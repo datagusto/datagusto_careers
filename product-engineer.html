@@ -384,6 +384,180 @@
     border: 1px solid var(--light2);
     box-shadow: 0 16px 38px rgba(14, 26, 43, 0.08);
   }
+
+  /* ---- Interview & Storyboard Grid ---- */
+  .interview-story-section {
+    padding: 80px 0;
+    background: var(--ink2);
+    border-top: 1px solid rgba(255,255,255,.06);
+    border-bottom: 1px solid rgba(255,255,255,.06);
+    color: #fff;
+  }
+  .interview-story-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 40px;
+    width: 100%;
+  }
+  .interview-story-container .talk-video-block {
+    flex: 1.8;
+    min-width: 0;
+  }
+  .interview-story-container .storyboard-card {
+    flex: 1;
+    min-width: 0;
+  }
+  @media(max-width: 960px) {
+    .interview-story-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .interview-story-container .talk-video-block,
+    .interview-story-container .storyboard-card {
+      width: 100%;
+      flex: none;
+    }
+  }
+
+  /* Storyboard Carousel Styles */
+  .storyboard-card {
+    background: var(--panel);
+    border-radius: 8px;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
+  .storyboard-card h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .story-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .story-slides {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+  }
+  .story-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .story-img-container {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #000;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .story-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .story-caption {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--muted-d);
+    min-height: 72px;
+  }
+  .story-caption strong {
+    color: #fff;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+  }
+  .story-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+    border-top: 1px solid rgba(255,255,255,.08);
+    padding-top: 14px;
+  }
+  .story-btn {
+    background: transparent;
+    border: 1px solid var(--muted-d);
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s, border-color .2s;
+  }
+  .story-btn:hover {
+    background: var(--teal);
+    border-color: var(--teal);
+    color: var(--ink);
+  }
+  .story-dots {
+    display: flex;
+    gap: 8px;
+  }
+  .story-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.2);
+    cursor: pointer;
+    transition: background .2s;
+  }
+  .story-dot.active {
+    background: var(--teal);
+  }
+
+  /* Timestamps Styles */
+  .talk-timestamps {
+    margin-top: 20px;
+    text-align: left;
+    background: rgba(255, 255, 255, .03);
+    padding: 16px 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, .05);
+  }
+  .talk-timestamps h4 {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--teal);
+    font-weight: 700;
+    text-align: left;
+  }
+  .talk-timestamps ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+  }
+  .talk-timestamps li {
+    font-size: 13px;
+    color: var(--muted-d);
+    text-align: left;
+  }
+  .timestamp-link {
+    color: var(--teal);
+    font-family: var(--disp);
+    font-weight: 600;
+    margin-right: 6px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .timestamp-link:hover {
+    color: #fff;
+  }
 </style>
 </head>
 <body>
@@ -775,25 +949,167 @@
 <section class="light" id="faq">
   <div class="wrap" style="padding-top: 46px;">
     
-    <!-- 共通形式の見出し（sec-head） -->
-    <!-- <div class="sec-head reveal">
-      <span class="kicker">Special Talk</span>
-      <h2>CEOとCTOによる特別対談</h2>
-      <p>創業者二人が語る、1.5年先のAIエージェント社会を見据えた『セーフティ市場』の可能性と、<br>未来を先取りする急成長スタートアップで働く魅力について解説します。</p>
-    </div> -->
+<!-- ===== INTERVIEW & STORYBOARD ===== -->
+<section class="interview-story-section" id="story">
+  <div class="wrap">
+    
+    <!-- Title / Heading -->
+    <div class="sec-head reveal" style="text-align: center; margin-bottom: 40px; max-width: 100%;">
+      <span class="kicker">Member Interview & Story</span>
+      <h2 style="color: #fff; margin-top: 8px; white-space: nowrap;">メンバーインタビュー：Yankho & datagusto参画ストーリー</h2>
+      <p style="color: var(--muted-d);">バックエンドエンジニアのYankhoに、datagustoの魅力や開発環境についてインタビューしました。</p>
+    </div>
 
-    <!-- 対談動画ブロック (FAQの上) -->
-    <!-- <div class="talk-video-block reveal" style="margin-top: 0; margin-bottom: 60px;">
-      <div class="talk-video-wrapper"> -->
-        <!-- YouTube埋め込み (YouTube公式の100%確実に再生できるテストIDを使用) -->
-        <!-- <iframe 
-          src="https://www.youtube.com/embed/M7lc1UVf-VE" 
-          title="datagusto CEO x CTO Talk" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          allowfullscreen>
-        </iframe>
+    <div class="interview-story-container">
+      
+      <!-- Left: YouTube Interview Video -->
+      <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
+        <div class="talk-video-wrapper">
+          <!-- YouTube Video Wireframe Placeholder -->
+          <iframe 
+            id="interviewVideo"
+            src="https://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1" 
+            title="datagusto Engineer Interview" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        
+        <!-- Video Timestamps (Reduced / High Value Only) -->
+        <div class="talk-timestamps">
+          <h4>インタビューのトピック（クリックしてジャンプ）</h4>
+          <ul>
+            <li><a href="#" class="timestamp-link" data-time="0">00:00</a> 会社での一番のお気に入り（プロダクトの魅力）</li>
+            <li><a href="#" class="timestamp-link" data-time="215">03:35</a> datagustoに参画を決めた理由</li>
+            <li><a href="#" class="timestamp-link" data-time="316">05:16</a> 技術的な最も面白いポイント（意味理解したガードレール）</li>
+            <li><a href="#" class="timestamp-link" data-time="772">12:52</a> 応募を考えているエンジニアへのメッセージ</li>
+          </ul>
+        </div>
       </div>
-    </div> -->
+
+      <!-- Right: How Mao met Yankho Storyboard -->
+      <div class="storyboard-card reveal">
+        <h3>
+          <span>How Mao met Yankho</span>
+          <span style="font-family: var(--disp); font-size: 12px; color: var(--muted-d); font-weight: normal;">Our Story</span>
+        </h3>
+        
+        <div class="story-carousel" id="storyCarousel">
+          <div class="story-slides" id="storySlides">
+            
+            <!-- Slide 1 -->
+            <div class="story-slide">
+              <div class="story-img-container">
+                <img src="assets/images/Gemini_Generated_Image_rmbas3rmbas3rmba.jpg" alt="始まりの時代" />
+              </div>
+              <p class="story-caption">
+                <strong>1. 始まりの時代 (2025年3月)</strong>
+                時はまだ1年半以上前。AI Agentについて現在のようにMulti-Agentが手軽に動く状態でもなく、OpenClawすら世に出ていませんでした。
+              </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="story-slide">
+              <div class="story-img-container">
+                <img src="assets/images/Gemini_Generated_Image_asf96nasf96nasf9.jpg" alt="手探りの開発者たち" />
+              </div>
+              <p class="story-caption">
+                <strong>2. 手探りの開発</strong>
+                ようやく一部の先進的な開発者が、LangChainなどの初期フレームワークを使ってAI Agentを手探りで作り始めていたくらいの頃です。
+              </p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="story-slide">
+              <div class="story-img-container">
+                <img src="assets/images/Gemini_Generated_Image_ (4).png" alt="オックスフォードでのミートアップ" />
+              </div>
+              <p class="story-caption">
+                <strong>3. オックスフォード初のミートアップ</strong>
+                そんな中、イギリスのオックスフォードに住んでいたParrは、現地初の「AI Agent Community」を立ち上げ、パブで最初のMeetupを開催しました。
+              </p>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="story-slide">
+              <div class="story-img-container">
+                <img src="assets/images/Gemini_Generated_Image_p00y76p00y76p00y.jpg" alt="ビールを片手に議論" />
+              </div>
+              <p class="story-caption">
+                <strong>4. ビールを片手のディスカッション</strong>
+                パブに集まった開発者たちが、ビールを飲みながら「AI Agentの将来像」について熱い議論を交わしていました。
+              </p>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="story-slide">
+              <div class="story-img-container">
+                <img src="assets/images/Gemini_Generated_Image_pdjrrlpdjrrlpdjr.jpg" alt="Yankhoとの出会い" />
+              </div>
+              <p class="story-caption">
+                <strong>5. Yankhoとの出会い</strong>
+                そのMeetup of AI agentの場に、オックスフォード在いたエンジニアであるYankhoが姿を現しました。
+              </p>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="story-slide">
+              <div class="story-img-container">
+                <img src="assets/images/Gemini_Generated_Image_sleqdrsleqdrsleq.jpg" alt="個人開発者としてのYankho" />
+              </div>
+              <p class="story-caption">
+                <strong>6. 個人での試行錯誤</strong>
+                Yankhoはスタートアップで働きながら、自らもAI Agentを用いた個人サービスの開発・運用を独自に開始していました。
+              </p>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="story-slide">
+              <div class="story-img-container">
+                <img src="assets/images/Gemini_Generated_Image_ (2).png" alt="カフェでの決意" />
+              </div>
+              <p class="story-caption">
+                <strong>7. 同意と当事者としての体験</strong>
+                当時datagustoは初期構想段階でしたが、「AIの予測不能な暴走は致命的な問題になる」という懸念にYankhoは深く同意し、カフェで「ぜひ手伝いたい」と意向を伝えてくれました。
+              </p>
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="story-slide">
+              <div class="story-img-container">
+                <img src="assets/images/Gemini_Generated_Image_ (2).png" alt="カフェでの決意" />
+              </div>
+              <p class="story-caption">
+                <strong>8. カフェでの決意 (datagustoへの参画)</strong>
+                Yankhoはその後、実際にAIエージェントの運用を通じて「予測不能なエージェント」がもたらす問題を当事者として実感。本格的にチームへの参画を決めました。
+              </p>
+            </div>
+
+            <!-- Slide 9 -->
+            <div class="story-slide">
+              <div class="story-img-container">
+                <img src="assets/images/Gemini_Generated_Image_pdjrrlpdjrrlpdjr.jpg" alt="そして現在" />
+              </div>
+              <p class="story-caption">
+                <strong>9. そして現在へ (2026年8月)</strong>
+                時が経ち2026年8月。今や世間ではAI Agentの制御不能な動作や暴走のニュースを見ない日はありません。datagustoの安全層プロダクトはますます重要性を増しています。
+              </p>
+            </div>
+
+          </div>
+          
+          <!-- Controls -->
+          <div class="story-controls">
+            <button class="story-btn" id="prevStoryBtn">←</button>
+            <div class="story-dots" id="storyDots"></div>
+            <button class="story-btn" id="nextStoryBtn">→</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <div class="sec-head reveal">
       <span class="kicker">FAQ</span>
@@ -901,6 +1217,69 @@
     if(y>lastY && y>200) nav.style.transform='translateY(-100%)';
     else nav.style.transform='translateY(0)';
     lastY=y;
+  });
+
+  // ---- storyboard carousel logic ----
+  const slides = document.getElementById('storySlides');
+  const dotsContainer = document.getElementById('storyDots');
+  const prevBtn = document.getElementById('prevStoryBtn');
+  const nextBtn = document.getElementById('nextStoryBtn');
+  const totalSlides = document.querySelectorAll('.story-slide').length;
+  let currentSlide = 0;
+
+  // Create dots
+  if (dotsContainer) {
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('story-dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  const dots = document.querySelectorAll('.story-dot');
+
+  function updateCarousel() {
+    if (slides) slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    dots.forEach((dot, index) => {
+      if (index === currentSlide) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+  }
+
+  function goToSlide(n) {
+    currentSlide = n;
+    updateCarousel();
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateCarousel();
+    });
+  }
+
+  // ---- youtube timestamp jump ----
+  document.querySelectorAll('.timestamp-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const seconds = link.getAttribute('data-time');
+      const iframe = document.getElementById('interviewVideo');
+      if (iframe) {
+        iframe.src = `https://www.youtube.com/embed/M7lc1UVf-VE?start=${seconds}&autoplay=1&enablejsapi=1`;
+      }
+    });
   });
 </script>
 </body>
