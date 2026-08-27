@@ -1888,6 +1888,31 @@
     </div>
   </section>
 
+  <!-- ===== SPECIAL TALK ===== -->
+  <section class="dark" id="talk" style="border-top: 1px solid rgba(255,255,255,.06); padding: 92px 0 60px;">
+    <div class="wrap">
+      <div class="sec-head reveal" style="text-align: center; margin: 0 auto 40px; max-width: 760px;">
+        <span class="kicker" style="justify-content: center;">Special Talk</span>
+        <h2 style="margin-top: 16px;">CEOとCTOによる特別対談</h2>
+        <p style="margin-top: 14px;">創業者二人が語る、1.5年先のAIエージェント社会を見据えた『セーフティ市場』の可能性と、<br>未来を先取りする急成長スタートアップで働く魅力について解説します。</p>
+      </div>
+      <div class="talk-video-block reveal" style="margin-top: 0;">
+        <div class="talk-video-wrapper" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, var(--panel-soft) 0%, var(--ink2) 100%);">
+          <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px;">
+            <div style="width: 64px; height: 64px; border-radius: 50%; background: rgba(255, 122, 51, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div style="font-family: var(--disp); font-weight: 700; font-size: 18px; color: var(--teal); letter-spacing: 0.1em; text-transform: uppercase;">Coming Soon</div>
+            <div style="font-size: 13.5px; color: var(--muted-d); margin-top: 8px;">動画は現在準備中です。公開までお待ちください。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== WHERE WE FIT ===== -->
   <section class="light" id="fit">
     <div class="wrap">
@@ -2314,35 +2339,8 @@
 
 
 
-          <!-- ===== Overview Content ===== -->
-          <div class="interview-story-container active" id="member-overview">
-            <div class="sec-head reveal">
-              <span class="kicker">Company Overview</span>
-              <h2>datagustoについて</h2>
-              <p>datagustoの紹介動画です。会社が目指すビジョンやプロダクトの方向性について、CEOとCTOがそれぞれの想いを語っています。</p>
-            </div>
-            <div class="interview-story-columns">
-              <div class="talk-video-block reveal" style="margin-top: 0; flex: none; width: 100%;">
-                <div class="talk-video-wrapper">
-                  <div class="video-coming-soon">
-                    <div class="icon-box">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" opacity="0.3"></polygon>
-                        <line x1="2" y1="2" x2="22" y2="22"></line>
-                      </svg>
-                    </div>
-                    <h4>Overview Video Coming Soon</h4>
-                    <p>紹介動画は現在準備中です。<br>公開までしばらくお待ちください。</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <!-- ===== Yankho Content ===== -->
-          <div class="interview-story-container" id="member-yankho">
+          <div class="interview-story-container active" id="member-yankho">
             <div class="sec-head reveal">
               <span class="kicker">Member Interview</span>
               <h2>メンバーインタビュー：Yankho</h2>
@@ -2352,7 +2350,6 @@
 
               <!-- Left: YouTube Interview Video -->
               <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
-
                 <div class="talk-video-wrapper">
                   <!-- Video Coming Soon Placeholder -->
                   <div class="video-coming-soon">
@@ -2607,8 +2604,7 @@
 
           <!-- Member Selection Tabs -->
           <div class="member-tabs-container reveal">
-            <button class="member-tab-btn active" data-member="overview">datagusto</button>
-            <button class="member-tab-btn" data-member="yankho">Yankho</button>
+            <button class="member-tab-btn active" data-member="yankho">Yankho</button>
             <button class="member-tab-btn" data-member="sean">Sean</button>
             <button class="member-tab-btn" data-member="ice">ICE</button>
             <button class="member-tab-btn" data-member="fastin">Fastin</button>
@@ -2845,6 +2841,18 @@
           updateCarousel();
         });
       }
+    });
+
+    // ---- youtube timestamp jump ----
+    document.querySelectorAll('.timestamp-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const seconds = link.getAttribute('data-time');
+        const iframe = document.getElementById('interviewVideo');
+        if (iframe) {
+          iframe.src = `https://www.youtube.com/embed/M7lc1UVf-VE?start=${seconds}&autoplay=1&enablejsapi=1`;
+        }
+      });
     });
   </script>
 </body>
