@@ -383,7 +383,368 @@
     border: 1px solid var(--light2);
     box-shadow: 0 16px 38px rgba(14, 26, 43, 0.08);
   }
-</style>
+    /* Member Interview Tabs */
+    .member-tabs-container {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 40px auto 0;
+      flex-wrap: wrap;
+      max-width: 600px;
+    }
+
+    .member-tab-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--muted-d);
+      padding: 10px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .member-tab-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .member-tab-btn.active {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: var(--ink);
+      box-shadow: 0 4px 15px rgba(255, 122, 51, 0.3);
+    }
+
+    /* Video Coming Soon Placeholder */
+    .video-coming-soon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #16294F 0%, #0F1E3D 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      padding: 24px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .video-coming-soon .icon-box {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: rgba(255, 122, 51, 0.1);
+      border: 1px solid rgba(255, 122, 51, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      color: var(--teal);
+      animation: video-pulse 2s infinite alternate;
+    }
+
+    .video-coming-soon h4 {
+      font-family: var(--disp);
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #fff;
+      letter-spacing: 0.05em;
+    }
+
+    .video-coming-soon p {
+      font-size: 13px;
+      color: var(--muted-d);
+      max-width: 320px;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    @keyframes video-pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 122, 51, 0.2);
+      }
+
+      100% {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px 5px rgba(255, 122, 51, 0.1);
+      }
+    }
+
+    /* Story Coming Soon Placeholder */
+    .story-coming-soon {
+      min-height: 280px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px dashed rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      padding: 32px 24px;
+      box-sizing: border-box;
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    .story-coming-soon .icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 122, 51, 0.08);
+      border: 1px solid rgba(255, 122, 51, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      color: var(--teal);
+    }
+
+    .story-coming-soon h4 {
+      font-family: var(--disp);
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #fff;
+      letter-spacing: 0.05em;
+    }
+
+    .story-coming-soon p {
+      font-size: 13px;
+      color: var(--muted-d);
+      max-width: 280px;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .interview-story-section .sec-head h2 {
+      color: #fff;
+    }
+    .interview-story-section .sec-head p {
+      color: var(--muted-d);
+    }
+    .interview-story-section .kicker {
+      color: var(--teal);
+    }
+
+    /* ---- Interview & Storyboard Grid ---- */
+    .interview-story-section {
+      padding: 80px 0;
+      background: var(--ink2);
+      border-top: 1px solid rgba(255, 255, 255, .06);
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+      color: #fff;
+      margin-bottom: 92px;
+    }
+
+    .interview-story-container {
+      display: none;
+      width: 100%;
+    }
+
+    .interview-story-container.active {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .interview-story-columns {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 40px;
+      width: 100%;
+    }
+
+    .interview-story-columns .talk-video-block {
+      flex: 1.8;
+      min-width: 0;
+    }
+
+    .interview-story-columns .storyboard-card {
+      flex: 1;
+      min-width: 0;
+    }
+
+    @media(max-width: 960px) {
+      .interview-story-columns {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .interview-story-container .talk-video-block,
+      .interview-story-container .storyboard-card {
+        width: 100%;
+        flex: none;
+      }
+    }
+
+    /* Storyboard Carousel Styles */
+    .storyboard-card {
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+      width: 100%;
+    }
+
+    .storyboard-card h3 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      color: var(--teal);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .story-carousel {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .story-slides {
+      display: flex;
+      transition: transform 0.4s ease-in-out;
+      width: 100%;
+    }
+
+    .story-slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .story-img-container {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: #000;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .story-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .story-caption {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--muted-d);
+      min-height: 72px;
+    }
+
+    .story-caption strong {
+      color: #fff;
+      display: block;
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    .story-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      padding-top: 14px;
+    }
+
+    .story-btn {
+      background: transparent;
+      border: 1px solid var(--muted-d);
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .2s, border-color .2s;
+    }
+
+    .story-btn:hover {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: var(--ink);
+    }
+
+    .story-dots {
+      display: flex;
+      gap: 8px;
+    }
+
+    .story-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .2);
+      cursor: pointer;
+      transition: background .2s;
+    }
+
+    .story-dot.active {
+      background: var(--teal);
+    }
+
+    /* Timestamps Styles */
+    .talk-timestamps {
+      margin-top: 20px;
+      text-align: left;
+      background: rgba(255, 255, 255, .03);
+      padding: 16px 20px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, .05);
+    }
+
+    .talk-timestamps h4 {
+      font-size: 14px;
+      margin-bottom: 12px;
+      color: var(--teal);
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .talk-timestamps ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      text-align: left;
+    }
+
+    .talk-timestamps li {
+      font-size: 13px;
+      color: var(--muted-d);
+      text-align: left;
+    }
+
+    .timestamp-link {
+      color: var(--teal);
+      font-family: var(--disp);
+      font-weight: 600;
+      margin-right: 6px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .timestamp-link:hover {
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
 
@@ -776,6 +1137,260 @@
 <!-- ===== FAQ ===== -->
 <section class="light" id="faq">
   <div class="wrap" style="padding-top: 46px;">
+
+      <!-- ===== INTERVIEW & STORYBOARD ===== -->
+      <section class="interview-story-section" id="story">
+        <div class="wrap">
+
+          <!-- ===== Yankho Content ===== -->
+          <div class="interview-story-container active" id="member-yankho">
+            <div class="sec-head reveal">
+              <span class="kicker">Member Interview</span>
+              <h2>Member Interview: Yankho & Story of Joining datagusto</h2>
+              <p>We interviewed backend engineer Yankho about the appeal of datagusto and the development environment.</p>
+            </div>
+            <div class="interview-story-columns">
+              <!-- Left: YouTube Interview Video -->
+              <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
+                <div class="talk-video-wrapper">
+                  <!-- Video Coming Soon Placeholder -->
+                  <div class="video-coming-soon">
+                    <div class="icon-box">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" opacity="0.3"></polygon>
+                        <line x1="2" y1="2" x2="22" y2="22"></line>
+                      </svg>
+                    </div>
+                    <h4>Interview Video Coming Soon</h4>
+                    <p>The interview video is currently in preparation.<br>Please wait a while for its release.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: How Mao met Yankho Storyboard -->
+              <div class="storyboard-card reveal">
+                <h3>
+                  <span>How Mao met Yankho</span>
+                  <span style="font-family: var(--disp); font-size: 12px; color: var(--muted-d); font-weight: normal;">Our Story</span>
+                </h3>
+                <div class="story-carousel">
+                  <div class="story-slides">
+                    <!-- Slide 1 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="assets/images/developing.jpg" alt="The Dawn of AI Agents" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>1. The Dawn of AI Agents (Spring 2025)</strong>
+                        It was more than a year and a half ago. Multi-Agent systems were not easy to run, and OpenClaw was not even released. It was an era when a few advanced developers were building AI Agents using early frameworks through trial and error.
+                      </p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="assets/images/pub.jpg" alt="Discussion over Beers" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>2. Community Launch in Oxford</strong>
+                        Meanwhile, Parr, who was living in Oxford, UK, launched the first local "AI Agent Community" and hosted the first Meetup in a pub. They had heated discussions about the future of AI Agents over beers.
+                      </p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="assets/images/01_yankho.png" alt="Meeting Yankho" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>3. Meeting Yankho and His Challenge</strong>
+                        Yankho, a highly skilled engineer who was already working at a startup and independently developing and operating his own personal services using AI Agents, also attended the Meetup.
+                      </p>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="assets/images/cafe.jpg" alt="Decision in a Cafe" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>4. Resonance and Joining the Team</strong>
+                        Yankho deeply resonated with the initial concept of "unpredictable behavior and runaway of AI Agents being fatal". He decided to join the team, feeling the seriousness of the issue from his own personal development experience.
+                      </p>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="assets/images/07_now.jpg" alt="And to the Present" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>5. Now, Solving Social Challenges (2026)</strong>
+                        Today, the uncontrolled behavior of AI Agents has become a real-world issue. The "Safety Layer (Guardrail)" product developed by datagusto is an essential technology for implementing agents in society.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="story-controls">
+                    <button class="story-btn prev-story-btn">←</button>
+                    <div class="story-dots"></div>
+                    <button class="story-btn next-story-btn">→</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== Sean Content ===== -->
+          <div class="interview-story-container" id="member-sean">
+            <div class="sec-head reveal">
+              <span class="kicker">Member Interview</span>
+              <h2>Member Interview: Sean & UI/UX Story</h2>
+              <p>We interviewed product designer Sean about the appeal of datagusto and the design environment.</p>
+            </div>
+            <div class="interview-story-columns">
+              <!-- Left: Interview Video -->
+              <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
+                <div class="talk-video-wrapper">
+                  <div class="video-coming-soon">
+                    <div class="icon-box">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" opacity="0.3"></polygon>
+                        <line x1="2" y1="2" x2="22" y2="22"></line>
+                      </svg>
+                    </div>
+                    <h4>Interview Video Coming Soon</h4>
+                    <p>The interview video is currently in preparation.<br>Please wait a while for its release.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Storyboard -->
+              <div class="storyboard-card reveal">
+                <h3>
+                  <span>How Mao met Sean</span>
+                  <span style="font-family: var(--disp); font-size: 12px; color: var(--muted-d); font-weight: normal;">Our Story</span>
+                </h3>
+                <div class="story-coming-soon">
+                  <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                      <circle cx="9" cy="9" r="2"></circle>
+                      <path d="M21 15l-3.086-3.086a2 2 0 00-2.828 0L6 21"></path>
+                    </svg>
+                  </div>
+                  <h4>Story Coming Soon</h4>
+                  <p>The storyboard is currently in preparation.<br>Please wait a while for its release.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== ICE Content ===== -->
+          <div class="interview-story-container" id="member-ice">
+            <div class="sec-head reveal">
+              <span class="kicker">Member Interview</span>
+              <h2>Member Interview: ICE & Safety Layer Architecture</h2>
+              <p>We interviewed AI engineer ICE about the appeal of datagusto and the safety layer.</p>
+            </div>
+            <div class="interview-story-columns">
+              <!-- Left: Interview Video -->
+              <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
+                <div class="talk-video-wrapper">
+                  <div class="video-coming-soon">
+                    <div class="icon-box">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" opacity="0.3"></polygon>
+                        <line x1="2" y1="2" x2="22" y2="22"></line>
+                      </svg>
+                    </div>
+                    <h4>Interview Video Coming Soon</h4>
+                    <p>The interview video is currently in preparation.<br>Please wait a while for its release.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Storyboard -->
+              <div class="storyboard-card reveal">
+                <h3>
+                  <span>How Mao met ICE</span>
+                  <span style="font-family: var(--disp); font-size: 12px; color: var(--muted-d); font-weight: normal;">Our Story</span>
+                </h3>
+                <div class="story-coming-soon">
+                  <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                      <circle cx="9" cy="9" r="2"></circle>
+                      <path d="M21 15l-3.086-3.086a2 2 0 00-2.828 0L6 21"></path>
+                    </svg>
+                  </div>
+                  <h4>Story Coming Soon</h4>
+                  <p>The storyboard is currently in preparation.<br>Please wait a while for its release.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== Fastin Content ===== -->
+          <div class="interview-story-container" id="member-fastin">
+            <div class="sec-head reveal">
+              <span class="kicker">Member Interview</span>
+              <h2>Member Interview: Fastin & Frontend Development</h2>
+              <p>We interviewed frontend engineer Fastin about the appeal of datagusto and frontend development.</p>
+            </div>
+            <div class="interview-story-columns">
+              <!-- Left: Interview Video -->
+              <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
+                <div class="talk-video-wrapper">
+                  <div class="video-coming-soon">
+                    <div class="icon-box">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" opacity="0.3"></polygon>
+                        <line x1="2" y1="2" x2="22" y2="22"></line>
+                      </svg>
+                    </div>
+                    <h4>Interview Video Coming Soon</h4>
+                    <p>The interview video is currently in preparation.<br>Please wait a while for its release.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Storyboard -->
+              <div class="storyboard-card reveal">
+                <h3>
+                  <span>How Mao met Fastin</span>
+                  <span style="font-family: var(--disp); font-size: 12px; color: var(--muted-d); font-weight: normal;">Our Story</span>
+                </h3>
+                <div class="story-coming-soon">
+                  <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                      <circle cx="9" cy="9" r="2"></circle>
+                      <path d="M21 15l-3.086-3.086a2 2 0 00-2.828 0L6 21"></path>
+                    </svg>
+                  </div>
+                  <h4>Story Coming Soon</h4>
+                  <p>The storyboard is currently in preparation.<br>Please wait a while for its release.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member Selection Tabs -->
+          <div class="member-tabs-container reveal">
+            <button class="member-tab-btn active" data-member="yankho">Yankho</button>
+            <button class="member-tab-btn" data-member="sean">Sean</button>
+            <button class="member-tab-btn" data-member="ice">ICE</button>
+            <button class="member-tab-btn" data-member="fastin">Fastin</button>
+          </div>
+        </div>
+      </section>
     
     <!-- <div class="sec-head reveal">
       <span class="kicker">Special Talk</span>
