@@ -1517,6 +1517,93 @@
     else nav.style.transform='translateY(0)';
     lastY=y;
   });
-</script>
+    // ---- member tab switching logic ----
+    const tabButtons = document.querySelectorAll('.member-tab-btn');
+    const containers = document.querySelectorAll('.interview-story-container');
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const member = btn.getAttribute('data-member');
+
+        // Update buttons active class
+        tabButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Update containers active class
+        containers.forEach(c => {
+          if (c.id === `member-${member}`) {
+            c.classList.add('active');
+            // Reset its carousel to first slide
+            const slides = c.querySelector('.story-slides');
+            if (slides) {
+              slides.style.transform = 'translateX(0%)';
+            }
+            const dots = c.querySelectorAll('.story-dot');
+            dots.forEach((dot, idx) => {
+              if (idx === 0) dot.classList.add('active');
+              else dot.classList.remove('active');
+            });
+          } else {
+            c.classList.remove('active');
+          }
+        });
+      });
+    });
+
+    // ---- storyboard carousel logic (generic) ----
+    document.querySelectorAll('.story-carousel').forEach(carousel => {
+      const slides = carousel.querySelector('.story-slides');
+      const dotsContainer = carousel.querySelector('.story-dots');
+      const prevBtn = carousel.querySelector('.prev-story-btn');
+      const nextBtn = carousel.querySelector('.next-story-btn');
+      const allSlides = carousel.querySelectorAll('.story-slide');
+      const totalSlides = allSlides.length;
+      let currentSlide = 0;
+
+      // Clear and Create dots
+      if (dotsContainer) {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalSlides; i++) {
+          const dot = document.createElement('div');
+          dot.classList.add('story-dot');
+          if (i === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => goToSlide(i));
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      const dots = carousel.querySelectorAll('.story-dot');
+
+      function updateCarousel() {
+        if (slides) slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        dots.forEach((dot, index) => {
+          if (index === currentSlide) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+
+      function goToSlide(n) {
+        currentSlide = n;
+        updateCarousel();
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          updateCarousel();
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          updateCarousel();
+        });
+      }
+    });
+  </script>
 </body>
+
 </html>
