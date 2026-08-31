@@ -316,6 +316,35 @@
       padding: 34px 0;
     }
 
+    .tbd {
+      display: inline-block;
+      font-family: var(--disp);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--ink);
+      background: var(--teal);
+      padding: 2px 7px;
+      border-radius: 2px;
+      vertical-align: middle;
+      line-height: 1.4;
+    }
+
+    .fact .v .tbd {
+      display: block;
+      width: fit-content;
+      margin-top: 6px;
+    }
+
+    .fact .v .hint {
+      display: block;
+      font-weight: 500;
+      font-size: 12px;
+      color: var(--muted-d);
+      margin-top: 4px;
+    }
+
     .facts-row {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -693,6 +722,66 @@
     .req-col h3 {
       font-size: 18px;
       margin-bottom: 4px;
+    }
+
+    .req-col h4 {
+      font-size: 13px;
+      font-weight: 700;
+      margin: 18px 0 10px;
+    }
+
+    .req-col.must h4 {
+      color: var(--teal);
+    }
+
+    .eval-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 28px;
+      margin-top: 28px;
+      list-style: none;
+    }
+
+    .eval-list li {
+      font-size: 13.5px;
+      color: var(--muted-d);
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .eval-list li::before {
+      content: "●";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      color: var(--teal);
+      font-size: 8px;
+    }
+
+    .mkt-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mkt-list li {
+      background: var(--ink2);
+      border-radius: 4px;
+      padding: 16px 18px;
+      border-left: 3px solid var(--teal);
+      font-size: 13.5px;
+      color: #dce6f0;
+      line-height: 1.65;
+    }
+
+    @media(max-width:780px) {
+      .eval-list,
+      .mkt-list {
+        grid-template-columns: 1fr;
+      }
     }
 
     .req-col.must h3 {
@@ -1794,10 +1883,10 @@
     </div>
     <div class="wrap">
       <span class="kicker">Careers / Sales Engineer</span>
-      <h1>AIエージェントの現場で<br><span class="hl">導入を技術で支える</span><br>セールスエンジニア</h1>
+      <h1>営業と開発の間に立ち<br><span class="hl">プロダクトの価値を正しく伝える</span><br>セールスエンジニア</h1>
       <div class="role-en">セールスエンジニア</div>
       <p class="summary">
-        本ポジションの詳細なジョブディスクリプションは現在準備中です。会社・チーム・選考に関する共通情報は以下をご覧ください。
+        営業メンバーとともに顧客商談へ参加し、プロダクトの機能、仕組み、導入方法、システム構成、技術的制約を説明するポジションです。顧客からの技術的な質問や要望を整理し、必要に応じてCTO・開発チームと連携しながら回答します。顧客と開発チームの認識をつなぎ、提案の質と導入検討のスピードを高めることが期待されます。
       </p>
       <div class="hero-btns">
         <a class="btn-primary" href="#apply">カジュアル面談に応募する</a>
@@ -1820,15 +1909,15 @@
         </div>
         <div class="fact">
           <div class="l">Type</div>
-          <div class="v">正社員<br>（業務委託開始も可）</div>
-        </div>
-        <div class="fact">
-          <div class="l">Language</div>
-          <div class="v">日本語＋英語<br>（開発チーム連携用）</div>
+          <div class="v">フルタイム・業務委託あり</div>
         </div>
         <div class="fact">
           <div class="l">Comp</div>
           <div class="v">600万円〜<br>（経験・スキルに応ず）</div>
+        </div>
+        <div class="fact">
+          <div class="l">Language</div>
+          <div class="v">日本語＋英語<br>（開発チーム連携用）</div>
         </div>
       </div>
     </div>
@@ -1954,25 +2043,26 @@
   </section>
 
   <!-- ===== ROLE ===== -->
-  <!-- TODO: Sales Engineer 固有の業務内容を記入 -->
   <section class="light alt" id="role">
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="kicker">The Role</span>
         <h2>セールスエンジニアの<br>具体的な業務範囲とミッション</h2>
         <p>
-          本セクションの詳細は現在準備中です。<br>各ブロックをタップすると詳細が開きます。
+          営業メンバーとともに顧客商談へ参加し、プロダクトの機能、仕組み、導入方法、システム構成、技術的制約を説明するポジションです。<br>契約や営業数値の主担当を担うのではなく、顧客の課題と自社AIプロダクトをつなぎ、技術面から導入検討と受注を支援します。各ブロックをタップすると詳細が開きます。
         </p>
       </div>
 
       <div class="role-block open reveal">
         <div class="role-head"><span class="num">01</span>
-          <h3>業務範囲 01（準備中）</h3><span class="tog">+</span>
+          <h3>顧客課題の把握・整理</h3><span class="tog">+</span>
         </div>
         <div class="role-body">
           <div class="role-body-inner">
             <ul>
-              <li>内容は準備中です</li>
+              <li>営業メンバーと顧客商談に参加し、技術面から提案を支援する</li>
+              <li>顧客の課題、要望、利用環境をヒアリングする</li>
+              <li>導入時の前提条件、技術的制約、想定される論点を整理する</li>
             </ul>
           </div>
         </div>
@@ -1980,12 +2070,15 @@
 
       <div class="role-block reveal">
         <div class="role-head"><span class="num">02</span>
-          <h3>業務範囲 02（準備中）</h3><span class="tog">+</span>
+          <h3>技術説明・提案の具体化</h3><span class="tog">+</span>
         </div>
         <div class="role-body">
           <div class="role-body-inner">
             <ul>
-              <li>内容は準備中です</li>
+              <li>プロダクトの機能、仕組み、構成を相手にあわせて説明する</li>
+              <li>顧客の要望に応じて、導入イメージや利用方法を具体化する</li>
+              <li>RFP、提案書、技術資料などの作成を支援する</li>
+              <li>必要に応じて、デモや簡単な技術検証を支援し、技術質問に一次対応する</li>
             </ul>
           </div>
         </div>
@@ -1993,12 +2086,15 @@
 
       <div class="role-block reveal">
         <div class="role-head"><span class="num">03</span>
-          <h3>業務範囲 03（準備中）</h3><span class="tog">+</span>
+          <h3>開発チームとの接続</h3><span class="tog">+</span>
         </div>
         <div class="role-body">
           <div class="role-body-inner">
             <ul>
-              <li>内容は準備中です</li>
+              <li>その場で回答できない内容を持ち帰り、CTO・開発チームへ確認する</li>
+              <li>開発チームから得た情報を顧客向けに整理し、前提条件・制約事項を正確に伝える</li>
+              <li>顧客の利用環境や技術要件を社内へ共有し、認識齟齬を防ぐ</li>
+              <li>技術的な論点や未解決事項を記録・管理する</li>
             </ul>
           </div>
         </div>
@@ -2006,35 +2102,36 @@
 
       <div class="role-block reveal">
         <div class="role-head"><span class="num">04</span>
-          <h3>業務範囲 04（準備中）</h3><span class="tog">+</span>
+          <h3>提案・検証の完了責任</h3><span class="tog">+</span>
         </div>
         <div class="role-body">
           <div class="role-body-inner">
             <ul>
-              <li>内容は準備中です</li>
+              <li>担当する提案や技術検証を、計画から実行、完了まで推進する</li>
+              <li>顧客への技術説明、回答、提案内容を最後まで完了させる</li>
+              <li>不明点やリスクを早期に発見し、チームメンバーと解決まで進める</li>
             </ul>
           </div>
         </div>
       </div>
 
       <div class="callout reveal">
-        <b>本ポジションの定義：</b> セールスエンジニアの位置づけ・他職種との違いは準備中です。
+        <b>本ポジションの定義：</b> このポジションは、契約や営業数値の主担当を担う営業職でも、プロダクト開発そのものを担う開発職でもありません。営業と技術の間に立ち、顧客の課題や利用環境を技術面から整理し、自社AIプロダクトの価値を正しく伝えることで、顧客の導入検討と受注を支援します。担当する提案や技術検証は、完了まで責任を持って推進します。
       </div>
 
       <p class="note-mini reveal">
-        ※ 本ポジションの主務・対象外業務の注記は準備中です。
+        ※ 契約条件や価格の最終交渉、プロダクト開発そのもの、導入後の継続的な運用・保守、高度な障害調査やインフラ運用などは主務ではありません。
       </p>
     </div>
   </section>
 
-  <!-- ===== WHY SALES ENGINEERS ===== -->
-  <!-- TODO: Sales Engineer 向けの魅力・メッセージを記入 -->
+  <!-- ===== WHY ENGINEERS ===== -->
   <section class="dark" id="why-eng">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="kicker">For Sales Engineers</span>
-        <h2>セールスエンジニアとして挑戦する面白さ</h2>
-        <p>本セクションの詳細は現在準備中です。</p>
+        <span class="kicker">For Engineers</span>
+        <h2>AIエージェントセキュリティという新領域に挑戦する面白さ</h2>
+        <p>まだ誰も完成形を持っていないエージェント型システムの安全性という、フロンティア領域において、顧客への技術説明と導入検討の支援に挑戦できます。</p>
       </div>
       <div class="card-3">
         <div class="card reveal" style="background:var(--ink2);border-color:var(--panel);">
@@ -2043,8 +2140,8 @@
               <path d="M12 3l9 5-9 5-9-5 9-5z" />
               <path d="M3 13l9 5 9-5" />
             </svg></div>
-          <h3 style="color:#fff;">ポイント 01（準備中）</h3>
-          <p style="color:var(--muted-d);">内容は準備中です。</p>
+          <h3 style="color:#fff;">AIエージェントという新領域への挑戦</h3>
+          <p style="color:var(--muted-d);">単なるチャットボットではなく、企業の基幹システムやSaaSと接続し自律的に操作を行うAIエージェントのリスク管理に挑みます。</p>
         </div>
         <div class="card reveal" style="background:var(--ink2);border-color:var(--panel);">
           <div class="ic" style="background:var(--panel);"><svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33"
@@ -2052,8 +2149,8 @@
               <circle cx="12" cy="13" r="6" />
               <path d="M12 7V3M9 4l3 3 3-3" />
             </svg></div>
-          <h3 style="color:#fff;">ポイント 02（準備中）</h3>
-          <p style="color:var(--muted-d);">内容は準備中です。</p>
+          <h3 style="color:#fff;">希少な実践現場へのアクセス</h3>
+          <p style="color:var(--muted-d);">エンタープライズ環境における実際のAIエージェント開発・運用の現場に入り、その動作、権限、ガードレール、運用フローに向き合います。</p>
         </div>
         <div class="card reveal" style="background:var(--ink2);border-color:var(--panel);">
           <div class="ic" style="background:var(--panel);"><svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33"
@@ -2061,18 +2158,18 @@
               <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" />
               <path d="M12 6v6l4 2" />
             </svg></div>
-          <h3 style="color:#fff;">ポイント 03（準備中）</h3>
-          <p style="color:var(--muted-d);">内容は準備中です。</p>
+          <h3 style="color:#fff;">顧客課題とAIプロダクトをつなぐ</h3>
+          <p style="color:var(--muted-d);">顧客の事業課題とAIプロダクトの技術を直接つなぎ、営業・開発・顧客の3者をつなぐ経験を積めます。</p>
         </div>
       </div>
       <div class="callout reveal" style="background:var(--ink2);">
-        <b>補足メッセージは準備中です。</b>
+        <b>すべての技術スタックを網羅している必要はありません。</b><br>
+        顧客へ技術を分かりやすく説明し、分からない点を整理して持ち帰る力があれば、AIやセキュリティといった専門領域は入社後に十分キャッチアップ可能です。選考において重視するのは知識の量ではなく、顧客の課題を技術面から整理し、提案や技術検証を完了まで進められる思考力です。
       </div>
     </div>
   </section>
 
   <!-- ===== REQUIREMENTS ===== -->
-  <!-- TODO: Sales Engineer の必須要件・歓迎要件を記入 -->
   <section class="light" id="req">
     <div class="wrap">
       <div class="sec-head reveal">
@@ -2086,7 +2183,12 @@
           <h3>応募時点で必要な経験および能力</h3>
           <p class="note">実務の土台となる能力です。</p>
           <ul>
-            <li>内容は準備中です</li>
+            <li>日本語で顧客と打ち合わせ、ヒアリング、説明ができる</li>
+            <li>顧客の課題・要望・利用環境を、技術面から整理できる</li>
+            <li>ITシステムやソフトウェアを、非エンジニアを含む相手に分かりやすく説明できる</li>
+            <li>その場で答えられない技術事項を整理し、開発チームへ確認して回答できる</li>
+            <li>新しい技術やプロダクトを自ら学び、キャッチアップできる</li>
+            <li>担当する提案や技術検証を、完了まで責任を持って推進できる</li>
           </ul>
         </div>
         <div class="req-col nice reveal">
@@ -2094,12 +2196,20 @@
           <h3>入社後に習得可能なスキル</h3>
           <p class="note">現時点で未経験であっても問題ありません。入社後の習得を想定した要件です。</p>
           <ul>
-            <li>内容は準備中です</li>
+            <li>SaaS、IT、SIerなどでのプリセールス・セールスエンジニア経験</li>
+            <li>顧客向けのシステム提案・技術説明経験</li>
+            <li>RFP、提案書、技術資料などの作成経験</li>
+            <li>クラウド、API、ネットワーク、認証、データ連携などの基礎知識</li>
+            <li>デモやPoCを通じた営業支援経験</li>
+            <li>AI / LLMプロダクトに関する知識</li>
+            <li>Enterprise顧客との折衝経験</li>
+            <li>顧客導入やソリューション設計の経験</li>
+            <li>技術的なFAQや社内ナレッジの作成経験</li>
           </ul>
         </div>
       </div>
       <div class="callout soft reveal">
-        <b>評価方針：</b> セールスエンジニアの評価方針は準備中です。
+        <b>評価方針：</b> 顧客接点で得た課題や技術的な論点を、単なる商談同行や営業支援にとどめず、導入検討と受注、提案や技術検証の完了に直接寄与する重要な存在として正当に評価する体制を整備しています。
       </div>
     </div>
   </section>
@@ -2168,7 +2278,6 @@
   </section>
 
   <!-- ===== FIRST 6 MONTHS + CAREER ===== -->
-  <!-- TODO: Sales Engineer の入社後ロードマップ・キャリアパスを記入 -->
   <section class="light alt" id="growth">
     <div class="wrap">
       <div class="sec-head reveal">
@@ -2180,26 +2289,26 @@
         <div class="tl-step reveal">
           <div class="dot">1</div>
           <div class="ph">1st month</div>
-          <h4>ステップ 1（準備中）</h4>
-          <p>内容は準備中です。</p>
+          <h4>プロダクトと連携の理解</h4>
+          <p>主要機能、仕組み、導入方法、技術的制約を理解し、既存商談に同席して顧客の課題や質問を整理します。小規模な技術説明をサポート付きで実行します。</p>
         </div>
         <div class="tl-step reveal">
           <div class="dot">2</div>
           <div class="ph">months 1–3</div>
-          <h4>ステップ 2（準備中）</h4>
-          <p>内容は準備中です。</p>
+          <h4>担当範囲での技術説明</h4>
+          <p>商談で担当範囲の技術説明ができ、社内確認が必要な質問を切り分けます。開発チームへの確認を整理し、小規模なデモや技術検証を完了まで進めます。</p>
         </div>
         <div class="tl-step reveal">
           <div class="dot">3</div>
           <div class="ph">months 3–6</div>
-          <h4>ステップ 3（準備中）</h4>
-          <p>内容は準備中です。</p>
+          <h4>自律した技術面の担当</h4>
+          <p>一定範囲の商談で技術説明と質疑応答を自律して担当します。導入条件や制約を早い段階で発見し、認識齟齬を減らし、対応方法の改善提案ができます。</p>
         </div>
         <div class="tl-step reveal">
           <div class="dot">4</div>
           <div class="ph">6 months〜</div>
-          <h4>ステップ 4（準備中）</h4>
-          <p>内容は準備中です。</p>
+          <h4>領域のOwnership</h4>
+          <p>ひとつ以上の顧客セグメントまたは技術領域で明確なOwnershipを持ち、担当する提案や技術検証を完了まで推進できます。</p>
         </div>
       </div>
       <div class="callout reveal" style="background:var(--ink);">
@@ -2211,8 +2320,8 @@
               <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" />
               <path d="M12 6v6l4 2" />
             </svg></div>
-          <h4>キャリアパス 01（準備中）</h4>
-          <p>内容は準備中です。</p>
+          <h4>Senior Sales Engineer</h4>
+          <p>複雑な案件や重要顧客を担当し、提案品質や技術支援の標準化をリードする。</p>
         </div>
         <div class="path reveal">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
@@ -2221,15 +2330,15 @@
               <rect x="15" y="16" width="6" height="5" />
               <path d="M12 8v4M6 16v-2h12v2" />
             </svg></div>
-          <h4>キャリアパス 02（準備中）</h4>
-          <p>内容は準備中です。</p>
+          <h4>Solutions Architect / Technical Consultant</h4>
+          <p>顧客要件の整理、導入設計、PoC、技術検証により深く関わる。</p>
         </div>
         <div class="path reveal">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
               <path d="M8 6l-5 6 5 6M16 6l5 6-5 6" />
             </svg></div>
-          <h4>キャリアパス 03（準備中）</h4>
-          <p>内容は準備中です。</p>
+          <h4>Product Manager / Product Specialist</h4>
+          <p>顧客課題や市場のフィードバックをもとに、プロダクトの方向性や改善をリードする。</p>
         </div>
       </div>
     </div>
@@ -2239,26 +2348,18 @@
   <section class="light alt" id="market-stats">
     <div class="wrap">
       <div class="market reveal" style="margin-top: 0;">
-        <h3>市場全体におけるAIエージェントエンジニアの需要</h3>
+        <h3>このポジションで身につく市場価値</h3>
         <p class="lead">
-          datagustoにおける業務経験は、社内でのキャリア構築にとどまりません。AIとリスク管理が交差する領域におけるAIエージェントの安全な運用設計スキルは、国内外の市場で需要が急速に高まっています。</p>
-        <div class="mkt-grid">
-          <div class="mkt-card">
-            <div class="src">Stanford AI Index 2026</div>
-            <div class="stat">AIスキルを求める求人が、米国で全求人の2.5%に到達。</div>
-            <p>
-              前年比55%、10年で約300%の増加。なかでもAIエージェント／エージェント型システムに関するスキルは、2024年の0.06%から2025年の0.23%へと急伸し、2025年はエージェント型システムの普及期に位置づけされています。
-            </p>
-          </div>
-          <div class="mkt-card">
-            <div class="src">日本「人工知能基本計画」（2025年12月閣議決定）</div>
-            <div class="stat">国はAIを、産業競争力と安全保障に直結する重点技術と明記。</div>
-            <p>同計画はAIエージェントの進展を新たな技術潮流として指定し、産業および安全保障の観点から官民共同の取組を強化しています。AIとサイバーセキュリティは、極めて重要度の高い分野として注視されています。</p>
-          </div>
-        </div>
-        <p class="mkt-foot">
-          AIエージェントの普及に伴い、<b>その安全な動作や制御レイヤーを構築できる人材</b>の必要性は高まっています。<br>あなたがこのポジションで身につける経験は、将来にわたって継続的な需要が見込まれる極めて専門性の高い領域です。
-        </p>
+          Sales Engineerとして得られるのは、社内でのキャリアにとどまらない、顧客課題を技術と事業につなぐ実務能力です。</p>
+        <ul class="mkt-list">
+          <li>顧客課題を技術要件へ変換する能力</li>
+          <li>AIプロダクトを顧客価値として説明する能力</li>
+          <li>営業・開発・顧客間の技術的な調整能力</li>
+          <li>SaaSやAIプロダクトの導入提案能力</li>
+          <li>技術的な制約やリスクを早期に発見する能力</li>
+          <li>デモ、PoC、RFP、提案資料の作成能力</li>
+          <li>新しいAI・クラウド技術を学び、顧客や社内へ説明する能力</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -2298,6 +2399,16 @@
           <p>リファレンスチェックを経てオファー。</p>
         </div>
       </div>
+      <h3 class="reveal" style="color:#fff; font-size:18px; margin: 42px 0 16px;">評価ポイント</h3>
+      <ul class="eval-list reveal">
+        <li>顧客の課題や要望を正確に聞き取る力</li>
+        <li>技術的な内容を分かりやすく説明する力</li>
+        <li>不明点を整理し、適切に確認する力</li>
+        <li>営業・開発・顧客間の調整力</li>
+        <li>新しい技術を学ぶ力</li>
+        <li>顧客視点と事業視点を持って提案を考える力</li>
+        <li>担当した提案や技術検証を最後まで完了させる力</li>
+      </ul>
     </div>
   </section>
 
@@ -2592,34 +2703,47 @@
       <div class="reveal">
         <div class="faq-item">
           <div class="faq-q">
-            <h4>会社のステージと資金調達状況は？</h4><span class="tog">+</span>
+            <h4>AIに関する実務経験がなくても応募できますか？</h4><span class="tog">+</span>
           </div>
           <div class="faq-a">
-            <p>創業期のスタートアップです。Alchemist
-              Acceleratorや英国政府の起業家プログラムに参加しており、大手企業との協業も開始しています。詳細な資金調達フェーズや計画については、カジュアル面談にて開示可能な範囲で説明します。</p>
+            <p>応募できます。AI / LLM / RAG / AI Agentの実務経験は応募時点での必須条件としていません。入社後にプロダクトや必要な技術を学ぶ意欲を重視します。</p>
           </div>
         </div>
         <div class="faq-item">
           <div class="faq-q">
-            <h4>他のポジション（プリセールスやサポートなど）とどう違うのですか？</h4><span class="tog">+</span>
+            <h4>エンジニア経験がなくても応募できますか？</h4><span class="tog">+</span>
           </div>
           <div class="faq-a">
-            <p>
-              本ポジションと他職種の違いは現在準備中です。カジュアル面談にてご説明します。
-            </p>
+            <p><span class="tbd">要確認</span> この項目の回答はまだ確定していません。</p>
           </div>
         </div>
         <div class="faq-item">
           <div class="faq-q">
-            <h4>リード経験やマネジメント経験は必要ですか？</h4><span class="tog">+</span>
+            <h4>コーディング経験は必要ですか？</h4><span class="tog">+</span>
           </div>
           <div class="faq-a">
-            <p>リードやマネジメントの経験に関する方針は準備中です。まずはカジュアル面談でお話ししましょう。</p>
+            <p>特定のプログラミング言語による開発経験は必須ではありません。ただし、必要に応じて技術検証やAPI・データ連携の内容を理解し、社内外へ説明することが求められます。</p>
           </div>
         </div>
         <div class="faq-item">
           <div class="faq-q">
-            <h4>英語はどの程度必要ですか？</h4><span class="tog">+</span>
+            <h4>Sales Engineerは営業職ですか、技術職ですか？</h4><span class="tog">+</span>
+          </div>
+          <div class="faq-a">
+            <p>営業と技術の間に立つポジションです。契約や営業数値の主担当は営業が担い、Sales Engineerは技術説明、技術要件の整理、技術面での提案支援を担います。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            <h4>導入後の顧客支援も担当しますか？</h4><span class="tog">+</span>
+          </div>
+          <div class="faq-a">
+            <p>商談から導入検討初期の技術支援が中心です。導入後の運用支援や継続的な顧客支援の範囲は <span class="tbd">要確認</span> です。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            <h4>英語は必要ですか？</h4><span class="tog">+</span>
           </div>
           <div class="faq-a">
             <p>
@@ -2629,20 +2753,10 @@
         </div>
         <div class="faq-item">
           <div class="faq-q">
-            <h4>リモートワークはどこまで可能ですか？</h4><span class="tog">+</span>
+            <h4>出張や顧客訪問はありますか？</h4><span class="tog">+</span>
           </div>
           <div class="faq-a">
-            <p>リモートワークの実施は可能ですが、顧客環境の理解や連携のためにオフィス勤務や顧客先への訪問といったオンサイト業務が発生します。勤務地は東京となります。</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">
-            <h4>要件をすべて満たしていなくても応募できますか？</h4><span class="tog">+</span>
-          </div>
-          <div class="faq-a">
-            <p>
-              すべての要件を網羅している必要はありません。募集要項では、応募時点で必須となる基礎能力と、入社後に習得・キャッチアップ可能なスキル（LLMやセキュリティの専門知識など）を分けて記載しています。ご関心をお持ちいただけましたら、まずはカジュアル面談でお話ししましょう。
-            </p>
+            <p>客先訪問はあります。通常業務はリモート可ですが、客先への訪問時はリモート不可です。</p>
           </div>
         </div>
       </div>
