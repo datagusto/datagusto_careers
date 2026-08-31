@@ -316,27 +316,6 @@
       padding: 34px 0;
     }
 
-    .tbd {
-      display: inline-block;
-      font-family: var(--disp);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: var(--ink);
-      background: var(--teal);
-      padding: 2px 7px;
-      border-radius: 2px;
-      vertical-align: middle;
-      line-height: 1.4;
-    }
-
-    .fact .v .tbd {
-      display: block;
-      width: fit-content;
-      margin-top: 6px;
-    }
-
     .fact .v .hint {
       display: block;
       font-weight: 500;
@@ -732,56 +711,6 @@
 
     .req-col.must h4 {
       color: var(--teal);
-    }
-
-    .eval-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px 28px;
-      margin-top: 28px;
-      list-style: none;
-    }
-
-    .eval-list li {
-      font-size: 13.5px;
-      color: var(--muted-d);
-      padding-left: 18px;
-      position: relative;
-    }
-
-    .eval-list li::before {
-      content: "●";
-      position: absolute;
-      left: 0;
-      top: 6px;
-      color: var(--teal);
-      font-size: 8px;
-    }
-
-    .mkt-list {
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px 18px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .mkt-list li {
-      background: var(--ink2);
-      border-radius: 4px;
-      padding: 16px 18px;
-      border-left: 3px solid var(--teal);
-      font-size: 13.5px;
-      color: #dce6f0;
-      line-height: 1.65;
-    }
-
-    @media(max-width:780px) {
-      .eval-list,
-      .mkt-list {
-        grid-template-columns: 1fr;
-      }
     }
 
     .req-col.must h3 {
@@ -2183,6 +2112,7 @@
           <h3>応募時点で必要な経験および能力</h3>
           <p class="note">実務の土台となる能力です。</p>
           <ul>
+            <li>業務として、ソフトウェアやシステムを自分で実装し、動作確認やリリースまで担った経験</li>
             <li>日本語で顧客と打ち合わせ、ヒアリング、説明ができる</li>
             <li>顧客の課題・要望・利用環境を、技術面から整理できる</li>
             <li>ITシステムやソフトウェアを、非エンジニアを含む相手に分かりやすく説明できる</li>
@@ -2348,18 +2278,26 @@
   <section class="light alt" id="market-stats">
     <div class="wrap">
       <div class="market reveal" style="margin-top: 0;">
-        <h3>このポジションで身につく市場価値</h3>
+        <h3>市場全体におけるAIエージェントエンジニアの需要</h3>
         <p class="lead">
-          Sales Engineerとして得られるのは、社内でのキャリアにとどまらない、顧客課題を技術と事業につなぐ実務能力です。</p>
-        <ul class="mkt-list">
-          <li>顧客課題を技術要件へ変換する能力</li>
-          <li>AIプロダクトを顧客価値として説明する能力</li>
-          <li>営業・開発・顧客間の技術的な調整能力</li>
-          <li>SaaSやAIプロダクトの導入提案能力</li>
-          <li>技術的な制約やリスクを早期に発見する能力</li>
-          <li>デモ、PoC、RFP、提案資料の作成能力</li>
-          <li>新しいAI・クラウド技術を学び、顧客や社内へ説明する能力</li>
-        </ul>
+          datagustoにおける業務経験は、社内でのキャリア構築にとどまりません。AIとリスク管理が交差する領域におけるAIエージェントの安全な運用設計スキルは、国内外の市場で需要が急速に高まっています。</p>
+        <div class="mkt-grid">
+          <div class="mkt-card">
+            <div class="src">Stanford AI Index 2026</div>
+            <div class="stat">AIスキルを求める求人が、米国で全求人の2.5%に到達。</div>
+            <p>
+              前年比55%、10年で約300%の増加。なかでもAIエージェント／エージェント型システムに関するスキルは、2024年の0.06%から2025年の0.23%へと急伸し、2025年はエージェント型システムの普及期に位置づけされています。
+            </p>
+          </div>
+          <div class="mkt-card">
+            <div class="src">日本「人工知能基本計画」（2025年12月閣議決定）</div>
+            <div class="stat">国はAIを、産業競争力と安全保障に直結する重点技術と明記。</div>
+            <p>同計画はAIエージェントの進展を新たな技術潮流として指定し、産業および安全保障の観点から官民共同の取組を強化しています。AIとサイバーセキュリティは、極めて重要度の高い分野として注視されています。</p>
+          </div>
+        </div>
+        <p class="mkt-foot">
+          AIエージェントの普及に伴い、<b>その安全な動作や制御レイヤーを構築できる人材</b>の必要性は高まっています。<br>あなたがこのポジションで身につける経験は、将来にわたって継続的な需要が見込まれる極めて専門性の高い領域です。
+        </p>
       </div>
     </div>
   </section>
@@ -2399,16 +2337,6 @@
           <p>リファレンスチェックを経てオファー。</p>
         </div>
       </div>
-      <h3 class="reveal" style="color:#fff; font-size:18px; margin: 42px 0 16px;">評価ポイント</h3>
-      <ul class="eval-list reveal">
-        <li>顧客の課題や要望を正確に聞き取る力</li>
-        <li>技術的な内容を分かりやすく説明する力</li>
-        <li>不明点を整理し、適切に確認する力</li>
-        <li>営業・開発・顧客間の調整力</li>
-        <li>新しい技術を学ぶ力</li>
-        <li>顧客視点と事業視点を持って提案を考える力</li>
-        <li>担当した提案や技術検証を最後まで完了させる力</li>
-      </ul>
     </div>
   </section>
 
@@ -2703,26 +2631,11 @@
       <div class="reveal">
         <div class="faq-item">
           <div class="faq-q">
-            <h4>AIに関する実務経験がなくても応募できますか？</h4><span class="tog">+</span>
+            <h4>会社のステージと資金調達状況は？</h4><span class="tog">+</span>
           </div>
           <div class="faq-a">
-            <p>応募できます。AI / LLM / RAG / AI Agentの実務経験は応募時点での必須条件としていません。入社後にプロダクトや必要な技術を学ぶ意欲を重視します。</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">
-            <h4>エンジニア経験がなくても応募できますか？</h4><span class="tog">+</span>
-          </div>
-          <div class="faq-a">
-            <p><span class="tbd">要確認</span> この項目の回答はまだ確定していません。</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">
-            <h4>コーディング経験は必要ですか？</h4><span class="tog">+</span>
-          </div>
-          <div class="faq-a">
-            <p>特定のプログラミング言語による開発経験は必須ではありません。ただし、必要に応じて技術検証やAPI・データ連携の内容を理解し、社内外へ説明することが求められます。</p>
+            <p>創業期のスタートアップです。Alchemist
+              Acceleratorや英国政府の起業家プログラムに参加しており、大手企業との協業も開始しています。詳細な資金調達フェーズや計画については、カジュアル面談にて開示可能な範囲で説明します。</p>
           </div>
         </div>
         <div class="faq-item">
@@ -2735,15 +2648,17 @@
         </div>
         <div class="faq-item">
           <div class="faq-q">
-            <h4>導入後の顧客支援も担当しますか？</h4><span class="tog">+</span>
+            <h4>開発経験は必要ですか？</h4><span class="tog">+</span>
           </div>
           <div class="faq-a">
-            <p>商談から導入検討初期の技術支援が中心です。導入後の運用支援や継続的な顧客支援の範囲は <span class="tbd">要確認</span> です。</p>
+            <p>
+              必要です。Engineerとして採用するため、業務としてソフトウェアやシステムを実装し、動作確認やリリースまで担った経験を応募時点で求めています。プロダクト開発そのものを主務とする職ではありませんが、技術説明や検証を担う前提として、実装の経験があることを必須としています。
+            </p>
           </div>
         </div>
         <div class="faq-item">
           <div class="faq-q">
-            <h4>英語は必要ですか？</h4><span class="tog">+</span>
+            <h4>英語はどの程度必要ですか？</h4><span class="tog">+</span>
           </div>
           <div class="faq-a">
             <p>
@@ -2753,10 +2668,20 @@
         </div>
         <div class="faq-item">
           <div class="faq-q">
-            <h4>出張や顧客訪問はありますか？</h4><span class="tog">+</span>
+            <h4>リモートワークはどこまで可能ですか？</h4><span class="tog">+</span>
           </div>
           <div class="faq-a">
-            <p>客先訪問はあります。通常業務はリモート可ですが、客先への訪問時はリモート不可です。</p>
+            <p>リモートワークの実施は可能です。客先訪問はあり、訪問時はリモート不可です。勤務地は東京となります。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            <h4>要件をすべて満たしていなくても応募できますか？</h4><span class="tog">+</span>
+          </div>
+          <div class="faq-a">
+            <p>
+              すべての要件を網羅している必要はありません。募集要項では、応募時点で必須となる基礎能力と、入社後に習得・キャッチアップ可能なスキル（LLMやセキュリティの専門知識など）を分けて記載しています。ご関心をお持ちいただけましたら、まずはカジュアル面談でお話ししましょう。
+            </p>
           </div>
         </div>
       </div>
