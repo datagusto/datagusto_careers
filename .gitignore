@@ -11,3 +11,6 @@ desktop.ini
 *.njsproj
 *.sln
 *.swp
+
+# Notes and prompt drafts
+image_prompts.md
