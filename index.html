@@ -26,7 +26,7 @@
       --muted-d: #9AA4BE;
       --disp: 'Space Grotesk', sans-serif;
       --body: 'Noto Sans JP', sans-serif;
-      --maxw: 960px;
+      --maxw: 1040px;
     }
 
     * {
@@ -75,7 +75,7 @@
     .container {
       max-width: var(--maxw);
       margin: 0 auto;
-      padding: 80px 24px;
+      padding: 72px 24px;
       position: relative;
       z-index: 2;
       width: 100%;
@@ -83,7 +83,7 @@
 
     header {
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 56px;
     }
 
     .logo-container {
@@ -128,24 +128,74 @@
     }
 
     .tagline {
-      font-size: 16px;
+      font-size: 15px;
       color: var(--muted-d);
-      max-width: 580px;
+      max-width: 640px;
       margin: 0 auto;
       line-height: 1.8;
     }
 
+    /* Product Section Headers */
+    .product-section {
+      margin-bottom: 64px;
+    }
+
+    .product-header {
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .product-header-left {
+      max-width: 720px;
+    }
+
+    .product-badge {
+      display: inline-block;
+      font-family: var(--disp);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      background: rgba(255, 122, 51, 0.12);
+      border: 1px solid rgba(255, 122, 51, 0.25);
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+
+    .product-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .product-desc {
+      font-size: 13px;
+      color: var(--muted-d);
+      margin-top: 6px;
+      line-height: 1.6;
+    }
+
     .positions-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      margin-bottom: 60px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
     }
 
     @media (max-width: 768px) {
       .positions-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 16px;
       }
     }
 
@@ -153,7 +203,7 @@
       background: var(--ink2);
       border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 8px;
-      padding: 36px 30px;
+      padding: 30px 26px;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       display: flex;
       flex-direction: column;
@@ -183,27 +233,59 @@
       background: var(--teal);
     }
 
+    .card-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
     .card-meta {
       font-family: var(--disp);
       font-size: 11px;
       font-weight: 600;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--teal);
-      margin-bottom: 12px;
+    }
+
+    .tags-container {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .tag-badge {
+      font-family: var(--disp);
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--muted-d);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .tag-badge.accent {
+      background: rgba(255, 122, 51, 0.12);
+      color: var(--teal);
+      border-color: rgba(255, 122, 51, 0.25);
     }
 
     .position-card h2 {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 700;
       margin-bottom: 12px;
       color: #fff;
+      line-height: 1.4;
     }
 
     .position-card p {
-      font-size: 14px;
+      font-size: 13.5px;
       color: var(--muted-d);
-      margin-bottom: 30px;
+      margin-bottom: 24px;
       line-height: 1.7;
       flex-grow: 1;
     }
@@ -211,19 +293,20 @@
     .btn-group {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
 
     .btn-link {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 12px 20px;
+      padding: 11px 18px;
       border-radius: 4px;
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 700;
       transition: all 0.2s;
       cursor: pointer;
+      text-decoration: none;
     }
 
     .btn-link.jp {
@@ -269,6 +352,7 @@
       color: var(--muted-d);
       margin: 0 8px;
       transition: color 0.2s;
+      text-decoration: none;
     }
 
     footer a:hover {
@@ -291,73 +375,233 @@
       <span class="kicker">Careers Portal</span>
       <h1>Join the <span>datagusto</span> Team</h1>
       <p class="tagline">
-        AIエージェントの安全な社会実装に向けて、次世代の「セーフティ・ガードレール」プラットフォームを共に創り出すメンバーを募集しています。
+        自律AIエージェントの安全な社会実装と、異種GPU基盤における大規模エージェント推論の効率化。私たちは2つの基盤技術を通じて、AIが自律行動する未来のインフラを創り出しています。
       </p>
     </header>
 
-    <main class="positions-grid">
-      <!-- Position 1: Product Engineer -->
-      <div class="position-card">
-        <div>
-          <div class="card-meta">Engineering</div>
-          <h2>Product Engineer<br><span style="font-size: 16px; font-weight: normal; color: var(--muted-d);">プロダクトエンジニア</span></h2>
-          <p>
-            AIエージェントの安全性を担うガードレール製品の開発において、導入現場で生じる実課題から機能を設計・抽象化し、優れた開発者体験を実装する役割です。
-          </p>
+    <main>
+      <!-- ============================================== -->
+      <!-- PRODUCT 1: Safety & Governance Platform        -->
+      <!-- ============================================== -->
+      <section class="product-section">
+        <div class="product-header">
+          <div class="product-header-left">
+            <span class="product-badge">Product Area 01</span>
+            <div class="product-title">AI Agent Safety & Governance Platform</div>
+            <p class="product-desc">
+              AIエージェントの誤動作・意図しない実行・情報漏洩を未然に防ぐ、次世代の「実行時セーフティ・ガードレール」プラットフォームの開発と導入を推進しています。
+            </p>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="product-engineer.html" class="btn-link jp">
-            <span>日本語版を見る</span>
-            <span class="arrow">→</span>
-          </a>
-          <a href="product-engineer-en.html" class="btn-link en">
-            <span>View English Version</span>
-            <span class="arrow">→</span>
-          </a>
-        </div>
-      </div>
 
-      <!-- Position 2: Technical Consultant -->
-      <div class="position-card">
-        <div>
-          <div class="card-meta">Consulting / Sales</div>
-          <h2>Technical Consultant<br><span style="font-size: 16px; font-weight: normal; color: var(--muted-d);">テクニカルコンサルタント</span></h2>
-          <p>
-            初期の顧客・パートナー企業と共にAIエージェントの活用ロードマップを構築し、セーフティプラットフォームの技術的な提案や導入支援をリードする役割です。
-          </p>
-        </div>
-        <div class="btn-group">
-          <a href="technical-consultant.html" class="btn-link jp">
-            <span>日本語版を見る</span>
-            <span class="arrow">→</span>
-          </a>
-          <a href="technical-consultant-en.html" class="btn-link en">
-            <span>View English Version</span>
-            <span class="arrow">→</span>
-          </a>
-        </div>
-      </div>
+        <div class="positions-grid">
+          <!-- Position 1-1: Product Engineer -->
+          <div class="position-card">
+            <div>
+              <div class="card-meta-row">
+                <div class="card-meta">Engineering</div>
+                <div class="tags-container">
+                  <span class="tag-badge">Tokyo / Remote</span>
+                  <span class="tag-badge accent">Full-time</span>
+                </div>
+              </div>
+              <h2>Product Engineer<br><span style="font-size: 15px; font-weight: normal; color: var(--muted-d);">プロダクトエンジニア</span></h2>
+              <p>
+                ガードレール製品の開発において、導入現場で生じる実課題から機能を設計・抽象化し、再利用可能な機能と優れた開発者体験を実装する役割です。
+              </p>
+            </div>
+            <div class="btn-group">
+              <a href="safety/product-engineer.html" class="btn-link jp">
+                <span>日本語版を見る</span>
+                <span class="arrow">→</span>
+              </a>
+              <a href="safety/product-engineer-en.html" class="btn-link en">
+                <span>View English Version</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
 
-      <!-- Position 3: Sales Engineer -->
-      <div class="position-card">
-        <div>
-          <div class="card-meta">Sales / Engineering</div>
-          <h2>Sales Engineer<br><span style="font-size: 16px; font-weight: normal; color: var(--muted-d);">セールスエンジニア</span></h2>
-          <p>
-            営業メンバーとともに顧客商談へ参加し、プロダクトの機能・仕組み・導入方法を技術面から説明し、導入検討と受注を支援する役割です。
-          </p>
+          <!-- Position 1-2: Technical Consultant -->
+          <div class="position-card">
+            <div>
+              <div class="card-meta-row">
+                <div class="card-meta">Consulting / Sales</div>
+                <div class="tags-container">
+                  <span class="tag-badge">Tokyo / Remote</span>
+                  <span class="tag-badge accent">Full-time</span>
+                </div>
+              </div>
+              <h2>Technical Consultant<br><span style="font-size: 15px; font-weight: normal; color: var(--muted-d);">テクニカルコンサルタント</span></h2>
+              <p>
+                初期の顧客・パートナー企業と共にAIエージェントの活用ロードマップを構築し、セーフティプラットフォームの技術的な提案や導入支援をリードする役割です。
+              </p>
+            </div>
+            <div class="btn-group">
+              <a href="safety/technical-consultant.html" class="btn-link jp">
+                <span>日本語版を見る</span>
+                <span class="arrow">→</span>
+              </a>
+              <a href="safety/technical-consultant-en.html" class="btn-link en">
+                <span>View English Version</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Position 1-3: Sales Engineer -->
+          <div class="position-card">
+            <div>
+              <div class="card-meta-row">
+                <div class="card-meta">Sales / Engineering</div>
+                <div class="tags-container">
+                  <span class="tag-badge">Tokyo / Remote</span>
+                  <span class="tag-badge accent">Full-time</span>
+                </div>
+              </div>
+              <h2>Sales Engineer<br><span style="font-size: 15px; font-weight: normal; color: var(--muted-d);">セールスエンジニア</span></h2>
+              <p>
+                営業メンバーとともに顧客商談へ参加し、プロダクトの機能・仕組み・導入方法を技術面から説明し、導入検討と受注を支援する役割です。
+              </p>
+            </div>
+            <div class="btn-group">
+              <a href="safety/sales-engineer.html" class="btn-link jp">
+                <span>日本語版を見る</span>
+                <span class="arrow">→</span>
+              </a>
+              <a href="safety/sales-engineer-en.html" class="btn-link en">
+                <span>View English Version</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="sales-engineer.html" class="btn-link jp">
-            <span>日本語版を見る</span>
-            <span class="arrow">→</span>
-          </a>
-          <a href="sales-engineer-en.html" class="btn-link en">
-            <span>View English Version</span>
-            <span class="arrow">→</span>
-          </a>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- PRODUCT 2: GPU Scheduler Systems for Agents    -->
+      <!-- ============================================== -->
+      <section class="product-section">
+        <div class="product-header">
+          <div class="product-header-left">
+            <span class="product-badge">Product Area 02</span>
+            <div class="product-title">Scheduler System for AI Agent Inference</div>
+            <p class="product-desc">
+              AIエージェントの24時間ワークロードを、新旧混在・異ベンダーのGPU環境で納期遵守かつ最小コストで実行する、次世代の分散推論スケジューラ基盤を構築します。
+            </p>
+          </div>
         </div>
-      </div>
+
+        <div class="positions-grid">
+          <!-- Position 2-1: Tech Lead, Scheduler Systems -->
+          <div class="position-card">
+            <div>
+              <div class="card-meta-row">
+                <div class="card-meta">Systems / Infra</div>
+                <div class="tags-container">
+                  <span class="tag-badge">Hybrid / Tokyo</span>
+                  <span class="tag-badge accent">Founding / Part-to-Full</span>
+                </div>
+              </div>
+              <h2>Tech Lead, Scheduler Systems<br><span style="font-size: 15px; font-weight: normal; color: var(--muted-d);">スケジューラ基盤 テックリード</span></h2>
+              <p>
+                システム側ファウンディングメンバー。エージェントジョブを「いつ・どのGPUで動かすか」を決定するスケジューラ基盤を開発し、PoC顧客の実GPUクラスタへ導入・実証します。
+              </p>
+            </div>
+            <div class="btn-group">
+              <a href="scheduler/tech-lead.html" class="btn-link jp">
+                <span>日本語版を見る</span>
+                <span class="arrow">→</span>
+              </a>
+              <a href="scheduler/tech-lead-en.html" class="btn-link en">
+                <span>View English Version</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Position 2-2: Applied Scientist -->
+          <div class="position-card">
+            <div>
+              <div class="card-meta-row">
+                <div class="card-meta">Science / ML</div>
+                <div class="tags-container">
+                  <span class="tag-badge">Remote OK</span>
+                  <span class="tag-badge accent">Contract / 1–2 days</span>
+                </div>
+              </div>
+              <h2>Applied Scientist, Feedback Loop<br><span style="font-size: 15px; font-weight: normal; color: var(--muted-d);">アプライドサイエンティスト</span></h2>
+              <p>
+                正解が直接観測できない環境において、ジョブの許容締め切りと品質要件をログから推定し、使われるほど賢くなる学習ループ・評価実験を数理的に設計・プロトタイプします。
+              </p>
+            </div>
+            <div class="btn-group">
+              <a href="scheduler/applied-scientist.html" class="btn-link jp">
+                <span>日本語版を見る</span>
+                <span class="arrow">→</span>
+              </a>
+              <a href="scheduler/applied-scientist-en.html" class="btn-link en">
+                <span>View English Version</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Position 2-3: SWE Intern -->
+          <div class="position-card">
+            <div>
+              <div class="card-meta-row">
+                <div class="card-meta">Infra / Intern</div>
+                <div class="tags-container">
+                  <span class="tag-badge">Tokyo / Remote</span>
+                  <span class="tag-badge accent">Paid Internship</span>
+                </div>
+              </div>
+              <h2>SWE Intern, Scheduler Systems<br><span style="font-size: 15px; font-weight: normal; color: var(--muted-d);">エンジニア インターン (基盤開発)</span></h2>
+              <p>
+                CTO直下で実環境GPUクラスタでのLLM推論ベンチマーク、OSSスケジューラ（KAI/Kueue等）との統合、テレメトリ基盤の構築に取り組み、実践的なAIインフラ開発を経験します。
+              </p>
+            </div>
+            <div class="btn-group">
+              <a href="scheduler/swe-intern.html" class="btn-link jp">
+                <span>日本語版を見る</span>
+                <span class="arrow">→</span>
+              </a>
+              <a href="scheduler/swe-intern-en.html" class="btn-link en">
+                <span>View English Version</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Position 2-4: Applied Scientist Intern -->
+          <div class="position-card">
+            <div>
+              <div class="card-meta-row">
+                <div class="card-meta">Data / Intern</div>
+                <div class="tags-container">
+                  <span class="tag-badge">Remote OK</span>
+                  <span class="tag-badge accent">Paid Internship</span>
+                </div>
+              </div>
+              <h2>Applied Scientist Intern<br><span style="font-size: 15px; font-weight: normal; color: var(--muted-d);">サイエンティスト インターン (数理・評価)</span></h2>
+              <p>
+                観測バイアスのあるログからプロキシ信号を定義し、分位数回帰やConformal Predictionを用いた区間推定モデルの実装、反実仮想を検証するPoC評価実験の設計に挑みます。
+              </p>
+            </div>
+            <div class="btn-group">
+              <a href="scheduler/applied-scientist-intern.html" class="btn-link jp">
+                <span>日本語版を見る</span>
+                <span class="arrow">→</span>
+              </a>
+              <a href="scheduler/applied-scientist-intern-en.html" class="btn-link en">
+                <span>View English Version</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 

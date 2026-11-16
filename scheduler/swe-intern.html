@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ソフトウェアエンジニア インターン (AIインフラ・スケジューラ基盤) — datagusto Careers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/job-detail.css">
+  <style>
+    .kicker-product {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--disp);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--teal);
+      background: rgba(255, 122, 51, .12);
+      border: 1px solid rgba(255, 122, 51, .3);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="wrap">
+      <a class="brand" href="../index.html"><img class="brand-logo" src="../assets/FeNhE14JPYchGuEUf45sdH35no.svg"
+          alt="datagusto" /></a>
+      <div class="nav-links">
+        <a href="#about">製品について</a>
+        <a href="#fit">既存技術との違い</a>
+        <a href="#role">仕事内容</a>
+        <a href="#why-eng">取り組む意義</a>
+        <a href="#req">応募要件</a>
+        <a href="#team">チーム</a>
+        <a href="#growth">成長とキャリア</a>
+        <a href="#process">選考フロー</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px;">
+        <div class="lang">
+          <span class="on" onclick="window.location.href='swe-intern-en.html'">JP</span>
+          <span class="" onclick="window.location.href='swe-intern-en.html'">EN</span>
+        </div>
+        <a class="nav-cta" href="#apply">カジュアル面談</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="top">
+    <div class="hero-grid" aria-hidden="true">
+      <script>for (let i = 0; i < 32; i++)document.write('<i></i>');</script>
+    </div>
+    <div class="wrap">
+      <div><span class="kicker-product">Scheduler System for AI Agent Inference</span></div>
+      <span class="kicker">Careers / SWE Intern, Scheduler Systems</span>
+      <h1>実環境のGPUクラスタでエージェントを動かす<br><span class="hl">CTO直下の次世代AIインフラ開発</span><br>ソフトウェアエンジニア インターン</h1>
+      <div class="role-en">AI Infrastructure & Distributed Systems Internship</div>
+      <p class="summary">
+        AIエージェントの推論ワークロードを「いつ・どのGPUで実行するか」を決定するスケジューラを開発し、実際の顧客GPU環境で稼働させます。東京の少数精鋭チームでCTOと直に開発を推進します。
+      </p>
+      <div class="hero-btns">
+        <a class="btn-primary" href="#apply">カジュアル面談に応募する</a>
+        <a class="btn-ghost" href="#role">仕事内容を見る</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== QUICK FACTS ===== -->
+  <section class="facts">
+    <div class="wrap">
+      <div class="facts-row">
+        <div class="fact">
+          <div class="l">Report to</div>
+          <div class="v">CTO</div>
+        </div>
+        <div class="fact">
+          <div class="l">Location</div>
+          <div class="v">東京・六本木（ハイブリッド / リモート可）</div>
+        </div>
+        <div class="fact">
+          <div class="l">Type</div>
+          <div class="v">有償インターンシップ</div>
+        </div>
+        <div class="fact">
+          <div class="l">Key Stack</div>
+          <div class="v">Python, Rust, Go, 分散システム, Linux, Kubernetes</div>
+        </div>
+        <div class="fact">
+          <div class="l">Language</div>
+          <div class="v">日本語または英語（技術資料・コードは英語）</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT PRODUCT ===== -->
+  <section class="dark" id="about" style="border-top: 1px solid rgba(255,255,255,.06);">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">About Product</span>
+        <h2>このインターンシップで得られる経験とキャリア</h2>
+        <p>最先端のAIインフラ、推論パフォーマンスエンジニア、分散システムエンジニア、あるいはAIスタートアップの初期エンジニアを目指す上で、他に代えがたい実践経験が得られます。</p>
+      </div>
+
+      <div class="card-3">
+        <div class="card reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3>新旧混在・異種GPUの最適活用</h3>
+          <p>最新GPUだけでなく、A100やL40S等の旧世代GPUやAMD環境を混載運用し、全ジョブを納期内に最安コストで完遂します。</p>
+        </div>
+        <div class="card reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3>分〜時間単位のデッドライン最適化</h3>
+          <p>画面の前で人が待つチャットと異なり、24時間動くエージェントジョブの許容締め切りを把握し、夜間やアイドル時間に賢く集約します。</p>
+        </div>
+        <div class="card reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+            </svg>
+          </div>
+          <h3>使われるほど賢くなる学習ループ</h3>
+          <p>ハードウェアメトリクスとエージェント側ログを突き合わせ、実測データを通じて予測精度と配置判断を継続的に進化させます。</p>
+        </div>
+      </div>
+
+      <div class="callout reveal">
+        実運用のGPUクラスタ（A100, H100, L40S等）上でLLM推論を稼働させ、KAI Scheduler, Kueue, llm-d, vLLM, SGLangなどの最先端OSSスタックに深くコミットします。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHERE WE FIT (COMPARE) ===== -->
+  <section class="light" id="fit">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Where We Fit</span>
+        <h2>従来のLLM推論基盤と datagusto スケジューラの違い</h2>
+        <p>従来の推論エンジンが「人間のための秒単位の応答速度」を一律に追及するのに対し、datagustoはエージェントの業務コンテキスト（締め切り・品質許容度）をGPU配置に直結させます。</p>
+      </div>
+
+      <div class="compare">
+        <div class="cmp old reveal">
+          <h3>従来のLLM推論基盤 (vLLM / SGLang 単体運用等)</h3>
+          <div class="sub">画面の前で人間が待つチャットボット前提の設計</div>
+          <dl>
+            <dt>応答目標</dt>
+            <dd>秒単位・ミリ秒単位の即時返答</dd>
+            <dt>ジョブの重要度</dt>
+            <dd>全リクエストを一律平等・最速で処理</dd>
+            <dt>ハードウェア調達</dt>
+            <dd>ピーク負荷に合わせ高価な最新GPU（H100等）を過剰調達</dd>
+            <dt>エージェントタスク</dt>
+            <dd>非緊急なバックオフィス業務も高額なリソースを消費</dd>
+          </dl>
+        </div>
+
+        <div class="cmp new reveal">
+          <h3>datagusto エージェント推論スケジューラ</h3>
+          <div class="sub">エージェントの納期とGPUインフラを最適接続</div>
+          <dl>
+            <dt>応答目標</dt>
+            <dd>分〜時間単位（業務デッドラインから逆算）</dd>
+            <dt>ジョブの重要度</dt>
+            <dd>エージェントの役割・利用目的から真の緊急度を推定</dd>
+            <dt>ハードウェア調達</dt>
+            <dd>旧世代GPU（A100/L40S）やアイドル時間を賢くフル活用</dd>
+            <dt>エージェントタスク</dt>
+            <dd>納期遵守率100%を維持しながらGPU推論コストを大幅削減</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="callout soft reveal">
+        datagustoはvLLMやSGLangなどの推論エンジンを置き換えるものではありません。KubernetesやSlurm上のクラスタ層に位置し、エージェントジョブを「どのGPUで・いつ動かすか」を最適制御するインフラです。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROLE DETAILS ===== -->
+  <section class="light alt" id="role">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">The Role</span>
+        <h2>実GPUクラスタでのスケジューラ実装と<br>最先端OSS分散推論インフラの実践開発</h2>
+        <p>
+          AIエージェントの推論ジョブをいつ・どのGPUで動かすかを決定する配置アルゴリズムの実装、Kueue/KAI SchedulerなどのOSS統合、DCGMテレメトリ基盤の構築を担当します。
+          <b>異種GPU環境（H100/A100/AMD）での本番LLM推論運用スキル</b>と、<b>分散クラスタ最適化・パフォーマンスエンジニアリングの第一線技術</b>を習得できます。各ブロックをタップすると詳細が開きます。
+        </p>
+      </div>
+
+<div class="roadmap-block reveal" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px; margin-bottom: 36px;">
+        <h3 style="margin-bottom: 16px; color: var(--text);">担当する主な業務内容</h3>
+        <ul style="padding-left: 20px; color: var(--muted); font-size: 15px; line-height: 1.8;">
+          <li style="margin-bottom: 8px;"><strong>1. 配置・実行ロジックの実装:</strong> 異種GPU環境におけるジョブ配置アルゴリズムの実装とベンチマーク検証</li><li style="margin-bottom: 8px;"><strong>2. プロファイリングとベンチマーク:</strong> GPU世代・モデルサイズ・コンテキスト長に応じたレイテンシ・メモリ計測</li><li style="margin-bottom: 8px;"><strong>3. テレメトリ基盤の構築:</strong> DCGM等のハードウェアメトリクスとエージェントログを連携させる計測実装</li><li style="margin-bottom: 8px;"><strong>4. 推定モデルの本番化支援:</strong> シャドウ実行機構を含む推定モデルの更新ループ実装を支援</li>
+        </ul>
+      </div>
+
+      
+        
+          <div class="role-block open reveal">
+        <div class="role-head"><span class="num">01</span>
+          <h3>スケジューリングアルゴリズムとOSS統合</h3><span class="tog">+</span>
+        </div>
+        <div class="role-body">
+          <div class="role-body-inner">
+            <ul>
+              <li>異世代・異種GPUクラスタにおけるジョブ配置アルゴリズムの改善</li>
+              <li>Kueue, KAI Scheduler, VolcanoなどのOSSスケジューラとの統合モジュール開発</li>
+              <li>クラスタシミュレーションおよびテストハーネスの構築</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-block reveal">
+        <div class="role-head"><span class="num">02</span>
+          <h3>GPUテレメトリとプロファイリング基盤</h3><span class="tog">+</span>
+        </div>
+        <div class="role-body">
+          <div class="role-body-inner">
+            <ul>
+              <li>DCGMを用いたGPUハードウェアメトリクス（電力・メモリ帯域・SM使用率）の収集</li>
+              <li>エージェントのツール呼び出しによる突発負荷時の推論エンジン内部挙動のプロファイリング</li>
+              <li>タスクログとハードウェアメトリクスを突合したボトルネック分析</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-block reveal">
+        <div class="role-head"><span class="num">03</span>
+          <h3>PoC顧客クラスタでの実環境デプロイ支援</h3><span class="tog">+</span>
+        </div>
+        <div class="role-body">
+          <div class="role-body-inner">
+            <ul>
+              <li>Kubernetes / Slurm環境へのスケジューラモジュールのデプロイ検証支援</li>
+              <li>納期遵守率とGPUコスト削減効果の実測評価とレポーティング</li>
+              <li>CTOとの週次ミーティングでの設計ディスカッションと提案</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY THIS MATTERS ===== -->
+  <section class="dark" id="why-eng" style="background: var(--ink);">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">For Engineers</span>
+        <h2>どのジョブが急ぎでないかを知っているのは、GPUではなくワークロード側です。</h2>
+        <p>画面の前で人が待っていないエージェントの非緊急タスクを、旧世代GPUやアイドル時間に賢く詰め込むことで、莫大なコスト削減を生み出します。</p>
+      </div>
+
+      <div class="grid-2" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 36px;">
+        <div class="card reveal" style="background: var(--ink2); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 32px;">
+          <h3 style="color:var(--white); margin-bottom: 12px;">着目している課題と技術的フロンティア</h3>
+          <p style="color:var(--muted-d); font-size: 14px; line-height: 1.8;">
+            GPU世代 × モデル × 負荷の組み合わせでベンチマークを計測し、締め切り遵守率とコスト削減率を定量測定します。分散システムとLLM推論の交差点にある未解決課題に挑みます。
+          </p>
+        </div>
+        <div class="card reveal" style="background: var(--ink2); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 32px;">
+          <h3 style="color:var(--white); margin-bottom: 12px;">このポジションが果たす役割とインパクト</h3>
+          <p style="color:var(--muted-d); font-size: 14px; line-height: 1.8;">
+            配置ロジックの実装、GPUメトリクスとタスクログの突合、顧客環境へのデプロイ支援を担当し、週次ミーティングでCTOへ設計提案を行います。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REQUIREMENTS ===== -->
+  <section class="light" id="req" style="background: var(--light);">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Requirements</span>
+        <h2>求める人物像・応募要件</h2>
+        <p>分散システム、Linux環境、そしてGPUインフラに関心を持つ学生を募集します。</p>
+      </div>
+
+      <div class="grid-2" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+        <div class="card reveal" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px;">
+          <div style="font-family: var(--disp); font-size: 12px; font-weight: 700; color: var(--teal); text-transform: uppercase; margin-bottom: 16px;">必須スキル・経験</div>
+          <ul style="padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.8;">
+            <li style="margin-bottom: 10px;">コンピュータサイエンスまたは関連分野の学部・修士・博士課程に在籍中の方</li><li style="margin-bottom: 10px;">PythonまたはRust（Goも可）での確かなプログラミング能力（デバッグ・テストを含む）</li><li style="margin-bottom: 10px;">講義や個人開発で培った分散システムの基礎知識（並行処理、ネットワーク、DB、キュー）</li><li style="margin-bottom: 10px;">Linux環境およびコンテナ（Docker / Kubernetes）の基本操作スキル</li><li style="margin-bottom: 10px;">コーディングエージェントを道具として使いこなしつつ、自らの頭でアーキテクチャを理解できること</li><li style="margin-bottom: 10px;">英語での技術文書の読み書きができること</li><li style="margin-bottom: 10px;">変化の速いスタートアップ環境で意欲的に学べること</li>
+          </ul>
+        </div>
+
+        <div class="card reveal" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px;">
+          <div style="font-family: var(--disp); font-size: 12px; font-weight: 700; color: var(--muted-d); text-transform: uppercase; margin-bottom: 16px;">歓迎スキル・経験</div>
+          <ul style="padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.8;">
+            <li style="margin-bottom: 10px;">vLLM, SGLang, TensorRT-LLM等を用いたGPU上でのLLM推論実行経験、またはKubernetes/Slurmの利用経験</li><li style="margin-bottom: 10px;">vLLM, SGLang, KAI Scheduler, Kueue, Volcano, llm-dなどのOSSへの貢献実績</li><li style="margin-bottom: 10px;">スケジューリング理論、待ち行列理論、最適化に関する履修または研究経験</li><li style="margin-bottom: 10px;">現代のLLM API機能（構造化出力、ツール呼び出し、Reasoning制御等）の理解</li><li style="margin-bottom: 10px;">日本語での日常的なコミュニケーション能力</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card reveal" style="margin-top: 24px; background: #fff; border: 1px solid rgba(226, 92, 24, 0.2); border-left: 4px solid var(--teal); border-radius: 8px; padding: 24px 32px;">
+        <h4 style="margin-bottom: 10px; color: var(--text);">マッチしない可能性がある方</h4>
+        <ul style="padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.8;">
+          <li style="margin-bottom: 6px;">低レベルのCUDAカーネルチューニングのみに集中したい方（分散クラスタ層のスケジューリングがメインです）</li><li style="margin-bottom: 6px;">実環境のGPUクラスタを触らず、トイデータセット上でのみ作業したい方</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="light" id="team" style="background:var(--white); color:var(--text); padding:92px 0;">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Team & Culture</span>
+        <h2>CTO直下の少数精鋭チーム</h2>
+        <p>CTO、テックリード、アプライドサイエンティストと直接連携しながら開発を進めます。</p>
+      </div>
+
+      <div class="team-grid reveal" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 32px;">
+        <div class="team-card" style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px;">
+          <div style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">Overall Lead</div>
+          <h4 style="color:var(--text); margin-bottom: 8px;">CTO</h4>
+          <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">学習精度ループとPoC数値の最終責任、設計方針決定、週次ミーティングを統括。</p>
+        </div>
+
+        <div class="team-card" style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px; border-color: var(--teal); background: #fff;">
+          <div style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">Systems & Infrastructure</div>
+          <h4 style="color:var(--text); margin-bottom: 8px;">Tech Lead / Founding Engineer</h4>
+          <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">ジョブ配置と実行、計測基盤、推定モデルの本番実装、顧客GPU環境への展開を担当。</p>
+        </div>
+
+        <div class="team-card" style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px; ">
+          <div style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">Estimation & Evaluation</div>
+          <h4 style="color:var(--text); margin-bottom: 8px;">Applied Scientist</h4>
+          <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">納期と品質の推定モデル設計・プロトタイプ、フィードバック信号・探索・評価の設計、ログ仕様定義。</p>
+        </div>
+
+        <div class="team-card" style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px;">
+          <div style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">Customers & Business</div>
+          <h4 style="color:var(--text); margin-bottom: 8px;">CEO</h4>
+          <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">PoC顧客との調整、要件定義、ビジネス成果の報告と検証結果の説明をリード。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GROWTH & CAREER PATHS ===== -->
+  <section class="light alt" id="growth">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">First 6 Months & Beyond</span>
+        <h2>入社後のロードマップとキャリアパス</h2>
+        <p>立ち上げフェーズでの具体的な業務プロセスと、GPUインフラ・スケジューラ開発を通じて開かれる将来のキャリアパスを明示します。</p>
+      </div>
+
+      <div class="tl">
+        
+          <div class="tl-step reveal">
+            <div class="dot">1</div>
+            <div class="ph">1ヶ月目</div>
+            <h4>テストベッド構築と計測</h4>
+            <p>GPU環境を立ち上げ、エージェント推論ワークロードのレイテンシ・メモリ特性をプロファイリングします。</p>
+          </div>
+        
+          <div class="tl-step reveal">
+            <div class="dot">2</div>
+            <div class="ph">2〜3ヶ月目</div>
+            <h4>配置ロジックとテレメトリ実装</h4>
+            <p>DCGMメトリクスと連動したジョブ配置アルゴリズムを実装し、シミュレーション検証します。</p>
+          </div>
+        
+          <div class="tl-step reveal">
+            <div class="dot">3</div>
+            <div class="ph">3〜6ヶ月目</div>
+            <h4>PoCクラスタ実証と分析</h4>
+            <p>顧客GPUクラスタでの実稼働を支援し、コスト削減効果と納期遵守率をレポート化します。</p>
+          </div>
+        
+          <div class="tl-step reveal">
+            <div class="dot">4</div>
+            <div class="ph">その先へ</div>
+            <h4>正社員登用 / 研究実績への昇華</h4>
+            <p>創業エンジニアとしての正社員登用や、最先端インフラ経験を活かした大学院研究・キャリアへ。</p>
+          </div>
+        
+      </div>
+
+      <div class="callout reveal" style="background:var(--ink);">
+        <b>将来のキャリアパス：</b> 本ポジションで培う「分散システム × GPU推論最適化 × 自律エージェント」のスキルは、世界的にも極めて希少な専門性となります。
+      </div>
+
+      <div class="paths">
+        
+          <div class="path reveal">
+            <div class="ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h4>AIインフラ / MLプラットフォームエンジニア</h4>
+            <p>国内外トップクラスのAIラボやメガテックで、大規模GPUクラスタを運用・最適化するインフラエンジニアへ。</p>
+          </div>
+        
+          <div class="path reveal">
+            <div class="ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h4>推論パフォーマンスエンジニア</h4>
+            <p>GPUメモリ・キャッシュ最適化からクラスタスケジューリングまで見通せる第一線のエンジニアへ。</p>
+          </div>
+        
+          <div class="path reveal">
+            <div class="ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h4>AIスタートアップの初期エンジニア</h4>
+            <p>少人数チームでCTO直下にゼロからプロダクトを立ち上げ、将来の技術責任者を目指すキャリア。</p>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARKET VALUE ===== -->
+  <section class="light alt" id="market-stats">
+    <div class="wrap">
+      <div class="market reveal" style="margin-top: 0;">
+        <h3>市場全体におけるGPUインフラ・推論エンジニアの爆発的需要</h3>
+        <p class="lead">
+          生成AIが「画面の前で人が待つチャット」から「24時間自律稼働するエージェント」へと進化する中、GPU推論コストと計算資源の枯渇は企業の最大のボトルネックになっています。エージェントの業務特性を理解し、異種GPU基盤を最適化できるエンジニアの市場価値は急速に高まっています。
+        </p>
+        <div class="mkt-grid">
+          <div class="mkt-card">
+            <div class="src">推論コストの爆発とGPU逼迫</div>
+            <div class="stat">LLM推論コンピュート需要は、学習需要の10倍以上のペースで急伸。</div>
+            <p>
+              自律エージェントの長大なReasoningやツール呼び出しの連鎖により、1つのタスクで数千〜数万トークンが消費されます。納期を考慮したスケジューリングと混載運用が、インフラコストの成否を分けます。
+            </p>
+          </div>
+          <div class="mkt-card">
+            <div class="src">マルチベンダー・異世代GPUの共存</div>
+            <div class="stat">最新GPUだけでなく、A100やAMD等あらゆるGPUの延命・併用が必須に。</div>
+            <p>
+              GPU供給の制約とコスト高騰により、最新GPUだけを買い増す運用は破綻しつつあります。既存のGPU資産を最大限に活かし、SLAを守り抜くスケジューラ基盤が世界中で求められています。
+            </p>
+          </div>
+        </div>
+        <p class="mkt-foot">
+          datagustoであなたが解く課題は、分散システムとAI推論の交差点にある未解決フロンティアです。ここで得る実務経験は、国内外のAIインフラ領域において圧倒的なキャリアの武器となります。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="dark" id="process">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Selection Process</span>
+        <h2>客観的指標と実務に基づく選考プロセス</h2>
+        <p>志望動機による選考ではなく、実際のGPU実行ログ・タスクログを用いた「有償ワークサンプル課題（Paid Work Sample）」を軸とした客観的で公平な選考です。</p>
+      </div>
+      <div class="steps">
+        
+          <div class="step reveal">
+            <div class="n">STEP 1</div>
+            <h4>カジュアル面談</h4>
+            <p>事業概要とインターンプロジェクトの紹介、これまでの経験のお伺い。</p>
+          </div>
+        
+          <div class="step reveal">
+            <div class="n">STEP 2</div>
+            <h4>技術面談 (CTO)</h4>
+            <p>分散システムの基礎力確認と、過去に開発したプロジェクトの深掘り。</p>
+          </div>
+        
+          <div class="step reveal">
+            <div class="n">STEP 3</div>
+            <h4>有償ワークサンプル課題 (半日〜1日)</h4>
+            <p>サンプルGPUログを用いて配置ロジックを実装・改善し、30分の発表を実施。</p>
+          </div>
+        
+          <div class="step reveal">
+            <div class="n">STEP 4</div>
+            <h4>CEO面談・オファー</h4>
+            <p>勤務日程、目標設定、待遇面の確認とオファー提示。</p>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="light" id="faq">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">FAQ</span>
+        <h2>よくある質問</h2>
+        <p>応募にあたって気になる点や、組織・技術に関する疑問にお答えします。</p>
+      </div>
+      <div class="reveal">
+        
+          <div class="faq-item">
+            <div class="faq-q">
+              <h4>大学の授業と両立できますか？</h4><span class="tog">+</span>
+            </div>
+            <div class="faq-a">
+              <p>はい。週2〜3日程度から柔軟に勤務日程を調整できます。リモートと出社を組み合わせたハイブリッド勤務が可能です。</p>
+            </div>
+          </div>
+        
+          <div class="faq-item">
+            <div class="faq-q">
+              <h4>有償インターンですか？</h4><span class="tog">+</span>
+            </div>
+            <div class="faq-a">
+              <p>はい、スキルや経験に応じた有償の時給または月額手当を支給します。</p>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TERMS ===== -->
+  <section class="light alt" id="terms" style="background: var(--light2); padding: 72px 0;">
+    <div class="wrap">
+      <div class="sec-head reveal" style="margin-bottom: 24px;">
+        <span class="kicker">Terms & Conditions</span>
+        <h2>募集要項</h2>
+      </div>
+
+      <div class="card reveal" style="background:#fff; border-radius: 8px; padding: 32px; border: 1px solid rgba(0,0,0,0.06); max-width: 800px; margin: 0 auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+          
+            <tr style="border-bottom: 1px solid var(--light2);">
+              <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">職種形態</td>
+              <td style="padding: 14px 12px; color: var(--muted);">有償インターンシップ（長期歓迎）</td>
+            </tr>
+          
+            <tr style="border-bottom: 1px solid var(--light2);">
+              <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">勤務時間・日数</td>
+              <td style="padding: 14px 12px; color: var(--muted);">週2〜3日以上（授業日程に合わせて柔軟に調整可能）</td>
+            </tr>
+          
+            <tr style="border-bottom: 1px solid var(--light2);">
+              <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">給与</td>
+              <td style="padding: 14px 12px; color: var(--muted);">有償時給 / 月額手当（スキル・経験に応じて支給）</td>
+            </tr>
+          
+            <tr style="border-bottom: 1px solid var(--light2);">
+              <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">勤務地</td>
+              <td style="padding: 14px 12px; color: var(--muted);">東京都港区六本木（ハイブリッド / リモート柔軟）</td>
+            </tr>
+          
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLOSING / APPLY ===== -->
+  <section class="closing" id="apply">
+    <div class="closing-grid" aria-hidden="true">
+      <script>for (let i = 0; i < 30; i++)document.write('<i></i>');</script>
+    </div>
+    <div class="wrap">
+      <h2 class="reveal">まずは、話すところから。</h2>
+      <p class="reveal">
+        「自分に合うか分からない」段階で大歓迎です。<br>AIエージェント向けの次世代GPUスケジューラ開発や数理モデル設計に興味をお持ちの方は、カジュアル面談を通じてチームメンバーと直接お話しいただけます。
+      </p>
+      <a class="btn-primary reveal"
+        href="https://outlook.office.com/book/datagusto_@datagusto.ai/s/9T6y-RBzcEaGfOTPYNpTGw2?ismsaljsauthenabled"
+        target="_blank" rel="noopener noreferrer">カジュアル面談を予約する</a>
+      <div class="tagline reveal">datagusto — Connect agent workloads to GPU allocation.</div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <span>© 2026 datagusto, Inc.</span>
+      <span>
+        <a href="https://datagusto.ai" target="_blank" rel="noopener noreferrer">コーポレートサイト</a> ・
+        <a href="../index.html">採用情報トップ</a>
+      </span>
+    </div>
+  </footer>
+
+  <a class="float-cta" id="floatCta" href="https://outlook.office.com/book/datagusto_@datagusto.ai/s/9T6y-RBzcEaGfOTPYNpTGw2?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer">カジュアル面談に応募 →</a>
+
+  <script src="../assets/js/job-detail.js"></script>
+</body>
+
+</html>
+
