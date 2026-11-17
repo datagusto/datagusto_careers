@@ -1748,3 +1748,323 @@
     .timestamp-link:hover {
       color: #fff;
     }
+
+/* ========================================================
+   COMPACT & REFINED LAYOUT OVERRIDES
+   ======================================================== */
+
+:root {
+  --maxw: 1240px;
+}
+
+/* 1. Header (100% full width with proper padding) */
+.nav {
+  height: 54px;
+}
+.nav .wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 54px;
+  padding: 0 32px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand-logo {
+  height: 20px;
+}
+.nav-links a {
+  font-size: 11.5px;
+}
+.nav-cta {
+  padding: 6px 14px;
+  font-size: 11.5px;
+}
+
+/* 2. Main Content Wrapper (75% width centered) */
+.wrap {
+  width: 75% !important;
+  max-width: var(--maxw) !important;
+  margin: 0 auto !important;
+  padding: 0 16px !important;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    width: 88% !important;
+  }
+}
+@media (max-width: 600px) {
+  .wrap {
+    width: 94% !important;
+    padding: 0 12px !important;
+  }
+  .nav .wrap {
+    padding: 0 16px !important;
+  }
+}
+
+/* 3. Hero Section (Compact & No overflow) */
+.hero {
+  padding: 92px 0 46px !important;
+}
+.hero h1 {
+  font-size: clamp(23px, 2.8vw, 36px) !important;
+  line-height: 1.3 !important;
+  margin: 12px 0 6px !important;
+}
+.hero .role-en {
+  font-size: clamp(13px, 1.5vw, 17px) !important;
+  margin-bottom: 16px !important;
+}
+.summary {
+  font-size: 13.5px !important;
+  line-height: 1.7 !important;
+  margin: 8px 0 24px !important;
+  padding-left: 16px !important;
+  max-width: 720px !important;
+}
+.hero-btns .btn-primary,
+.hero-btns .btn-ghost {
+  font-size: 13px !important;
+  padding: 10px 20px !important;
+}
+
+/* 4. Facts Section */
+.facts {
+  padding: 18px 0 !important;
+}
+.fact {
+  padding: 6px 12px !important;
+}
+.fact .l {
+  font-size: 9.5px !important;
+  margin-bottom: 3px !important;
+}
+.fact .v {
+  font-size: 12.5px !important;
+}
+
+/* 5. Sections Spacing & Typography */
+.light,
+.dark {
+  padding: 48px 0 !important;
+}
+.sec-head {
+  margin-bottom: 24px !important;
+}
+.sec-head h2 {
+  font-size: clamp(19px, 2.2vw, 25px) !important;
+  margin: 10px 0 8px !important;
+  line-height: 1.4 !important;
+}
+.sec-head p {
+  font-size: 13px !important;
+  line-height: 1.65 !important;
+}
+.kicker {
+  font-size: 10.5px !important;
+  gap: 7px !important;
+}
+.kicker::before {
+  width: 9px !important;
+  height: 9px !important;
+}
+
+/* 6. Cards & Role Accordion */
+.card {
+  padding: 20px 18px !important;
+}
+.card .ic {
+  width: 36px !important;
+  height: 36px !important;
+  margin-bottom: 12px !important;
+}
+.card .ic svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+.card h3 {
+  font-size: 15px !important;
+}
+.card p {
+  font-size: 12.5px !important;
+  line-height: 1.6 !important;
+}
+
+.role-head {
+  padding: 13px 18px !important;
+  gap: 12px !important;
+}
+.role-head .num {
+  width: 24px !important;
+  height: 24px !important;
+  font-size: 11px !important;
+}
+.role-head h3 {
+  font-size: 14.5px !important;
+}
+.role-body-inner {
+  padding: 0 18px 16px 54px !important;
+}
+.role-body-inner li {
+  font-size: 12.5px !important;
+  margin-bottom: 6px !important;
+}
+
+/* 7. Requirements & Roadmap */
+.req-col {
+  padding: 18px 18px !important;
+}
+.req-col h3 {
+  font-size: 15px !important;
+}
+.req-col li {
+  font-size: 12.5px !important;
+  margin-bottom: 8px !important;
+  line-height: 1.55 !important;
+}
+.roadmap-block {
+  padding: 20px 22px !important;
+  margin-bottom: 24px !important;
+}
+.roadmap-block h3 {
+  font-size: 15px !important;
+}
+.roadmap-block ul {
+  font-size: 12.5px !important;
+  line-height: 1.65 !important;
+}
+
+/* 8. Team & Career Paths & Market */
+.team-card {
+  padding: 18px 16px !important;
+}
+.team-card h4 {
+  font-size: 14.5px !important;
+}
+.team-card p {
+  font-size: 12px !important;
+}
+.path {
+  padding: 18px 16px !important;
+}
+.path h4 {
+  font-size: 14px !important;
+}
+.path p {
+  font-size: 12px !important;
+}
+.market {
+  padding: 24px 22px !important;
+}
+.market h3 {
+  font-size: 18px !important;
+}
+.market .lead {
+  font-size: 12.5px !important;
+  margin-bottom: 16px !important;
+}
+.mkt-card {
+  padding: 16px 14px !important;
+}
+.mkt-card .stat {
+  font-size: 13.5px !important;
+}
+.mkt-card p {
+  font-size: 12px !important;
+}
+
+/* 9. Process Steps */
+.steps {
+  gap: 12px !important;
+}
+.step {
+  padding: 16px 14px !important;
+}
+.step .n {
+  font-size: 10px !important;
+}
+.step h4 {
+  font-size: 13.5px !important;
+  margin-bottom: 6px !important;
+}
+.step p {
+  font-size: 11.5px !important;
+  line-height: 1.5 !important;
+}
+
+/* 10. Interview & Storyboard (Expand content to full width of the outer box) */
+.interview-story-section {
+  padding: 36px 0 !important;
+  margin-bottom: 48px !important;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.interview-story-section .wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 28px !important;
+}
+.interview-story-columns {
+  gap: 28px !important;
+}
+.storyboard-card {
+  padding: 20px 22px !important;
+}
+.storyboard-card h3 {
+  font-size: 16px !important;
+  margin-bottom: 12px !important;
+}
+.story-caption {
+  font-size: 12.5px !important;
+  line-height: 1.55 !important;
+  min-height: 58px !important;
+}
+.story-caption strong {
+  font-size: 13.5px !important;
+  margin-bottom: 4px !important;
+}
+.member-tabs-container {
+  margin: 24px auto 0 !important;
+  gap: 8px !important;
+}
+.member-tab-btn {
+  padding: 6px 16px !important;
+  font-size: 12px !important;
+}
+
+@media (max-width: 600px) {
+  .interview-story-section .wrap {
+    padding: 0 14px !important;
+  }
+}
+
+/* 11. FAQ */
+.faq-q {
+  padding: 13px 18px !important;
+  font-size: 13.5px !important;
+}
+.faq-a-inner {
+  padding: 0 18px 14px !important;
+  font-size: 12.5px !important;
+  line-height: 1.6 !important;
+}
+
+/* 12. Closing Section */
+.closing {
+  padding: 56px 0 !important;
+}
+.closing h2 {
+  font-size: clamp(20px, 2.6vw, 28px) !important;
+}
+.closing p {
+  font-size: 12.5px !important;
+  line-height: 1.65 !important;
+  margin-bottom: 20px !important;
+}
+.float-cta {
+  padding: 10px 16px !important;
+  font-size: 12.5px !important;
+}
+
