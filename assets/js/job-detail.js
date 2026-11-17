@@ -1,3 +1,14 @@
+    // ---- prevent auto-scroll / enforce top on initial page load ----
+    if (!window.location.hash) {
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+      window.scrollTo(0, 0);
+      window.addEventListener('load', () => {
+        window.scrollTo(0, 0);
+      });
+    }
+
     // ---- role accordion ----
     document.querySelectorAll('.role-head').forEach(h => {
       h.addEventListener('click', () => {

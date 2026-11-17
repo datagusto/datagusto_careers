@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scheduler System for AI Agent Inference Careers — datagusto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0F1E3D;
+      --ink2: #16294F;
+      --panel: #22386B;
+      --panel-soft: #2C4480;
+      --teal: #FF7A33;
+      --teal-deep: #E25C18;
+      --white: #FFFFFF;
+      --light: #F5F6F9;
+      --light2: #E4E7EE;
+      --text: #1B2236;
+      --muted: #5C6478;
+      --muted-d: #9AA4BE;
+      --disp: 'Space Grotesk', sans-serif;
+      --body: 'Noto Sans JP', sans-serif;
+      --maxw: 1040px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--body);
+      color: #fff;
+      background: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-x: hidden;
+    }
+
+    /* Background decorative grids */
+    .hero-grid {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: grid;
+      grid-template-columns: repeat(12, 40px);
+      gap: 16px;
+      opacity: 0.15;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .hero-grid i {
+      width: 20px;
+      height: 20px;
+      background: var(--panel);
+    }
+
+    .hero-grid i:nth-child(3n) {
+      background: var(--teal);
+    }
+
+    /* Top Navigation Bar */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(15, 30, 61, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      width: 100%;
+    }
+
+    .top-nav-inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      height: 28px;
+      width: auto;
+      display: block;
+    }
+
+    .brand-product-tag {
+      font-family: var(--disp);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--teal);
+      background: rgba(255, 122, 51, 0.12);
+      border: 1px solid rgba(255, 122, 51, 0.25);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .nav-btn {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted-d);
+      text-decoration: none;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-btn:hover {
+      color: var(--teal);
+    }
+
+    /* Language Switcher */
+    .lang {
+      display: inline-flex;
+      gap: 2px;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 3px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      margin-left: 4px;
+    }
+
+    .lang a,
+    .lang span {
+      font-family: var(--disp);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 3px;
+      text-decoration: none;
+      color: var(--muted-d);
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+
+    .lang a:hover {
+      color: #fff;
+    }
+
+    .lang .on {
+      color: var(--ink);
+      background: var(--teal);
+    }
+
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 56px 24px 72px;
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-family: var(--disp);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 16px;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: var(--teal);
+      display: block;
+    }
+
+    h1 {
+      font-size: clamp(28px, 4.2vw, 44px);
+      font-weight: 900;
+      margin-bottom: 18px;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+    }
+
+    h1 span {
+      color: var(--teal);
+    }
+
+    .tagline {
+      font-size: 15.5px;
+      color: var(--muted-d);
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* Product Section */
+    .product-section {
+      margin-bottom: 56px;
+    }
+
+    .product-header {
+      margin-bottom: 28px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .product-badge {
+      display: inline-block;
+      font-family: var(--disp);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      background: rgba(255, 122, 51, 0.12);
+      border: 1px solid rgba(255, 122, 51, 0.25);
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+
+    .product-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .product-desc {
+      font-size: 13.5px;
+      color: var(--muted-d);
+      margin-top: 6px;
+      line-height: 1.6;
+    }
+
+    .positions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .positions-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+
+    .position-card {
+      background: var(--ink2);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 30px 26px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .position-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--panel-soft);
+      transition: background 0.3s;
+    }
+
+    .position-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 122, 51, 0.3);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .position-card:hover::before {
+      background: var(--teal);
+    }
+
+    .card-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .card-meta {
+      font-family: var(--disp);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+
+    .tags-container {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .tag-badge {
+      font-family: var(--disp);
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--muted-d);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .tag-badge.accent {
+      background: rgba(255, 122, 51, 0.12);
+      color: var(--teal);
+      border-color: rgba(255, 122, 51, 0.25);
+    }
+
+    .position-card h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #fff;
+      line-height: 1.4;
+    }
+
+    .position-card p {
+      font-size: 13.5px;
+      color: var(--muted-d);
+      margin-bottom: 24px;
+      line-height: 1.7;
+      flex-grow: 1;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px 18px;
+      border-radius: 4px;
+      font-size: 13.5px;
+      font-weight: 700;
+      transition: all 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn-link.en {
+      background: var(--panel);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .btn-link.en:hover {
+      background: var(--panel-soft);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .arrow {
+      font-family: var(--disp);
+      transition: transform 0.2s;
+    }
+
+    .btn-link:hover .arrow {
+      transform: translateX(4px);
+    }
+
+    /* Cross-product Banner */
+    .cross-banner {
+      background: rgba(34, 56, 107, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-top: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cross-banner-content h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .cross-banner-content p {
+      font-size: 13px;
+      color: var(--muted-d);
+    }
+
+    .cross-banner-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--disp);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--teal);
+      border: 1.5px solid var(--teal);
+      padding: 10px 18px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .cross-banner-btn:hover {
+      background: var(--teal);
+      color: var(--ink);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    footer a {
+      color: var(--muted-d);
+      margin: 0 8px;
+      transition: color 0.2s;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--teal);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-inner">
+      <a class="brand-link" href="index-en.html">
+        <img class="logo-img" src="../assets/FeNhE14JPYchGuEUf45sdH35no.svg" alt="datagusto" />
+        <span class="brand-product-tag">GPU Scheduler</span>
+      </a>
+      <div class="nav-actions">
+        <div class="lang">
+          <a href="index.html">JP</a>
+          <span class="on">EN</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero-grid" aria-hidden="true">
+    <script>for (let i = 0; i < 24; i++) document.write('<i></i>');</script>
+  </div>
+
+  <div class="container">
+    <header>
+      <span class="kicker">Product Area 02 · Careers</span>
+      <h1>Scheduler System for<br><span>AI Agent Inference</span></h1>
+      <p class="tagline">
+        Next-generation distributed inference scheduler ensuring deadline adherence and minimal compute cost across heterogeneous GPUs.<br>We optimize 24/7 compute workloads for autonomous AI agents.
+      </p>
+    </header>
+
+    <main>
+      <!-- ============================================== -->
+      <!-- CORE POSITIONS                                  -->
+      <!-- ============================================== -->
+      <section class="product-section">
+        <div class="product-header">
+          <div>
+            <div class="product-title">Open Positions (Core Members)</div>
+            <p class="product-desc">
+              We are looking for founding engineers and scientists to build our scheduler platform and mathematical evaluation loops.
+            </p>
+          </div>
+        </div>
+
+        <div class="positions-grid">
+          <!-- Position 2-1: Tech Lead, Scheduler Systems -->
+          <div class="position-card">
+            <div>
+              <div class="card-meta-row">
+                <div class="card-meta">Systems / Infra</div>
+                <div class="tags-container">
+                  <span class="tag-badge">Hybrid / Tokyo</span>
+                  <span class="tag-badge accent">Founding / Part-to-Full</span>
+                </div>
+              </div>
+              <h2>Tech Lead, Scheduler Systems</h2>
+              <p>
+                Founding system member. Architect and build the scheduler deciding when and on which GPU to run agent workloads, validating on client GPU clusters.
+              </p>
+            </div>
+            <div class="btn-group">
+              <a href="tech-lead-en.html" class="btn-link en">
+                <span>View Role Details</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Position 2-2: Applied Scientist -->
+          <div class="position-card">
+            <div>
+              <div class="card-meta-row">
+                <div class="card-meta">Science / ML</div>
+                <div class="tags-container">
+                  <span class="tag-badge">Remote OK</span>
+                  <span class="tag-badge accent">Contract / 1–2 days</span>
+                </div>
+              </div>
+              <h2>Applied Scientist, Feedback Loop</h2>
+              <p>
+                In environments without direct ground truth, formulate estimation loops for deadlines and quality, architecting continuous evaluation and mathematical models.
+              </p>
+            </div>
+            <div class="btn-group">
+              <a href="applied-scientist-en.html" class="btn-link en">
+                <span>View Role Details</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- INTERNSHIP POSITIONS                           -->
+      <!-- ============================================== -->
+      <section class="product-section" style="margin-top: 56px;">
+        <div class="product-header">
+          <div>
+            <span class="product-badge" style="background: rgba(44, 68, 128, 0.4); border-color: rgba(255, 255, 255, 0.15); color: #fff;">Internship Program</span>
+            <div class="product-title">Paid Internships</div>
+            <p class="product-desc">
+              Hands-on paid internships directly under our CTO, conducting real-world GPU inference benchmarks and mathematical modeling.
+            </p>
+          </div>
+        </div>
+
+        <div class="positions-grid">
+          <!-- Position 2-3: SWE Intern -->
+          <div class="position-card">
+            <div>
+              <div class="card-meta-row">
+                <div class="card-meta">Infra / Intern</div>
+                <div class="tags-container">
+                  <span class="tag-badge">Tokyo / Remote</span>
+                  <span class="tag-badge accent">Paid Internship</span>
+                </div>
+              </div>
+              <h2>SWE Intern, Scheduler Systems</h2>
+              <p>
+                Work directly with our CTO on LLM inference benchmarking in physical GPU clusters, integration with OSS schedulers (KAI/Kueue), and telemetry infrastructure.
+              </p>
+            </div>
+            <div class="btn-group">
+              <a href="swe-intern-en.html" class="btn-link en">
+                <span>View Role Details</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Position 2-4: Applied Scientist Intern -->
+          <div class="position-card">
+            <div>
+              <div class="card-meta-row">
+                <div class="card-meta">Data / Intern</div>
+                <div class="tags-container">
+                  <span class="tag-badge">Remote OK</span>
+                  <span class="tag-badge accent">Paid Internship</span>
+                </div>
+              </div>
+              <h2>Applied Scientist Intern</h2>
+              <p>
+                Define proxy signals from biased logs, implementing quantile regression and Conformal Prediction models, and designing counterfactual evaluation experiments.
+              </p>
+            </div>
+            <div class="btn-group">
+              <a href="applied-scientist-intern-en.html" class="btn-link en">
+                <span>View Role Details</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2026 datagusto, Inc.</p>
+    <p style="margin-top: 8px;">
+      <a href="https://datagusto.ai" target="_blank" rel="noopener noreferrer">Corporate Site</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>
