@@ -1,0 +1,1107 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>アプライドサイエンティスト インターン (推定・評価・数理モデル設計) — datagusto Careers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/job-detail.css">
+  <style>
+    .kicker-product {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--disp);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--teal);
+      background: rgba(255, 122, 51, .12);
+      border: 1px solid rgba(255, 122, 51, .3);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img class="brand-logo" src="../assets/FeNhE14JPYchGuEUf45sdH35no.svg"
+          alt="datagusto" /></a>
+      <div class="nav-links">
+        <a href="#about">製品について</a>
+        <a href="#fit">既存技術との違い</a>
+        <a href="#role">仕事内容</a>
+        <a href="#why-eng">取り組む意義</a>
+        <a href="#req">応募要件</a>
+        <a href="#growth">成長とキャリア</a>
+        <a href="#team">チーム</a>
+        <a href="#process">選考フロー</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px;">
+        <div class="lang">
+          <span class="on" onclick="window.location.href='applied-scientist-intern-en.html'">JP</span>
+          <span class="" onclick="window.location.href='applied-scientist-intern-en.html'">EN</span>
+        </div>
+        <a class="nav-cta" href="#apply">カジュアル面談</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="top">
+    <div class="hero-grid" aria-hidden="true">
+      <script>for (let i = 0; i < 32; i++)document.write('<i></i>');</script>
+    </div>
+    <div class="wrap">
+      <div>
+        <span class="kicker-product">Scheduler System for AI Agent Inference</span>
+        <span style="font-family: var(--disp); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #fff; background: rgba(255,122,51,0.25); border: 1px solid rgba(255,122,51,0.5); padding: 3px 10px; border-radius: 999px; margin-bottom: 16px; margin-left: 8px; vertical-align: middle; display: inline-flex; align-items: center;">Stealth Project</span>
+      </div>
+      <span class="kicker">Careers / Applied Scientist Intern, Scheduling Feedback Loop</span>
+      <h1>AIエージェント推論を支える<br><span class="hl">納期・品質推定と学習ループ設計</span><br>アプライドサイエンティスト インターン</h1>
+      <div class="role-en">Machine Learning, Statistics & Operations Research Internship</div>
+      <p class="summary">
+        直接正解が観測できない環境において、AIエージェントの許容納期と品質要件を推定する数理モデルと評価実験を設計します。CTOと直接連携しながら開発を進めます。
+      </p>
+      <div class="hero-btns">
+        <a class="btn-primary" href="#apply">カジュアル面談に応募する</a>
+        <a class="btn-ghost" href="#role">仕事内容を見る</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== QUICK FACTS ===== -->
+  <section class="facts">
+    <div class="wrap">
+      <div class="facts-row">
+        <div class="fact">
+          <div class="l">Report to</div>
+          <div class="v">CTO</div>
+        </div>
+        <div class="fact">
+          <div class="l">Location</div>
+          <div class="v">フルリモート可<br>週1回オンライン</div>
+        </div>
+        <div class="fact">
+          <div class="l">Type</div>
+          <div class="v">有給インターン<br>正社員登用あり</div>
+        </div>
+        <div class="fact">
+          <div class="l">Language</div>
+          <div class="v">日本語または英語<br>論文・仕様は英語可</div>
+        </div>
+        <div class="fact">
+          <div class="l">Comp</div>
+          <div class="v">応相談</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT PRODUCT ===== -->
+  <section class="dark" id="about" style="border-top: 1px solid rgba(255,255,255,.06);">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">About Product</span>
+        <h2>実務で扱う研究領域と開発課題</h2>
+        <p>アプライドサイエンス、機械学習研究、因果推論・実験設計、あるいはオペレーションズ・リサーチの領域で、実運用データを用いた実践的な研究・開発経験が得られます。</p>
+      </div>
+
+      <div class="stealth-notice reveal" style="background: rgba(255, 122, 51, .07); border: 1px solid rgba(255, 122, 51, .25); border-radius: 10px; padding: 16px 20px; margin-bottom: 32px;">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+          <span style="font-family: var(--disp); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--teal); background: rgba(255, 122, 51, .15); padding: 2px 8px; border-radius: 4px;">Stealth Project</span>
+          <span style="font-size: 13.5px; font-weight: 700; color: #fff;">公開情報について</span>
+        </div>
+        <p style="font-size: 13px; line-height: 1.65; color: var(--muted-d); margin: 0;">
+          本プロジェクトは現在ステルス（Stealth）フェーズとして立ち上げを進めています。米国のスタートアップがStealthプロジェクトで人材を採用する際と同様、Web上では課題領域や求める人物像・募集要件の概要に絞った情報公開としています。プロダクトの詳細なアーキテクチャやPoCの検証状況、事業背景などはカジュアル面談にて直接お伝えします。
+        </p>
+      </div>
+
+      <div class="card-3">
+        <div class="card reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3>新旧混在・異種GPUの最適活用</h3>
+          <p>最新GPUだけでなく、A100やL40Sなどの旧世代GPUやAMD環境を混載運用し、全ジョブを納期内に最小コストで処理します。</p>
+        </div>
+        <div class="card reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3>分〜時間単位のデッドライン制御</h3>
+          <p>画面の前で人が待つチャットと異なり、24時間稼働するエージェントジョブの許容締め切りを把握し、夜間やアイドル時間に集約します。</p>
+        </div>
+        <div class="card reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+            </svg>
+          </div>
+          <h3>ログに基づく継続的な学習ループ</h3>
+          <p>ハードウェアメトリクスとエージェント側ログを突き合わせ、実測データを通じて予測精度と配置判断を継続的に更新します。</p>
+        </div>
+      </div>
+
+      <div class="callout reveal">
+        正解が直接観測できないオープンプロブレムに対し、反実仮想評価やシャドウ実行を設計し、成果を論文や特許へ昇華させる機会があります。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHERE WE FIT (COMPARE) ===== -->
+  <section class="light" id="fit">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Where We Fit</span>
+        <h2>従来のLLM推論基盤と datagusto スケジューラの比較</h2>
+        <p>従来の推論エンジンが「人間のための秒単位の応答速度」を一律に追求するのに対し、datagustoはエージェントの業務コンテキスト（締め切り・品質許容度）をGPU配置に直結させます。</p>
+      </div>
+
+      <div class="compare">
+        <div class="cmp old reveal">
+          <h3>従来のLLM推論基盤 (vLLM / SGLang 単体運用等)</h3>
+          <div class="sub">画面の前で人間が待つチャットボット前提の設計</div>
+          <dl>
+            <dt>応答目標</dt>
+            <dd>秒単位・ミリ秒単位の即時返答</dd>
+            <dt>ジョブの重要度</dt>
+            <dd>全リクエストを一律平等・最速で処理</dd>
+            <dt>ハードウェア調達</dt>
+            <dd>ピーク負荷に合わせ高価な最新GPU（H100等）を過剰調達</dd>
+            <dt>エージェントタスク</dt>
+            <dd>非緊急なバックオフィス業務も高額なリソースを消費</dd>
+          </dl>
+        </div>
+
+        <div class="cmp new reveal">
+          <h3>datagusto エージェント推論スケジューラ</h3>
+          <div class="sub">エージェントの納期とGPUインフラを最適接続</div>
+          <dl>
+            <dt>応答目標</dt>
+            <dd>分〜時間単位（業務デッドラインから逆算）</dd>
+            <dt>ジョブの重要度</dt>
+            <dd>エージェントの役割・利用目的から真の緊急度を推定</dd>
+            <dt>ハードウェア調達</dt>
+            <dd>旧世代GPU（A100/L40S）やアイドル時間を賢くフル活用</dd>
+            <dt>エージェントタスク</dt>
+            <dd>納期遵守率100%を維持しながらGPU推論コストを大幅削減</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="callout soft reveal">
+        datagustoはvLLMやSGLangなどの推論エンジンを置き換えるものではありません。KubernetesやSlurm上のクラスタ層に位置し、エージェントジョブを「どのGPUで・いつ動かすか」を最適制御するインフラです。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROLE DETAILS ===== -->
+  <section class="light alt" id="role">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">The Role</span>
+        <h2>暗黙デッドラインの区間推定と<br>因果推論・反実仮想評価を担うインターン</h2>
+        <p>
+          AIエージェントのログから真のデッドラインや品質許容度を推定する数理モデル（分位数回帰・Conformal Prediction）のプロトタイピングから、実クラスタでのシャドウ実行・PoC評価実験の設計までを担当します。
+          実世界の意思決定AIにおける観測バイアスへの対処や、成果の論文執筆・特許化に取り組む機会があります。各ブロックをタップすると詳細が開きます。
+        </p>
+      </div>
+
+      <div class="roadmap-block reveal"
+        style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px; margin-bottom: 36px;">
+        <h3 style="margin-bottom: 16px; color: var(--text);">担当する主な業務内容</h3>
+        <ul style="padding-left: 20px; color: var(--muted); font-size: 15px; line-height: 1.8;">
+          <li style="margin-bottom: 8px;"><strong>1. プロキシ信号の定義:</strong> 成果物の実利用時間、手戻り、再実行などの代替指標を定義しログ要件を作成</li>
+          <li style="margin-bottom: 8px;"><strong>2. 区間推定モデルのプロトタイプ:</strong> 分位数回帰やConformal
+            Predictionを用いた締め切り・品質の予測モデルをPython実装</li>
+          <li style="margin-bottom: 8px;"><strong>3. 反実仮想評価の設計:</strong> シャドウ実行や小規模探索を通じて、別構成での成否を評価する検証手法の確立</li>
+          <li style="margin-bottom: 8px;"><strong>4. PoC実験計画の策定:</strong> 対照群の構成、実験期間、統計的検出力に必要なサンプルサイズの算出</li>
+        </ul>
+      </div>
+
+
+
+      <div class="role-block open reveal">
+        <div class="role-head"><span class="num">01</span>
+          <h3>プロキシ信号設計とテレメトリ仕様化</h3><span class="tog">+</span>
+        </div>
+        <div class="role-body">
+          <div class="role-body-inner">
+            <ul>
+              <li>エージェントの業務ログから緊急度や品質劣化を反映する統計的代替指標の抽出</li>
+              <li>システムエンジニアへ引き渡すテレメトリ記録仕様の策定</li>
+              <li>観測バイアスや遅延フィードバックを考慮したデータパイプライン設計</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-block reveal">
+        <div class="role-head"><span class="num">02</span>
+          <h3>不確実性推定とPythonプロトタイピング</h3><span class="tog">+</span>
+        </div>
+        <div class="role-body">
+          <div class="role-body-inner">
+            <ul>
+              <li>Conformal Predictionや分位数回帰を用いた締め切り区間推定モデルの実装</li>
+              <li>エージェントの職種に応じた安全マージンとキューイング挙動のシミュレーション</li>
+              <li>エンジニアが本番環境へ統合可能なモジュール化されたPythonコードの実装</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-block reveal">
+        <div class="role-head"><span class="num">03</span>
+          <h3>反実仮想評価・PoC実験計画の設計</h3><span class="tog">+</span>
+        </div>
+        <div class="role-body">
+          <div class="role-body-inner">
+            <ul>
+              <li>「より安価なGPUでも間に合ったか」を検証するシャドウ実行・探索スキームの設計</li>
+              <li>顧客PoCでの対照群設計、必要サンプルサイズ・検証期間の統計的算出</li>
+              <li>国際学会への論文投稿、技術解説記事、特許出願のサポート</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY THIS MATTERS ===== -->
+  <section class="dark" id="why-eng" style="background: var(--ink);">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Why It Matters</span>
+        <h2>数理モデル設計の技術的背景</h2>
+        <p>推論スケジューラが納期遵守とコスト最小化を達成するには、明示的に与えられない「締め切り」と「要求品質」を高精度に推定し続ける必要があります。</p>
+      </div>
+
+      <div class="grid-2"
+        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 36px;">
+        <div class="card reveal"
+          style="background: var(--ink2); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 32px;">
+          <h3 style="color:var(--white); margin-bottom: 12px;">着目している課題と技術的フロンティア</h3>
+          <p style="color:var(--muted-d); font-size: 14px; line-height: 1.8;">
+            Conformal Predictionや分位数回帰を用いた区間推定モデルを構築し、手戻りや再実行、生成物が実際に利用されるまでの時間などの代替指標を設計します。
+          </p>
+        </div>
+        <div class="card reveal"
+          style="background: var(--ink2); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 32px;">
+          <h3 style="color:var(--white); margin-bottom: 12px;">このポジションが果たす役割とインパクト</h3>
+          <p style="color:var(--muted-d); font-size: 14px; line-height: 1.8;">
+            あなたが考案した評価計画（「より安価なGPU構成でも間に合ったか」の検証）やPythonプロトタイプは、実稼働クラスタに直接導入されます。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REQUIREMENTS ===== -->
+  <section class="light" id="req" style="background: var(--light);">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Requirements</span>
+        <h2>求める人物像・応募要件</h2>
+        <p>統計学、機械学習、因果推論、数理最適化の基礎を持つ学生を募集します。</p>
+      </div>
+
+      <div class="card reveal"
+        style="margin-bottom: 24px; background: #fff; border: 1px solid var(--light2); border-radius: 8px; padding: 20px 28px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+        <div
+          style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase;">
+          Key Stack / 主な技術スタック</div>
+        <div style="font-size: 14px; color: var(--text); font-weight: 600;">Python, 統計学, 因果推論, バンディット, OR, 分位数回帰</div>
+      </div>
+
+      <div class="grid-2" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+        <div class="card reveal"
+          style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px;">
+          <div
+            style="font-family: var(--disp); font-size: 12px; font-weight: 700; color: var(--teal); text-transform: uppercase; margin-bottom: 16px;">
+            必須スキル・経験</div>
+          <ul style="padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.8;">
+            <li style="margin-bottom: 10px;">統計学、機械学習、オペレーションズ・リサーチ、情報科学などの計量・数理系分野の学部・修士・博士課程に在籍中の方</li>
+            <li style="margin-bottom: 10px;">自身で推定モデルや統計シミュレーションをPythonで実装できるプログラミングスキル</li>
+            <li style="margin-bottom: 10px;">統計学・機械学習の強固な基礎知識（予測モデルの評価設計を含む）</li>
+            <li style="margin-bottom: 10px;">因果推論、実験計画（A/Bテスト）、オフポリシー評価、バンディット、強化学習のいずれかに関する履修またはプロジェクト経験</li>
+            <li style="margin-bottom: 10px;">観測バイアス（選択した行動の結果しか見えない、正解が遅延する等）を伴う問題への強い知的好奇心</li>
+          </ul>
+        </div>
+
+        <div class="card reveal"
+          style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px;">
+          <div
+            style="font-family: var(--disp); font-size: 12px; font-weight: 700; color: var(--muted-d); text-transform: uppercase; margin-bottom: 16px;">
+            歓迎スキル・経験</div>
+          <ul style="padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.8;">
+            <li style="margin-bottom: 10px;">コンテキスト付きバンディット、強化学習、または因果推論に関する研究発表・論文実績</li>
+            <li style="margin-bottom: 10px;">待ち行列理論、スケジューリング理論、または数理最適化に関する研究経験</li>
+            <li style="margin-bottom: 10px;">不確実性推定（分位数回帰、Conformal Predictionなど）の実装経験</li>
+            <li style="margin-bottom: 10px;">LLMエージェントの挙動評価・ベンチマークの経験</li>
+            <li style="margin-bottom: 10px;">実世界の意思決定モデル構築およびオンライン評価の経験</li>
+            <li style="margin-bottom: 10px;">英語での論文執筆またはプレゼンテーション経験</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card reveal"
+        style="margin-top: 24px; background: #fff; border: 1px solid rgba(226, 92, 24, 0.2); border-left: 4px solid var(--teal); border-radius: 8px; padding: 24px 32px;">
+        <h4 style="margin-bottom: 10px; color: var(--text);">マッチしない可能性がある方</h4>
+        <ul style="padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.8;">
+          <li style="margin-bottom: 6px;">整備済みの静的なデータセット上でのみモデルを動かしたい方（実環境の生ログから仕様を設計する姿勢を重視します）</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GROWTH & CAREER PATHS ===== -->
+  <section class="light alt" id="growth">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">First 6 Months & Beyond</span>
+        <h2>入社後のロードマップとキャリアパス</h2>
+        <p>立ち上げフェーズでの具体的な業務プロセスと、GPUインフラ・スケジューラ開発を通じて開かれる将来のキャリアパスを明示します。</p>
+      </div>
+
+      <div class="tl">
+
+        <div class="tl-step reveal">
+          <div class="dot">1</div>
+          <div class="ph">1ヶ月目</div>
+          <h4>プロキシ信号設計</h4>
+          <p>生ログから代替指標を抽出し、システム側へのロギング要件を作成します。</p>
+        </div>
+
+        <div class="tl-step reveal">
+          <div class="dot">2</div>
+          <div class="ph">2ヶ月目</div>
+          <h4>区間推定モデル実装</h4>
+          <p>Conformal Prediction / 分位数回帰を用いたプロトタイプをPythonで構築・検証します。</p>
+        </div>
+
+        <div class="tl-step reveal">
+          <div class="dot">3</div>
+          <div class="ph">3ヶ月目</div>
+          <h4>PoC実験プロトコル策定</h4>
+          <p>シャドウ実行による反実仮想評価を設計し、実クラスタでの検証計画を完成させます。</p>
+        </div>
+
+        <div class="tl-step reveal">
+          <div class="dot">4</div>
+          <div class="ph">その先へ</div>
+          <h4>学会論文・特許化 / 正社員登用</h4>
+          <p>トップカンファレンスへの論文投稿や、創業サイエンティストとしての正社員登用へ。</p>
+        </div>
+
+      </div>
+
+      <div class="callout reveal" style="background:var(--ink);">
+        <b>将来のキャリアパス：</b> 本ポジションで培う「分散システム × GPU推論最適化 × 自律エージェント」のスキルは、世界的にも極めて希少な専門性となります。
+      </div>
+
+      <div class="paths">
+
+        <div class="path reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <h4>アプライドサイエンティスト / MLリサーチサイエンティスト</h4>
+          <p>観測データが不完全な実世界の意思決定システムにおいて、先端アルゴリズムを設計する研究者へ。</p>
+        </div>
+
+        <div class="path reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <h4>因果推論・実験設計データサイエンティスト</h4>
+          <p>オフポリシー評価やバンディットアルゴリズムを駆使し、ビジネス意思決定を最適化するデータサイエンティストへ。</p>
+        </div>
+
+        <div class="path reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <h4>AIシステム・最適化の研究者（大学院・博士進学）</h4>
+          <p>スケジューリング理論と生成AIインフラの交差点にある未解決問題を解き、国際学会で活躍する研究者へ。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARKET VALUE ===== -->
+  <section class="light alt" id="market-stats">
+    <div class="wrap">
+      <div class="market reveal" style="margin-top: 0;">
+        <h3>市場全体におけるGPUインフラ・推論エンジニアの爆発的需要</h3>
+        <p class="lead">
+          生成AIが「画面の前で人が待つチャット」から「24時間自律稼働するエージェント」へと進化する中、GPU推論コストと計算資源の枯渇は企業の最大のボトルネックになっています。エージェントの業務特性を理解し、異種GPU基盤を最適化できるエンジニアの市場価値は急速に高まっています。
+        </p>
+        <div class="mkt-grid">
+          <div class="mkt-card">
+            <div class="src">推論コストの爆発とGPU逼迫</div>
+            <div class="stat">LLM推論コンピュート需要は、学習需要の10倍以上のペースで急伸。</div>
+            <p>
+              自律エージェントの長大なReasoningやツール呼び出しの連鎖により、1つのタスクで数千〜数万トークンが消費されます。納期を考慮したスケジューリングと混載運用が、インフラコストの成否を分けます。
+            </p>
+          </div>
+          <div class="mkt-card">
+            <div class="src">マルチベンダー・異世代GPUの共存</div>
+            <div class="stat">最新GPUだけでなく、A100やAMD等あらゆるGPUの延命・併用が必須に。</div>
+            <p>
+              GPU供給の制約とコスト高騰により、最新GPUだけを買い増す運用は破綻しつつあります。既存のGPU資産を最大限に活かし、SLAを守り抜くスケジューラ基盤が世界中で求められています。
+            </p>
+          </div>
+        </div>
+        <p class="mkt-foot">
+          datagustoであなたが解く課題は、分散システムとAI推論の交差点にある未解決フロンティアです。ここで得る実務経験は、国内外のAIインフラ領域において圧倒的なキャリアの武器となります。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="dark" id="process">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Selection Process</span>
+        <h2>客観的指標と実務に基づく選考プロセス</h2>
+        <p>志望動機による選考ではなく、実際のGPU実行ログ・タスクログを用いた「有償ワークサンプル課題（Paid Work Sample）」を軸とした客観的で公平な選考です。</p>
+      </div>
+      <div class="steps">
+
+        <div class="step reveal">
+          <div class="n">STEP 1</div>
+          <h4>カジュアル面談</h4>
+          <p>研究課題の概要説明と、ご関心分野のヒアリング。</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="n">STEP 2</div>
+          <h4>研究・プロジェクト発表 (30分 / CTO同席)</h4>
+          <p>正解が直接観測しにくい問題や統計モデリングに関する過去の取り組み発表。</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="n">STEP 3</div>
+          <h4>有償アサインメント課題</h4>
+          <p>サンプルログをもとに、計測仕様と反実仮想の検証計画書を作成。</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="n">STEP 4</div>
+          <h4>CEO面談・オファー</h4>
+          <p>勤務形態、目標設定、待遇面の確認とオファー提示。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM (GLOBAL TEAM) ===== -->
+  <section class="light" id="global-team" style="background:var(--light); color:var(--text); padding:92px 0;">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker" style="color:var(--teal-deep);">Global Team</span>
+        <h2>日本拠点で進める、グローバルな開発チーム体制</h2>
+        <p style="color:var(--muted);">
+          datagustoは東京を拠点としていますが、開発チームは多国籍なメンバーで構成されています。<br>英語によるコミュニケーションを基本とし、多様な背景を持つメンバーが製品開発に参画しています。</p>
+      </div>
+      <div class="gt-grid">
+        <div class="gt-points">
+          <div class="gp reveal" style="background:var(--white); border:1px solid var(--light2);">
+            <div class="ic" style="background:var(--light);"><svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33"
+                stroke-width="2">
+                <circle cx="9" cy="8" r="3" />
+                <circle cx="17" cy="9" r="2.4" />
+                <path d="M3 19c0-3 2.7-5 6-5s6 2 6 5M15 19c0-2 .5-3.4 2-4" />
+              </svg></div>
+            <div>
+              <h4 style="color:var(--text);">多国籍な開発チーム</h4>
+              <p style="color:var(--muted);">起票されたバグや改善要望は、開発チームのエンジニアに直接共有され、迅速に対応が進められます。</p>
+            </div>
+          </div>
+          <div class="gp reveal" style="background:var(--white); border:1px solid var(--light2);">
+            <div class="ic" style="background:var(--light);"><svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33"
+                stroke-width="2">
+                <path d="M21 12a8 8 0 01-11.5 7.2L3 21l1.8-6.5A8 8 0 1121 12z" />
+              </svg></div>
+            <div>
+              <h4 style="color:var(--text);">英語と日本語の業務環境</h4>
+              <p style="color:var(--muted);">顧客への技術対応は日本語で実施し、開発チームとの意思疎通は英語で行うなど、状況や対象に応じて適切に使い分けます。</p>
+            </div>
+          </div>
+          <div class="gp reveal" style="background:var(--white); border:1px solid var(--light2);">
+            <div class="ic" style="background:var(--light);"><svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M15 9l-2 6-4 0 2-6 4 0z" />
+              </svg></div>
+            <div>
+              <h4 style="color:var(--text);">テキストで明快に共有する文化</h4>
+              <p style="color:var(--muted);">文脈の共有に頼ることなく、テキストを用いて論点を明確に共有する文化を大切にしています。多様な背景を持つメンバーが円滑に連携するための仕組みです。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gt-side reveal"
+          style="background:var(--white); border-top:4px solid var(--teal-deep); border-left:1px solid var(--light2); border-right:1px solid var(--light2); border-bottom:1px solid var(--light2);">
+          <h4 style="color:var(--teal-deep);">対象となる適性・人物像</h4>
+          <ul class="fit">
+            <li>グローバルな環境で成長したい日本人エンジニア</li>
+            <li>日本で働きたい・住みたい外国籍のエンジニア</li>
+            <li>多様な背景のメンバーと、英語で率直に議論することを楽しめる人</li>
+          </ul>
+          <div class="eng" style="border-top:1px solid var(--light2);"><b>英語について：</b>
+            開発チームには英語話者のメンバーが多いため、現時点で流暢でなくても、英語で伝えようとする姿勢や、必要に応じて英語でのテキスト・口頭コミュニケーションに挑戦する意欲がある方を歓迎します。</div>
+        </div>
+      </div>
+      <p class="note-mini reveal" style="color:var(--muted);">経営陣も含めて日本語と英語を使い分けた対話が活発に行われており、特定の文化に捉われない柔軟で開かれた組織です。
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="light" id="team" style="background:var(--white); color:var(--text); padding:92px 0;">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Team & Culture</span>
+        <h2>CTO直下の少数精鋭チーム</h2>
+        <p>CTOおよびシステムエンジニアと直に連携し、数理モデルを実世界インフラに落とし込みます。</p>
+      </div>
+
+      <div class="team-grid reveal"
+        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 32px;">
+        <div class="team-card"
+          style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px;">
+          <div
+            style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">
+            Overall Lead</div>
+          <h4 style="color:var(--text); margin-bottom: 8px;">CTO</h4>
+          <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">学習精度ループとPoC数値の最終責任、設計方針決定、週次ミーティングを統括。</p>
+        </div>
+
+        <div class="team-card"
+          style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px; ">
+          <div
+            style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">
+            Systems & Infrastructure</div>
+          <h4 style="color:var(--text); margin-bottom: 8px;">Tech Lead / Founding Engineer</h4>
+          <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">ジョブ配置と実行、計測基盤、推定モデルの本番実装、顧客GPU環境への展開を担当。
+          </p>
+        </div>
+
+        <div class="team-card"
+          style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px; border-color: var(--teal); background: #fff;">
+          <div
+            style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">
+            Estimation & Evaluation</div>
+          <h4 style="color:var(--text); margin-bottom: 8px;">Applied Scientist</h4>
+          <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">
+            納期と品質の推定モデル設計・プロトタイプ、フィードバック信号・探索・評価の設計、ログ仕様定義。</p>
+        </div>
+
+        <div class="team-card"
+          style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px;">
+          <div
+            style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">
+            Customers & Business</div>
+          <h4 style="color:var(--text); margin-bottom: 8px;">CEO</h4>
+          <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">PoC顧客との調整、要件定義、ビジネス成果の報告と検証結果の説明をリード。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="light" id="faq">
+    <div class="wrap" style="padding-top: 46px;">
+
+      <!-- ===== INTERVIEW & STORYBOARD ===== -->
+      <section class="interview-story-section" id="story">
+        <div class="wrap">
+
+          <!-- ===== Yankho Content ===== -->
+          <div class="interview-story-container active" id="member-yankho">
+            <div class="sec-head reveal">
+              <span class="kicker">Member Interview</span>
+              <h2>メンバーインタビュー：Yankho</h2>
+              <p>「インフラや制御レイヤーでの開発は非常に魅力的で、社会に必要とされていることである」</p>
+            </div>
+            <div class="interview-story-columns">
+
+              <!-- Left: YouTube Interview Video -->
+              <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
+                <div class="talk-video-wrapper">
+                  <iframe tabindex="-1" loading="lazy" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/g-pgvjzxgzo?autoplay=1><img src=https://img.youtube.com/vi/g-pgvjzxgzo/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>" title="Yankho Interview Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <!-- Right: How Yankho Joined Storyboard -->
+              <div class="storyboard-card reveal">
+                <h3>
+                  <span>How Yankho Joined</span>
+                  <span
+                    style="font-family: var(--disp); font-size: 12px; color: var(--muted-d); font-weight: normal;">Yankho's
+                    story</span>
+                </h3>
+
+                <div class="story-carousel">
+                  <div class="story-slides">
+                    <!-- Slide 1 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Yankho/Yankho_01.jpg" alt="始まりの時代" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>1. AI Agent黎明期と手探りの開発 (2025年春)</strong>
+                        当時はMulti-Agentが手軽に動く状態でもなく、OpenClawすら世に出ていませんでした。一部の先進的な開発者が初期のフレームワークを使って手探りで開発し始めた時代です。
+                      </p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Yankho/Yankho_02.jpg" alt="ビールを片手に議論" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>2. オックスフォードでのコミュニティ発足</strong>
+                        そんな中、イギリスのオックスフォードにいたParrは現地初の「AI Agent Community」を立ち上げ、パブでMeetupを開催。ビールを片手に「AI
+                        Agentの将来像」について熱い議論を交わしていました。
+                      </p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Yankho/Yankho_03.png" alt="Yankhoとの出会い" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>3. Yankhoとの出会いと彼の挑戦</strong>
+                        そのMeetupの場には、当時すでにスタートアップで働きながらAI Agentを用いた個人サービスの開発・運用を独自に進めていた優秀なエンジニア、Yankhoも参加していました。
+                      </p>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Yankho/Yankho_04.jpg" alt="カフェでの決意" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>4. 予測不能な暴走への共感と参画</strong>
+                        「AIエージェントの予測不能な挙動や暴走は致命的になる」という初期構想にYankhoは深く共感。自らの個人開発での運用体験からもその深刻さを痛感し、チームへの本格参画を決めました。
+                      </p>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Yankho/Yankho_05.jpg" alt="そして現在へ" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>5. そして現在、社会的な課題解決へ (2026年)</strong>
+                        現在、世間ではAI
+                        Agentの制御不能な動作が現実の課題となっています。datagustoが開発する「安全層（ガードレール）」プロダクトは、エージェントを社会実装する上で極めて重要な技術となっています。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="story-controls">
+                    <button class="story-btn prev-story-btn">←</button>
+                    <div class="story-dots"></div>
+                    <button class="story-btn next-story-btn">→</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ===== Sean Content ===== -->
+          <div class="interview-story-container" id="member-sean">
+            <div class="sec-head reveal">
+              <span class="kicker">Member Interview</span>
+              <h2>メンバーインタビュー：Sean</h2>
+              <p>「機械学習の研究から実社会のプロダクトへ。独自LLMの開発で生成AIの未来を切り拓く」</p>
+            </div>
+            <div class="interview-story-columns">
+
+              <!-- Left: Interview Video -->
+              <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
+                <div class="talk-video-wrapper">
+                  <iframe tabindex="-1" loading="lazy" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/iznFI-UzUU4?autoplay=1><img src=https://img.youtube.com/vi/iznFI-UzUU4/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>" title="Sean Interview Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <!-- Right: Storyboard -->
+              <div class="storyboard-card reveal">
+                <h3>
+                  <span>How Sean Joined</span>
+                  <span
+                    style="font-family: var(--disp); font-size: 12px; color: var(--muted-d); font-weight: normal;">Sean's
+                    story</span>
+                </h3>
+                <div class="story-carousel">
+                  <div class="story-slides">
+                    <!-- Slide 1 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Sean/Sean_01.jpeg" alt="元ルームメイト、Seanとの巡り合わせ" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>1. Iceからの紹介と、元ルームメイトSeanとの巡り合わせ</strong>
+                        Iceの働きぶりに感銘を受け、「Iceの周囲にも同じように情熱的な仲間がいるはずだ」と考え、Iceに紹介を依頼しました。そこで巡り合ったのが大学時代にIceのルームメイトだったSeanでした。
+                      </p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Sean/Sean_02.jpeg" alt="最先端の研究から商用プロダクトへ" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>2. 最先端の研究から、商用プロダクトへの渇望</strong>
+                        Seanは大学院で機械学習や生成AIの高度な研究に従事し開発実績もありましたが、いわゆる商用プロダクトの開発経験はなく、「実社会で使われるプロダクトを作りたい」と強く願っていました。
+                      </p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Sean/Sean_03.jpeg" alt="生成AIプロダクトへの共鳴" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>3. 生成AIプロダクトへの共鳴と意気投合</strong>
+                        datagustoが創り出すプロダクトそのものが生成AIの中核技術であったことから、二人は即座に意気投合。Seanの卓越したAI知見と情熱をチームに迎えることとなりました。
+                      </p>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Sean/Sean_04.jpeg" alt="独自LLM開発を牽引" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>4. そして現在、独自LLMの開発を牽引 (2026年)</strong>
+                        現在は研究で培った高いスキルを遺憾なく発揮し、datagustoの独自LLM開発やコアアルゴリズムの実装を牽引。研究と実用をつなぐ重要なエンジニアとして開発に参画しています。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="story-controls">
+                    <button class="story-btn prev-story-btn">←</button>
+                    <div class="story-dots"></div>
+                    <button class="story-btn next-story-btn">→</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ===== Ice Content ===== -->
+          <div class="interview-story-container" id="member-ice">
+            <div class="sec-head reveal">
+              <span class="kicker">Member Interview</span>
+              <h2>メンバーインタビュー：Ice</h2>
+              <p>「自分でAI Agentを開発しているが、もっと上手く開発できるようになりたい。ここに未来がある」</p>
+            </div>
+            <div class="interview-story-columns">
+
+              <!-- Left: Interview Video -->
+              <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
+                <div class="talk-video-wrapper">
+                  <iframe tabindex="-1" loading="lazy" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/c6LUT3Sja8A?autoplay=1><img src=https://img.youtube.com/vi/c6LUT3Sja8A/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>" title="Ice Interview Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <!-- Right: Storyboard -->
+              <div class="storyboard-card reveal">
+                <h3>
+                  <span>How Ice Joined</span>
+                  <span
+                    style="font-family: var(--disp); font-size: 12px; color: var(--muted-d); font-weight: normal;">Ice's
+                    story</span>
+                </h3>
+                <div class="story-carousel">
+                  <div class="story-slides">
+                    <!-- Slide 1 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Ice/Ice_01.jpeg" alt="台湾Garage+への採択" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>1. 台湾Garage+への採択と渡航 (2025年5月)</strong>
+                        2025年5月中旬、台湾進出を目指すグローバルスタートアップ支援プログラム「Garage+」に採択され、Maoは台湾・台北に滞在していました。
+                      </p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Ice/Ice_02.jpeg" alt="黎明期の台湾とComputex" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>2. 黎明期の台湾とComputex</strong>
+                        当時、台湾でもAI Agentは黎明期。アジア最大のIT見本市「Computex」でさえ、「AIエージェントは名前を聞いたことがある程度」という手探りの段階でした。
+                      </p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Ice/Ice_03.jpeg" alt="目を輝かせるインターン、Iceとの出会い" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>3. 目を輝かせるインターン、Iceとの出会い</strong>
+                        各社に1名つく支援インターンの中で、友人の英国スタートアップを担当していたのがIceでした。Iceは「自分でAI
+                        Agentを開発しているが、もっと上手く作りたい。ここに未来がある」と目をキラキラさせながらMaoに話しかけてきました。
+                      </p>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Ice/Ice_04.jpeg" alt="エージェントの未来と意気投合" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>4. エージェントの未来と意気投合</strong>
+                        AI Agentが拓く未来と直面する課題について熱狂的に語り合い、二人は強く意気投合。最先端の現場でエージェント技術を追求するため、datagustoへの参画が決まりました。
+                      </p>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Ice/Ice_05.jpeg" alt="そして現在、次代の起業家へ" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>5. そして現在、次代の起業家へ (2026年)</strong>
+                        現在はdatagustoで高度なエージェント開発を学びながらプロダクト開発に貢献。自身でもAI Agentサービスを開発し続けており、自ら起業する日もそう遠くないかもしれません。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="story-controls">
+                    <button class="story-btn prev-story-btn">←</button>
+                    <div class="story-dots"></div>
+                    <button class="story-btn next-story-btn">→</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ===== Fastin Content ===== -->
+          <div class="interview-story-container" id="member-fastin">
+            <div class="sec-head reveal">
+              <span class="kicker">Member Interview</span>
+              <h2>メンバーインタビュー：Faustin</h2>
+              <p>「創業初期のインターンからFinTechのリードへ、そしてAIエージェントの裏側を支える真のエンジニアへ」</p>
+            </div>
+            <div class="interview-story-columns">
+
+              <!-- Left: Interview Video -->
+              <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
+                <div class="talk-video-wrapper">
+                  <iframe tabindex="-1" loading="lazy" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/iQebouRFzDw?autoplay=1><img src=https://img.youtube.com/vi/iQebouRFzDw/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>" title="Faustin Interview Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <!-- Right: Storyboard -->
+              <div class="storyboard-card reveal">
+                <h3>
+                  <span>How Faustin Joined</span>
+                  <span
+                    style="font-family: var(--disp); font-size: 12px; color: var(--muted-d); font-weight: normal;">Faustin's
+                    story</span>
+                </h3>
+                <div class="story-carousel">
+                  <div class="story-slides">
+                    <!-- Slide 1 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Faustin/Faustin_01.jpeg" alt="創業初期の出会いとインターン参画" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>1. 創業初期の出会いとインターン参画</strong>
+                        datagustoの創業初期、当時大学院の修士課程だったFaustinと出会い、インターンとしてチームにジョインしました。
+                      </p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Faustin/Faustin_02.jpeg" alt="ゼロからのWebエンジニアリング修行" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>2. ゼロからのWebエンジニアリング修行</strong>
+                        当時は実務での開発経験がほぼゼロ。代表の中村がメンターとなり、Web開発の「いろはのい」を一から共に学びました（Faustin曰く、最初に叩き込まれたのはテストコードだったとのこと）。
+                      </p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Faustin/Faustin_03.jpeg" alt="修士修了とFinTechでの大躍進" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>3. 修士修了と、FinTechでの大躍進</strong>
+                        修士修了と就職に伴ってインターンを卒業。それから約4年の歳月を経て、FaustinはFinTech業界で新規プロダクト開発を力強くリードするトップエンジニアへと目覚ましい成長を遂げていました。
+                      </p>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Faustin/Faustin_04.jpeg" alt="4年ぶりの再会と新たな渇望" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>4. 4年ぶりの再会と、新たな渇望</strong>
+                        datagustoが新プロダクトに着手した際、4年ぶりに再会。「流行のAIエージェントの技術深層に本気で挑みたい、datagustoで再び新しい学びを得たい」と、再ジョインを決意します。
+                      </p>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="story-slide">
+                      <div class="story-img-container">
+                        <img src="../assets/images/Faustin/Faustin_05.jpeg" alt="システムの真の支柱へ" />
+                      </div>
+                      <p class="story-caption">
+                        <strong>5. そして現在、システムの真の支柱へ (2026年)</strong>
+                        現在は培ったインフラ〜バックエンドの高い技術力を活かし、プロダクトの信頼性向上を牽引。複雑なAIエージェントシステムの裏側を全て統括する、真のAIエージェントエンジニアとして活躍しています。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="story-controls">
+                    <button class="story-btn prev-story-btn">←</button>
+                    <div class="story-dots"></div>
+                    <button class="story-btn next-story-btn">→</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Member Selection Tabs -->
+          <div class="member-tabs-container reveal">
+            <button class="member-tab-btn active" data-member="yankho">Yankho</button>
+            <button class="member-tab-btn" data-member="ice">Ice</button>
+            <button class="member-tab-btn" data-member="sean">Sean</button>
+            <button class="member-tab-btn" data-member="fastin">Faustin</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="sec-head reveal">
+        <span class="kicker">FAQ</span>
+        <h2>よくある質問</h2>
+        <p>応募にあたって気になる点や、組織・技術に関する疑問にお答えします。</p>
+      </div>
+      <div class="reveal">
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <h4>リモートで参加できますか？</h4><span class="tog">+</span>
+          </div>
+          <div class="faq-a">
+            <p>はい、完全フルリモートで参画可能です。CTOとの週次オンラインミーティングで進捗を確認しながら進めます。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <h4>研究成果を修論や学会論文にできますか？</h4><span class="tog">+</span>
+          </div>
+          <div class="faq-a">
+            <p>大歓迎です。学術的にも価値の高いテーマのため、学会発表や論文執筆を積極的に支援します。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TERMS ===== -->
+  <section class="light alt" id="terms" style="background: var(--light2); padding: 72px 0;">
+    <div class="wrap">
+      <div class="sec-head reveal" style="margin-bottom: 24px;">
+        <span class="kicker">Terms & Conditions</span>
+        <h2>募集要項</h2>
+      </div>
+
+      <div class="card reveal"
+        style="background:#fff; border-radius: 8px; padding: 32px; border: 1px solid rgba(0,0,0,0.06); max-width: 800px; margin: 0 auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+
+          <tr style="border-bottom: 1px solid var(--light2);">
+            <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">職種形態</td>
+            <td style="padding: 14px 12px; color: var(--muted);">有償研究・データサイエンスインターンシップ</td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid var(--light2);">
+            <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">勤務時間・日数</td>
+            <td style="padding: 14px 12px; color: var(--muted);">週2日以上（学業・研究と両立できるよう柔軟に調整）</td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid var(--light2);">
+            <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">給与</td>
+            <td style="padding: 14px 12px; color: var(--muted);">有償時給 / 月額手当（研究実績・専門性に応じて支給）</td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid var(--light2);">
+            <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">勤務地</td>
+            <td style="padding: 14px 12px; color: var(--muted);">フルリモート可（週次オンラインミーティング）</td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLOSING / APPLY ===== -->
+  <section class="closing" id="apply">
+    <div class="closing-grid" aria-hidden="true">
+      <script>for (let i = 0; i < 30; i++)document.write('<i></i>');</script>
+    </div>
+    <div class="wrap">
+      <h2 class="reveal">まずは、話すところから。</h2>
+      <p class="reveal">
+        「自分に合うか分からない」段階で大歓迎です。<br>AIエージェント向けの次世代GPUスケジューラ開発や数理モデル設計に興味をお持ちの方は、<br>カジュアル面談を通じてチームメンバーと直接お話しいただけます。
+      </p>
+      <a class="btn-primary reveal"
+        href="https://outlook.office.com/book/datagusto_@datagusto.ai/s/9T6y-RBzcEaGfOTPYNpTGw2?ismsaljsauthenabled"
+        target="_blank" rel="noopener noreferrer">カジュアル面談を予約する</a>
+      <div class="tagline reveal">datagusto — Connect agent workloads to GPU allocation.</div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <span>© 2026 datagusto, Inc.</span>
+      <span>
+        <a href="https://datagusto.ai" target="_blank" rel="noopener noreferrer">コーポレートサイト</a> ・
+        <a href="index.html">採用情報トップ</a>
+      </span>
+    </div>
+  </footer>
+
+  <a class="float-cta" id="floatCta"
+    href="https://outlook.office.com/book/datagusto_@datagusto.ai/s/9T6y-RBzcEaGfOTPYNpTGw2?ismsaljsauthenabled"
+    target="_blank" rel="noopener noreferrer">カジュアル面談に応募 →</a>
+
+  <script src="../assets/js/job-detail.js"></script>
+</body>
+
+</html>
