@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>スケジューラ基盤 テックリード / ファウンディングエンジニア — datagusto Careers</title>
+  <title>ファウンディング・テックリード（次世代AIコンピュート/分散スケジューラ基盤 0→1立ち上げ） — datagusto Careers</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -12,7 +12,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/job-detail.css">
   <style>
-    .kicker-product {
+    .kicker-founding {
       display: inline-flex;
       align-items: center;
       gap: 6px;
@@ -21,12 +21,26 @@
       font-weight: 700;
       letter-spacing: .08em;
       text-transform: uppercase;
-      color: var(--teal);
-      background: rgba(255, 122, 51, .12);
-      border: 1px solid rgba(255, 122, 51, .3);
+      color: #fff;
+      background: rgba(255, 122, 51, 0.9);
+      border: 1px solid rgba(255, 122, 51, 1);
       padding: 4px 10px;
       border-radius: 999px;
       margin-bottom: 16px;
+    }
+    .kicker-founding::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
     }
   </style>
 </head>
@@ -39,12 +53,12 @@
       <a class="brand" href="index.html"><img class="brand-logo" src="../assets/FeNhE14JPYchGuEUf45sdH35no.svg"
           alt="datagusto" /></a>
       <div class="nav-links">
-        <a href="#about">製品について</a>
-        <a href="#fit">既存技術との違い</a>
-        <a href="#role">仕事内容</a>
-        <a href="#why-eng">取り組む意義</a>
-        <a href="#req">応募要件</a>
-        <a href="#growth">成長とキャリア</a>
+        <a href="#about">Problem Space</a>
+        <a href="#fit">Paradigm Shift</a>
+        <a href="#role">0→1の役割と働き方</a>
+        <a href="#why-eng">技術的挑戦</a>
+        <a href="#req">求める人物像</a>
+        <a href="#growth">キャリア</a>
         <a href="#team">チーム</a>
         <a href="#process">選考フロー</a>
         <a href="#faq">FAQ</a>
@@ -65,16 +79,16 @@
       <script>for (let i = 0; i < 32; i++)document.write('<i></i>');</script>
     </div>
     <div class="wrap">
-      <div><span class="kicker-product">Scheduler System for AI Agent Inference</span></div>
-      <span class="kicker">Careers / Tech Lead, Scheduler Systems</span>
-      <h1>AIエージェント推論を支える<br><span class="hl">異種GPUスケジューリング基盤</span><br>テックリード</h1>
-      <div class="role-en">Tech Lead / Lead Systems Engineer</div>
+      <div><span class="kicker-founding">0→1 Founding Initiative</span></div>
+      <span class="kicker">Careers / Founding Tech Lead, Next-Gen Compute Architecture</span>
+      <h1>AIエージェント時代の新しいコンピュート基盤を<br><span class="hl">ゼロから設計・立ち上げる</span><br>ファウンディング・テックリード</h1>
+      <div class="role-en">Founding Tech Lead / Staff Systems Architect</div>
       <p class="summary">
-        初期メンバーとしてスケジューラ基盤のシステム開発をリードします。AIエージェントの推論ワークロードを最適なGPUノードへ配置・実行する分散基盤を設計・開発し、顧客のGPUクラスタ環境への導入と実証を進めます。
+        私たちは現在、AIエージェント推論の爆発的増加に伴うコンピュート資源の構造的ボトルネックを解決する、全く新しい分散スケジューラ基盤を立ち上げています。本ポジションは、最初のコードとアーキテクチャを決定づけ、ゼロからシステム全体を構築・リードするファウンディング・エンジニア（最初のテクニカルリード）の募集です。
       </p>
       <div class="hero-btns">
-        <a class="btn-primary" href="#apply">カジュアル面談に応募する</a>
-        <a class="btn-ghost" href="#role">仕事内容を見る</a>
+        <a class="btn-primary" href="#apply">カジュアル面談（構想共有）</a>
+        <a class="btn-ghost" href="#role">0→1の役割と働き方を見る</a>
       </div>
     </div>
   </header>
@@ -84,41 +98,52 @@
     <div class="wrap">
       <div class="facts-row">
         <div class="fact">
-          <div class="l">Report to</div>
-          <div class="v">CTO</div>
+          <div class="l">Phase</div>
+          <div class="v">0→1 Founding Phase<br>（初期立ち上げ）</div>
+        </div>
+        <div class="fact">
+          <div class="l">Role & Scope</div>
+          <div class="v">Founding Tech Lead<br>白紙からの技術選定・全権</div>
+        </div>
+        <div class="fact">
+          <div class="l">Work Style</div>
+          <div class="v">非同期・自律駆動<br>副業/週数日〜参画可</div>
         </div>
         <div class="fact">
           <div class="l">Location</div>
-          <div class="v">東京・六本木<br>リモート可</div>
-        </div>
-        <div class="fact">
-          <div class="l">Type</div>
-          <div class="v">業務委託 / 副業開始可<br>正社員登用あり</div>
+          <div class="v">東京・六本木<br>フルリモート可</div>
         </div>
         <div class="fact">
           <div class="l">Language</div>
           <div class="v">英語（仕様・開発）<br>日本語歓迎</div>
         </div>
-        <div class="fact">
-          <div class="l">Comp</div>
-          <div class="v">応相談</div>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== ABOUT PRODUCT ===== -->
+  <!-- ===== ABOUT PRODUCT (PROBLEM SPACE) ===== -->
   <section class="dark" id="about" style="border-top: 1px solid rgba(255,255,255,.06);">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="kicker">About Product</span>
-        <h2>異世代・異種GPUクラスタを統合する推論スケジューラ</h2>
+        <span class="kicker">The Problem Space</span>
+        <h2>私たちが解こうとしている、極めて大きな未解決の問い</h2>
         <p>
-          AIエージェントの推論需要が急増する中、すべての処理に最新の高価なGPUを割り当て続ける運用は持続可能ではありません。datagustoは、タスクごとの締め切りや品質要件に応じて新旧・異種のGPUノードへ適切にジョブを分散配置し、GPUインフラの利用効率を最大化するスケジューラ基盤を開発しています。
+          AIが「人間が画面の前で即答を待つチャット」から「24時間自律的に思考・行動するエージェント」へとシフトする今、既存のGPUインフラや推論スタックは根本的な構造限界に直面しています。私たちはこの不可逆なパラダイムシフトを見据え、エージェント推論に特化した新しい分散オーケストレーション基盤をゼロから創り出しています。
         </p>
       </div>
 
       <div class="card-3">
+        <div class="card reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3>0から創る、白紙の設計図</h3>
+          <p>既存コードの改修や運用ではありません。未踏領域におけるアーキテクチャ策定、言語・技術スタック選定、コアエンジンの初期実装までを自らの手で牽引します。</p>
+        </div>
         <div class="card reveal">
           <div class="ic">
             <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
@@ -127,106 +152,114 @@
               <line x1="12" y1="17" x2="12" y2="21"></line>
             </svg>
           </div>
-          <h3>新旧混在・異種GPUの最適活用</h3>
-          <p>最新GPUだけでなく、A100やL40Sなどの旧世代GPUやAMD環境を混載運用し、全ジョブを納期内に最小コストで処理します。</p>
+          <h3>エージェント時代の計算資源シフト</h3>
+          <p>長大化する推論ワークロードと多様なハードウェア環境を前提に、限られた高密度コンピュートをどう再定義・最大効率化するかという世界規模の難題に挑みます。</p>
         </div>
         <div class="card reveal">
           <div class="ic">
             <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
               <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
+              <path d="M12 6v6l4 2"></path>
             </svg>
           </div>
-          <h3>分〜時間単位のデッドライン制御</h3>
-          <p>画面の前で人が待つチャットと異なり、24時間稼働するエージェントジョブの許容納期を把握し、夜間やアイドル時間に集約します。</p>
-        </div>
-        <div class="card reveal">
-          <div class="ic">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
-              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
-            </svg>
-          </div>
-          <h3>ログに基づく継続的な学習ループ</h3>
-          <p>ハードウェアメトリクスとエージェント側のログを突き合わせ、実測データを通じて予測精度と配置判断を継続的に更新します。</p>
+          <h3>グローバル実証とインパクト</h3>
+          <p>机上の空論にとどまらず、国内外の最前線にある大規模クラスタ環境へ直接持ち込み、圧倒的な効率向上と実測インパクトを最短で証明します。</p>
         </div>
       </div>
 
       <div class="callout reveal">
-        既存の推論基盤は「秒単位の応答速度」を一律に追求しますが、私たちは「分〜時間単位の締め切り」を扱います。本ポジションはその最適化を顧客の既存GPUインフラ上で実際に稼働させる役割です。
+        <b>※ プロジェクトの技術詳細について：</b>
+        独自の技術アプローチやアルゴリズム、具体的なプロダクト仕様の全貌は、カジュアル面談にて創業者・テクニカルリードより直接ビジョンと共にお話しいたします。
       </div>
     </div>
   </section>
 
-  <!-- ===== WHERE WE FIT (COMPARE) ===== -->
+  <!-- ===== WHERE WE FIT (PARADIGM SHIFT) ===== -->
   <section class="light" id="fit">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="kicker">Where We Fit</span>
-        <h2>従来のLLM推論基盤と datagusto スケジューラの比較</h2>
-        <p>従来の推論エンジンが「人間のための秒単位の応答速度」を一律に追求するのに対し、datagustoはエージェントの業務コンテキスト（締め切り・品質許容度）をGPU配置に直結させます。</p>
+        <span class="kicker">Paradigm Shift</span>
+        <h2>従来の推論パラダイム vs. エージェント時代の新コンピュート</h2>
+        <p>なぜ今、既存のインフラスタックをゼロベースで見直し、全く新しい基盤を1から創る必要があるのか。</p>
       </div>
 
       <div class="compare">
         <div class="cmp old reveal">
-          <h3>従来のLLM推論基盤 (vLLM / SGLang 単体運用等)</h3>
-          <div class="sub">画面の前で人間が待つチャットボット前提の設計</div>
+          <h3>従来の推論スタック（Human-facing）</h3>
+          <div class="sub">人間が画面の前で即答を待つ時代に作られた前提</div>
           <dl>
-            <dt>応答目標</dt>
-            <dd>秒単位・ミリ秒単位の即時返答</dd>
-            <dt>ジョブの重要度</dt>
-            <dd>全リクエストを一律平等・最速で処理</dd>
-            <dt>ハードウェア調達</dt>
-            <dd>ピーク負荷に合わせ高価な最新GPU（H100等）を過剰調達</dd>
-            <dt>エージェントタスク</dt>
-            <dd>非緊急なバックオフィス業務も高額なリソースを消費</dd>
+            <dt>ワークロード特性</dt>
+            <dd>短時間の単発チャット、秒単位・ミリ秒の即時応答を一律に追求</dd>
+            <dt>スケジューリング</dt>
+            <dd>先着順（FIFO）または静的クォータによる単純なキュー制御</dd>
+            <dt>インフラの前提</dt>
+            <dd>ピーク需要に合わせて同一スペックの最新GPUを過剰に確保・待機</dd>
+            <dt>エージェント適性</dt>
+            <dd>長時間のバックグラウンド推論や複雑なツール連鎖でリソースが破綻</dd>
           </dl>
         </div>
 
         <div class="cmp new reveal">
-          <h3>datagusto エージェント推論スケジューラ</h3>
-          <div class="sub">エージェントの納期とGPUインフラを最適接続</div>
+          <h3>私たちが創る次世代基盤（Agent-native）</h3>
+          <div class="sub">自律型エージェントが24時間自律稼働する時代を再定義</div>
           <dl>
-            <dt>応答目標</dt>
-            <dd>分〜時間単位（業務デッドラインから逆算）</dd>
-            <dt>ジョブの重要度</dt>
-            <dd>エージェントの役割・利用目的から真の緊急度を推定</dd>
-            <dt>ハードウェア調達</dt>
-            <dd>旧世代GPU（A100/L40S）やアイドル時間を賢くフル活用</dd>
-            <dt>エージェントタスク</dt>
-            <dd>納期遵守率100%を維持しながらGPU推論コストを大幅削減</dd>
+            <dt>ワークロード特性</dt>
+            <dd>複数ターンの長大Reasoning、業務コンテキストと品質要求に基づく最適化</dd>
+            <dt>スケジューリング</dt>
+            <dd>タスクの文脈とコンピュート資源をダイナミックに結ぶ自律オーケストレーション</dd>
+            <dt>インフラの前提</dt>
+            <dd>異種・異世代のGPUクラスタを横断し、遊休時間と計算資源を極限まで活用</dd>
+            <dt>開発のアプローチ</dt>
+            <dd><strong>白紙からアーキテクチャを設計し、世界基準の基盤を1から構築</strong></dd>
           </dl>
         </div>
       </div>
 
       <div class="callout soft reveal">
-        datagustoはvLLMやSGLangなどの推論エンジンを置き換えるものではありません。KubernetesやSlurm上のクラスタ層に位置し、エージェントジョブを「どのGPUで・いつ動かすか」を最適制御するインフラです。
+        既存ツールのラッパーや単なるチューニングではありません。「エージェント推論における真のボトルネックは何か」を突き詰め、これからの10年を支えるコアシステムを立ち上げます。
       </div>
     </div>
   </section>
 
-  <!-- ===== ROLE DETAILS ===== -->
+  <!-- ===== ROLE DETAILS (0->1 WORK STYLE & AUTONOMY) ===== -->
   <section class="light alt" id="role">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="kicker">The Role</span>
-        <h2>異種GPUクラスタ向けスケジューラ開発と<br>エンタープライズ本番環境への導入・検証</h2>
+        <span class="kicker">Founding & Work Style</span>
+        <h2>「1から新しいものを作り上げる」<br>ファウンディングの裁量と0→1の働き方</h2>
         <p>
-          スケジューラ基盤のシステム全般（配置ロジック、分散キューイング、DCGMメトリクス突合、推定モデルの本番組み込み）を統括し、顧客クラスタでの実証をリードします。
-          クラスタ層の最適化アーキテクチャの設計から実装までを一貫して担い、ファウンディングエンジニアとして大きな裁量を持って開発を進めます。各ブロックをタップすると詳細が開きます。
+          まだ誰も解いたことのない課題に対して、最初の技術意思決定を下し、最初のプロトタイプを動かし、プロダクションへと昇華させる。
+          大企業の細分化された分業体制とは真逆の、圧倒的な裁量・自律性・スピード感を持った「0→1のビルダーのための環境」です。
         </p>
+      </div>
+
+      <!-- 0->1 Work Style Highlights -->
+      <div class="grid-2 reveal" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 36px;">
+        <div class="card" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 28px;">
+          <div style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px;">0→1の自由と技術決定権</div>
+          <h3 style="font-size: 18px; margin-bottom: 12px; color: var(--text);">レガシーなし。白紙からスタックを選び切る</h3>
+          <p style="color: var(--muted); font-size: 14px; line-height: 1.8;">
+            引き継ぐべきレガシーコードも、縛られる社内標準フレームワークもありません。パフォーマンスと堅牢性を最大化するために最適な技術スタック（Rust, Go, C++等）を自らの意思で選定し、最初のコミットから主導できます。
+          </p>
+        </div>
+
+        <div class="card" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 28px;">
+          <div style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px;">柔軟で自律的なワーキングスタイル</div>
+          <h3 style="font-size: 18px; margin-bottom: 12px; color: var(--text);">非同期中心・副業/週数日からの0→1立ち上げ歓迎</h3>
+          <p style="color: var(--muted); font-size: 14px; line-height: 1.8;">
+            形式的な会議や承認フローは排除し、テキスト主体の明快な非同期コミュニケーションで自律駆動。まずは現在の本業を続けながら副業・業務委託（週数日〜）として0→1の立ち上げに参画し、双方が納得した段階でコアメンバー・フルタイムへ移行する柔軟な働き方が可能です。
+          </p>
+        </div>
       </div>
 
       <div class="roadmap-block reveal"
         style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px; margin-bottom: 36px;">
-        <h3 style="margin-bottom: 16px; color: var(--text);">最初の3〜6ヶ月で取り組むこと</h3>
+        <h3 style="margin-bottom: 16px; color: var(--text);">0→1の立ち上げフェーズで担うこと</h3>
         <ul style="padding-left: 20px; color: var(--muted); font-size: 15px; line-height: 1.8;">
-          <li style="margin-bottom: 8px;"><strong>1. MVPの配置・実行ロジック稼働:</strong> 異世代・異ベンダーのGPU環境（H100, A100, L40S,
-            AMD）でMVPを安定稼働させる</li>
-          <li style="margin-bottom: 8px;"><strong>2. 計測・ログ基盤の構築:</strong> Applied
-            Scientistの仕様に基づき、DCGM/vLLM等のメトリクスとエージェントログを紐付ける</li>
-          <li style="margin-bottom: 8px;"><strong>3. PoC顧客クラスタでの実証:</strong> 顧客GPU環境へデプロイし、納期遵守率とコスト削減実績を測定する</li>
-          <li style="margin-bottom: 8px;"><strong>4. 推定モデルの本番化:</strong> Applied
-            Scientistが設計した締め切り・品質推定モデルと週次更新ループを本番システムとして実装する</li>
+          <li style="margin-bottom: 8px;"><strong>1. アーキテクチャのゼロベース策定:</strong> 言語選定から通信・状態管理・分散プロトコルまで、白紙から設計</li>
+          <li style="margin-bottom: 8px;"><strong>2. 最初の動くコアエンジンの実装:</strong> 構想を最速で動くコードへと落とし込み、初期クラスタで実証</li>
+          <li style="margin-bottom: 8px;"><strong>3. 先端ハードウェア・分散環境での検証:</strong> 国内外のコンピュート環境へ持ち込み、世界初の実証データを取得</li>
+          <li style="margin-bottom: 8px;"><strong>4. ファウンディングエンジニアとしてのカルチャー確立:</strong> 初期コードベースの設計基準、技術文化、後続エンジニアの採用基準を策定</li>
         </ul>
       </div>
 

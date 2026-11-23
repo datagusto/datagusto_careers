@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tech Lead, Scheduler Systems — datagusto Careers</title>
+  <title>Founding Tech Lead (Next-Gen AI Compute & Distributed Scheduler 0→1) — datagusto Careers</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -12,7 +12,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/job-detail.css">
   <style>
-    .kicker-product {
+    .kicker-founding {
       display: inline-flex;
       align-items: center;
       gap: 6px;
@@ -21,12 +21,26 @@
       font-weight: 700;
       letter-spacing: .08em;
       text-transform: uppercase;
-      color: var(--teal);
-      background: rgba(255, 122, 51, .12);
-      border: 1px solid rgba(255, 122, 51, .3);
+      color: #fff;
+      background: rgba(255, 122, 51, 0.9);
+      border: 1px solid rgba(255, 122, 51, 1);
       padding: 4px 10px;
       border-radius: 999px;
       margin-bottom: 16px;
+    }
+    .kicker-founding::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
     }
   </style>
 </head>
@@ -39,12 +53,12 @@
       <a class="brand" href="index-en.html"><img class="brand-logo" src="../assets/FeNhE14JPYchGuEUf45sdH35no.svg"
           alt="datagusto" /></a>
       <div class="nav-links">
-        <a href="#about">About Product</a>
-        <a href="#fit">Where We Fit</a>
-        <a href="#role">Role</a>
-        <a href="#why-eng">Why This Matters</a>
-        <a href="#req">Requirements</a>
-        <a href="#growth">Roadmap & Career</a>
+        <a href="#about">Problem Space</a>
+        <a href="#fit">Paradigm Shift</a>
+        <a href="#role">0→1 Role & Style</a>
+        <a href="#why-eng">Technical Frontier</a>
+        <a href="#req">Profile</a>
+        <a href="#growth">Career</a>
         <a href="#team">Team</a>
         <a href="#process">Process</a>
         <a href="#faq">FAQ</a>
@@ -65,16 +79,16 @@
       <script>for (let i = 0; i < 32; i++)document.write('<i></i>');</script>
     </div>
     <div class="wrap">
-      <div><span class="kicker-product">Scheduler System for AI Agent Inference</span></div>
-      <span class="kicker">Careers / Tech Lead, Scheduler Systems</span>
-      <h1>Run Agent Workloads on GPUs<br><span class="hl">On Deadline and at Low Cost</span><br>Tech Lead, Scheduler Systems</h1>
-      <div class="role-en">Founding Engineer / Systems Lead</div>
+      <div><span class="kicker-founding">0→1 Founding Initiative</span></div>
+      <span class="kicker">Careers / Founding Tech Lead, Next-Gen Compute Architecture</span>
+      <h1>Architect the Next-Gen Compute Stack<br><span class="hl">From Scratch (0 to 1)</span><br>Founding Tech Lead</h1>
+      <div class="role-en">Founding Tech Lead / Staff Systems Architect</div>
       <p class="summary">
-        You will be the founding team member in charge of systems. You will build the scheduler platform that executes where and when agent workloads run on GPUs, and deploy it into customers' real GPU environments.
+        We are building a ground-breaking distributed scheduler platform to resolve the structural bottleneck of compute resources for autonomous AI agent workloads. As our first technical lead, you will own the initial architecture, write the core engine from a clean slate, and drive world-first production deployments.
       </p>
       <div class="hero-btns">
-        <a class="btn-primary" href="#apply">Apply for a Casual Talk</a>
-        <a class="btn-ghost" href="#role">View Role Details</a>
+        <a class="btn-primary" href="#apply">Book a Casual Talk (Vision Sync)</a>
+        <a class="btn-ghost" href="#role">Explore 0→1 Scope & Work Style</a>
       </div>
     </div>
   </header>
@@ -84,39 +98,52 @@
     <div class="wrap">
       <div class="facts-row">
         <div class="fact">
-          <div class="l">Report to</div>
-          <div class="v">CTO</div>
+          <div class="l">Phase</div>
+          <div class="v">0→1 Founding Phase<br>(Early Stage)</div>
+        </div>
+        <div class="fact">
+          <div class="l">Role & Scope</div>
+          <div class="v">Founding Tech Lead<br>Full Stack & Arch Ownership</div>
+        </div>
+        <div class="fact">
+          <div class="l">Work Style</div>
+          <div class="v">Async-First & Autonomous<br>Side-Project / Contract Welcome</div>
         </div>
         <div class="fact">
           <div class="l">Location</div>
-          <div class="v">Tokyo, Japan (Hybrid / Remote)</div>
-        </div>
-        <div class="fact">
-          <div class="l">Type</div>
-          <div class="v">Part-time converting to Full-time</div>
+          <div class="v">Tokyo, Japan<br>(Full Remote OK)</div>
         </div>
         <div class="fact">
           <div class="l">Language</div>
-          <div class="v">English (Specs & Code) / Japanese (Nice to have)</div>
-        </div>
-        <div class="fact">
-          <div class="l">Comp</div>
-          <div class="v">-</div>
+          <div class="v">English (Code & Specs)<br>Japanese Welcome</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== ABOUT PRODUCT ===== -->
+  <!-- ===== ABOUT PRODUCT (PROBLEM SPACE) ===== -->
   <section class="dark" id="about" style="border-top: 1px solid rgba(255,255,255,.06);">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="kicker">About Product</span>
-        <h2>Heterogeneous GPU Scheduling for Agentic Workloads</h2>
-        <p>datagusto connects workload context to GPU allocation. AI agents run tasks 24/7 without a human waiting in front of a screen. Packing non-urgent jobs into idle time on older-generation GPUs dramatically lowers enterprise compute costs.</p>
+        <span class="kicker">The Problem Space</span>
+        <h2>A Massive, Unsolved Challenge in the Age of AI Agents</h2>
+        <p>
+          As AI shifts from interactive chatbots to 24/7 autonomous agents executing complex multi-step reasoning, legacy GPU infrastructure and serving stacks are hitting a fundamental structural wall. We are reimagining compute orchestration from the ground up to unlock massive efficiency across heterogeneous GPU clusters.
+        </p>
       </div>
 
       <div class="card-3">
+        <div class="card reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3>0 to 1 Clean-Slate Architecture</h3>
+          <p>No legacy code or bureaucratic constraints. You will evaluate paradigms, select languages (Rust, Go, C++), and write the core scheduling engine from day one.</p>
+        </div>
         <div class="card reveal">
           <div class="ic">
             <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
@@ -125,114 +152,126 @@
               <line x1="12" y1="17" x2="12" y2="21"></line>
             </svg>
           </div>
-          <h3>Heterogeneous GPU Clusters</h3>
-          <p>Execute agent workloads across mixed generations (H100, A100, L40S) and vendors (NVIDIA, AMD) on deadline and at lowest cost.</p>
+          <h3>Agentic Compute Paradigm</h3>
+          <p>Tackle long-context memory footprints, multi-turn state reuse, and multi-vendor hardware coordination across a global computing fleet.</p>
         </div>
         <div class="card reveal">
           <div class="ic">
             <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
               <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
+              <path d="M12 6v6l4 2"></path>
             </svg>
           </div>
-          <h3>Deadline-Aware (Minutes to Hours)</h3>
-          <p>Unlike interactive chatbots requiring immediate response, autonomous agent tasks run 24/7 with flexible deadlines, unlocking massive idle-time packing.</p>
-        </div>
-        <div class="card reveal">
-          <div class="ic">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
-              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
-            </svg>
-          </div>
-          <h3>Self-Improving Accuracy Loop</h3>
-          <p>Put deadline and quality estimation models into production, reconciling GPU-side and agent-side telemetry to continuously improve placement decisions.</p>
+          <h3>Global Field Validation</h3>
+          <p>Beyond theoretical benchmarks, validate your system directly on large-scale GPU clusters across enterprise partners in Tokyo, the US, and Asia.</p>
         </div>
       </div>
 
       <div class="callout reveal">
-        Existing inference platforms pursue response speeds measured in seconds. We work with deadlines measured in minutes to hours. This role makes those decisions actually run on real customer GPU clusters.
+        <b>※ Technical In-Depth Discussion:</b>
+        Our core architectural designs, algorithms, and technical execution roadmaps are shared directly during a casual conversation with the founders and CTO.
       </div>
     </div>
   </section>
 
-  <!-- ===== WHERE WE FIT (COMPARE) ===== -->
+  <!-- ===== WHERE WE FIT (PARADIGM SHIFT) ===== -->
   <section class="light" id="fit">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="kicker">Where We Fit</span>
-        <h2>Traditional LLM Serving vs datagusto Scheduler</h2>
-        <p>Existing inference platforms optimize for instant sub-second response times for humans. We optimize for deadline-aware, cost-efficient 24/7 autonomous agent execution.</p>
+        <span class="kicker">Paradigm Shift</span>
+        <h2>Legacy Inference Platforms vs. Agent-Native Compute</h2>
+        <p>Why we must rebuild the infrastructure layer from first principles for autonomous agents.</p>
       </div>
 
       <div class="compare">
         <div class="cmp old reveal">
-          <h3>Existing LLM Serving Platforms</h3>
-          <div class="sub">Optimized for instant interactive chat</div>
+          <h3>Legacy Serving Stacks (Human-Facing)</h3>
+          <div class="sub">Designed for humans waiting in front of screens</div>
           <dl>
             <dt>Latency Target</dt>
             <dd>Sub-second / instant token delivery for human users</dd>
-            <dt>Workload Context</dt>
-            <dd>Treats every token request with equal priority</dd>
-            <dt>Hardware Allocation</dt>
-            <dd>Provisioning peak capacity with costly top-tier GPUs</dd>
-            <dt>Background Agent Jobs</dt>
-            <dd>Non-urgent background jobs consume expensive peak GPUs</dd>
+            <dt>Scheduling</dt>
+            <dd>First-in-first-out (FIFO) or static queue priority</dd>
+            <dt>Provisioning</dt>
+            <dd>Over-provisioning identical, costly top-tier GPUs for peak spikes</dd>
+            <dt>Agent Workloads</dt>
+            <dd>Autonomous multi-hour workflows break compute cost models</dd>
           </dl>
         </div>
 
         <div class="cmp new reveal">
-          <h3>datagusto Agentic Scheduler</h3>
-          <div class="sub">Deadline-aware orchestration across heterogeneous GPUs</div>
+          <h3>Our Next-Gen Architecture (Agent-Native)</h3>
+          <div class="sub">Built for 24/7 continuous autonomous agent operations</div>
           <dl>
             <dt>Latency Target</dt>
-            <dd>Deadline-aware (minutes to hours depending on role)</dd>
-            <dt>Workload Context</dt>
-            <dd>Extracts urgency & quality tolerance from agent context</dd>
-            <dt>Hardware Allocation</dt>
-            <dd>Packs jobs across older GPUs (A100, L40S) & off-peak hours</dd>
-            <dt>Background Agent Jobs</dt>
-            <dd>Guaranteed deadline adherence at 50–70% lower GPU cost</dd>
+            <dd>Contextual SLA & flexible deadlines (minutes to hours)</dd>
+            <dt>Scheduling</dt>
+            <dd>Dynamic orchestration matching agent urgency with GPU capacity</dd>
+            <dt>Provisioning</dt>
+            <dd>Unifies heterogeneous & mixed-generation clusters (A100, L40S, AMD)</dd>
+            <dt>Engineering Scope</dt>
+            <dd><strong>Greenfield system design defining the global industry standard</strong></dd>
           </dl>
         </div>
       </div>
 
       <div class="callout soft reveal">
-        datagusto does not replace inference engines like vLLM or SGLang. Instead, we sit at the cluster layer (Kubernetes, Slurm, Kueue), intelligently routing and scheduling agentic workloads to the right GPU at the right time.
+        We are not building a wrapper or simple tuning script. We are defining the foundational distributed control plane for the next decade of autonomous AI agent computing.
       </div>
     </div>
   </section>
 
-  <!-- ===== ROLE DETAILS ===== -->
+  <!-- ===== ROLE DETAILS (0->1 & WORK STYLE) ===== -->
   <section class="light alt" id="role">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="kicker">The Role</span>
-        <h2>Architecting Cluster-Layer Schedulers for Mixed GPUs<br>& Leading Production Deployments on Customer Infrastructure</h2>
+        <span class="kicker">Founding Scope & Work Style</span>
+        <h2>Building from 0 to 1:<br>Autonomy, Technical Ownership & Culture</h2>
         <p>
-          Own the end-to-end systems architecture of the GPU scheduler platform—placement algorithms, telemetry instrumentation, open-source orchestrator integrations, and production model pipelines.
-          You will build <b>defining distributed systems expertise solving the global GPU bottleneck</b> and <b>founding engineering leadership with equity</b>. Tap each block below to explore details.
+          Make foundational architectural decisions, ship the first production lines of code, and establish our engineering culture.
+          This role is designed for true system builders who thrive in high-autonomy, high-ownership early-stage environments.
         </p>
       </div>
 
-<div class="roadmap-block reveal" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px; margin-bottom: 36px;">
-        <h3 style="margin-bottom: 16px; color: var(--text);">What you will do in the first 3–6 months</h3>
+      <!-- 0->1 Work Style Highlights -->
+      <div class="grid-2 reveal" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 36px;">
+        <div class="card" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 28px;">
+          <div style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px;">Zero Legacy, Total Ownership</div>
+          <h3 style="font-size: 18px; margin-bottom: 12px; color: var(--text);">Clean Slate Technical Freedom</h3>
+          <p style="color: var(--muted); font-size: 14px; line-height: 1.8;">
+            No legacy baggage or enterprise bureaucracy. You have full discretion over system languages (Rust, Go, C++), protocols, and patterns to build the world's most performant distributed scheduler.
+          </p>
+        </div>
+
+        <div class="card" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 28px;">
+          <div style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px;">Flexible & Async-First</div>
+          <h3 style="font-size: 18px; margin-bottom: 12px; color: var(--text);">Side-Project & Part-Time Start Welcome</h3>
+          <p style="color: var(--muted); font-size: 14px; line-height: 1.8;">
+            We operate with clear, written async communication and minimal meetings. Start part-time or on contract (a few days/week) while keeping your current commitments, converting to full-time founding leadership once mutual conviction is established.
+          </p>
+        </div>
+      </div>
+
+      <div class="roadmap-block reveal" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px; margin-bottom: 36px;">
+        <h3 style="margin-bottom: 16px; color: var(--text);">What you will own in the 0→1 phase</h3>
         <ul style="padding-left: 20px; color: var(--muted); font-size: 15px; line-height: 1.8;">
-          <li style="margin-bottom: 8px;"><strong>1. Get the MVP running:</strong> Deploy placement & execution logic across GPU environments of mixed generations (A100, H100, L40S) and vendors.</li><li style="margin-bottom: 8px;"><strong>2. Build instrumentation:</strong> Lay down telemetry linking GPU-side (DCGM, vLLM/SGLang metrics) and agent-side records according to the logging spec.</li><li style="margin-bottom: 8px;"><strong>3. Deploy to PoC customer clusters:</strong> Measure deadline adherence rate and cost reductions in live enterprise environments.</li><li style="margin-bottom: 8px;"><strong>4. Implement estimation models:</strong> Turn the models and update loops designed by the Applied Scientist into a production system running weekly.</li>
+          <li style="margin-bottom: 8px;"><strong>1. Architecture from Scratch:</strong> Design distributed protocols, state management, and core runtime in Rust/Go/C++.</li>
+          <li style="margin-bottom: 8px;"><strong>2. Core Engine Implementation:</strong> Build the first working scheduling prototypes and deploy to test clusters.</li>
+          <li style="margin-bottom: 8px;"><strong>3. Live Cluster Field Proof:</strong> Validate performance and cost reduction metrics in actual GPU cluster environments.</li>
+          <li style="margin-bottom: 8px;"><strong>4. Founding Engineering Culture:</strong> Set the technical bar, testing standards, and participate in hiring the initial team.</li>
         </ul>
       </div>
 
-      
-        
-          <div class="role-block open reveal">
+      <div class="role-block open reveal">
         <div class="role-head"><span class="num">01</span>
-          <h3>Placement & Execution Engine</h3><span class="tog">+</span>
+          <h3>Core Placement & Runtime Architecture</h3><span class="tog">+</span>
         </div>
         <div class="role-body">
           <div class="role-body-inner">
             <ul>
-              <li>Implement logic deciding placement and execution timing across heterogeneous GPU nodes</li>
-              <li>Integrate with Kubernetes, Slurm, KAI Scheduler, Kueue, Volcano, llm-d, and Dynamo</li>
-              <li>Optimize GPU memory, batching, and KV/prefix cache utilization for long-context agent reasoning</li>
+              <li>Architect and implement the next-gen distributed placement engine tailored for autonomous agents</li>
+              <li>Lead stack and language decisions (Rust, Go, C++) for high-throughput, low-latency execution</li>
+              <li>Design memory, state cache, and heterogeneous hardware routing strategies</li>
             </ul>
           </div>
         </div>
@@ -240,14 +279,14 @@
 
       <div class="role-block reveal">
         <div class="role-head"><span class="num">02</span>
-          <h3>Telemetry, Benchmarking & Profiling</h3><span class="tog">+</span>
+          <h3>Telemetry & Feedback Instrumentation</h3><span class="tog">+</span>
         </div>
         <div class="role-body">
           <div class="role-body-inner">
             <ul>
-              <li>Collect profiles and benchmarks for each combination of GPU generation × model × load level</li>
-              <li>Build instrumentation linking DCGM GPU metrics, vLLM/SGLang engine state, and agent task events</li>
-              <li>Reconcile multi-turn agent logs to measure deadline adherence and GPU idle-time compaction</li>
+              <li>Build real-time telemetry systems reconciling compute metrics with agent task progress</li>
+              <li>Collaborate closely with Applied Scientists to integrate predictive models into production</li>
+              <li>Establish high-precision benchmarking to demonstrate massive efficiency gains</li>
             </ul>
           </div>
         </div>
@@ -255,18 +294,20 @@
 
       <div class="role-block reveal">
         <div class="role-head"><span class="num">03</span>
-          <h3>Productionizing Estimation Models & Customer Deployment</h3><span class="tog">+</span>
+          <h3>Field Validation & Global Scale</h3><span class="tog">+</span>
         </div>
         <div class="role-body">
           <div class="role-body-inner">
             <ul>
-              <li>Implement production update loops and shadow-execution mechanisms designed by the Applied Scientist</li>
-              <li>Deploy into customer environments (including on-premises and air-gapped enterprise clusters)</li>
-              <li>Lead joint technical validation with customer infrastructure engineers in Tokyo, US, and APAC</li>
+              <li>Deploy and validate systems within cutting-edge enterprise partner clusters in Tokyo, the US, and APAC</li>
+              <li>Incorporate empirical cluster realities into the core architectural loop</li>
+              <li>Prepare modular architectures for future open-source ecosystem expansion</li>
             </ul>
           </div>
         </div>
       </div>
+    </div>
+  </section>
     </div>
   </section>
 
@@ -274,22 +315,22 @@
   <section class="dark" id="why-eng" style="background: var(--ink);">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="kicker">For Engineers</span>
-        <h2>It is the workload side, not the GPU side, that knows which jobs are not urgent.</h2>
-        <p>AI agents generate heavy, continuous background workloads. Rather than provisioning expensive new-generation clusters for every job, datagusto bridges the gap between agent priorities and multi-vendor GPU capacity.</p>
+        <span class="kicker">Why This Matters</span>
+        <h2>Why Building from 0 to 1 in Compute Matters Now</h2>
+        <p>As autonomous AI agents redefine the software landscape, re-architecting compute scheduling is the highest-leverage frontier in AI infrastructure.</p>
       </div>
 
       <div class="grid-2" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 36px;">
         <div class="card reveal" style="background: var(--ink2); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 32px;">
-          <h3 style="color:var(--white); margin-bottom: 12px;">The Core Frontier</h3>
+          <h3 style="color:var(--white); margin-bottom: 12px;">No De Facto Standard Exists</h3>
           <p style="color:var(--muted-d); font-size: 14px; line-height: 1.8;">
-            Most inference engines treat every token request with equal urgency. In agentic workflows, complex research, code review, and back-office pipelines can tolerate scheduled execution. Knowing the deadline unlocks massive optimization potential across GPU generation, model size, and queue timing.
+            Just as the early web required new web servers and HTTP load balancers, the agentic era requires a dedicated compute orchestration layer. This is an extraordinary window to define the global standard from scratch rather than tuning legacy setups.
           </p>
         </div>
         <div class="card reveal" style="background: var(--ink2); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 32px;">
-          <h3 style="color:var(--white); margin-bottom: 12px;">Your Direct Impact</h3>
+          <h3 style="color:var(--white); margin-bottom: 12px;">Founding Leadership & Equity Leverage</h3>
           <p style="color:var(--muted-d); font-size: 14px; line-height: 1.8;">
-            As the systems lead, you own the placement logic, telemetry instrumentation, and integration into Kubernetes/Slurm clusters in PoC customer environments across Tokyo, Taiwan, Singapore, and the US.
+            Instead of being a cog in a large organization, join as the foundational systems architect shaping technical destiny, engineering culture, and long-term equity upside.
           </p>
         </div>
       </div>
@@ -300,36 +341,45 @@
   <section class="light" id="req" style="background: var(--light);">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="kicker">Requirements</span>
-        <h2>Required & Preferred Qualifications</h2>
-        <p>At the résumé stage, we look at production GPU inference experience, distributed systems fundamentals, and implementation craftsmanship.</p>
+        <span class="kicker">Founding Profile</span>
+        <h2>Candidate Profile (Must & Nice to Have)</h2>
+        <p>We prioritize foundational systems craftsmanship, a builder mindset, and the ability to turn blank slates into working production runtimes.</p>
       </div>
 
       <div class="card reveal" style="margin-bottom: 24px; background: #fff; border: 1px solid var(--light2); border-radius: 8px; padding: 20px 28px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
-        <div style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase;">Key Stack</div>
-        <div style="font-size: 14px; color: var(--text); font-weight: 600;">Kubernetes, Slurm, GPU Inference, Rust / Python / Go</div>
+        <div style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase;">Focus Domain</div>
+        <div style="font-size: 14px; color: var(--text); font-weight: 600;">Distributed Systems Architecture, High-Throughput Runtimes, Low-Latency / GPU Compute, Systems Programming (Rust / Go / Python / C++)</div>
       </div>
 
       <div class="grid-2" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
         <div class="card reveal" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px;">
-          <div style="font-family: var(--disp); font-size: 12px; font-weight: 700; color: var(--teal); text-transform: uppercase; margin-bottom: 16px;">Required Qualifications</div>
+          <div style="font-family: var(--disp); font-size: 12px; font-weight: 700; color: var(--teal); text-transform: uppercase; margin-bottom: 16px;">Core Must-Haves</div>
           <ul style="padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.8;">
-            <li style="margin-bottom: 10px;">Experience operating and modifying production LLM inference workloads running on GPUs, on Kubernetes, Slurm, or similar</li><li style="margin-bottom: 10px;">Solid distributed systems fundamentals (concurrency, networking, databases, queueing, performance engineering)</li><li style="margin-bottom: 10px;">Master's or Ph.D., or equivalent practical experience (as a guide, 5+ years of software development)</li><li style="margin-bottom: 10px;">Excellent implementation and design skills in Python or Rust (Go is also acceptable), including debugging, profiling, and test design</li><li style="margin-bottom: 10px;">Understanding of current LLM API features (structured outputs, tool calling, reasoning-effort control, token metering, context management)</li><li style="margin-bottom: 10px;">Actively uses coding agents without taking their output at face value; verifies reasoning from high-level architecture</li><li style="margin-bottom: 10px;">Able to thrive in a small founding team where priorities evolve rapidly</li><li style="margin-bottom: 10px;">Technical reading and writing in English (materials and code deliverables are in English)</li>
+            <li style="margin-bottom: 10px;"><strong>Passion for 0→1 Building:</strong> Drive to design architectures and write initial implementations without relying on existing boilerplate.</li>
+            <li style="margin-bottom: 10px;"><strong>Strong CS & Distributed Fundamentals:</strong> Concurrency, memory models, distributed state consensus, network protocols, and high-throughput profiling.</li>
+            <li style="margin-bottom: 10px;"><strong>Expert Systems Programming:</strong> Production craftsmanship in Rust, Go, Python, or C++ with rigorous testing and debugging skills.</li>
+            <li style="margin-bottom: 10px;"><strong>GPU / Compute Infrastructure Familiarity:</strong> Hands-on experience with GPU clusters, Linux internals, or container orchestration at scale.</li>
+            <li style="margin-bottom: 10px;">High autonomy and decisiveness under the ambiguity of early-stage 0→1 initiatives.</li>
           </ul>
         </div>
 
         <div class="card reveal" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px;">
-          <div style="font-family: var(--disp); font-size: 12px; font-weight: 700; color: var(--muted-d); text-transform: uppercase; margin-bottom: 16px;">Preferred Qualifications</div>
+          <div style="font-family: var(--disp); font-size: 12px; font-weight: 700; color: var(--muted-d); text-transform: uppercase; margin-bottom: 16px;">Nice to Haves</div>
           <ul style="padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.8;">
-            <li style="margin-bottom: 10px;">Understanding of agentic inference workloads (context growth, reasoning tokens, tool-calling bursts, multi-turn state reuse)</li><li style="margin-bottom: 10px;">Contributions to or extensions on vLLM, SGLang, TensorRT-LLM, KAI Scheduler, Kueue, Volcano, or llm-d</li><li style="margin-bottom: 10px;">Optimization of GPU memory and KV/prefix caches for long-context workloads</li><li style="margin-bottom: 10px;">Experience connecting self-hosted LLM inference platforms to agent harnesses (Claude Code, Codex, OpenCode, etc.)</li><li style="margin-bottom: 10px;">High-throughput distributed systems experience (e.g. messaging, high-frequency trading)</li><li style="margin-bottom: 10px;">Experience leading technical validation and deployment at enterprise customer sites</li><li style="margin-bottom: 10px;">Experience operating AMD GPUs (ROCm)</li><li style="margin-bottom: 10px;">Business communication in Japanese; conversational English</li>
+            <li style="margin-bottom: 10px;">Early-stage startup experience as a founding engineer or lead architect.</li>
+            <li style="margin-bottom: 10px;">Contributions to open-source schedulers, distributed engines, or inference frameworks.</li>
+            <li style="margin-bottom: 10px;">Background in ultra-low latency or high-throughput distributed systems (FinTech, streaming, HPC).</li>
+            <li style="margin-bottom: 10px;">Experience leading customer-facing technical validation and cluster deployments.</li>
+            <li style="margin-bottom: 10px;">Conversational or business-level Japanese (nice to have, not required).</li>
           </ul>
         </div>
       </div>
 
       <div class="card reveal" style="margin-top: 24px; background: #fff; border: 1px solid rgba(226, 92, 24, 0.2); border-left: 4px solid var(--teal); border-radius: 8px; padding: 24px 32px;">
-        <h4 style="margin-bottom: 10px; color: var(--text);">Who this role is not for</h4>
+        <h4 style="margin-bottom: 10px; color: var(--text);">Who this role is (and isn't) for</h4>
         <ul style="padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.8;">
-          <li style="margin-bottom: 6px;">You want to focus only on optimizing GPU kernels or inference engine internals (this position owns the cluster scheduling layer)</li><li style="margin-bottom: 6px;">You want to work only on internal infrastructure without deploying to customer GPU environments</li>
+          <li style="margin-bottom: 6px;"><strong>Ideal Fit:</strong> Builders who want complete technical freedom to create a foundational computing platform from scratch and lead it into global scale.</li>
+          <li style="margin-bottom: 6px;"><strong>Not a Fit:</strong> Engineers who prefer well-defined specifications, mature codebases, or strictly siloed feature tickets.</li>
         </ul>
       </div>
     </div>
@@ -452,33 +502,33 @@
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="kicker">Selection Process</span>
-        <h2>Objective Evaluation Based on Real Problem Solving</h2>
-        <p>The core of our hiring is a paid work sample evaluated on objective metrics: deadline adherence and GPU cost.</p>
+        <h2>Selection Process</h2>
+        <p>A fast, transparent process focused on mutual vision alignment and practical systems craftsmanship.</p>
       </div>
       <div class="steps">
         
           <div class="step reveal">
             <div class="n">STEP 1</div>
-            <h4>Intro Conversation</h4>
-            <p>Discussion with CEO or CTO on business, scheduler technology, and background.</p>
+            <h4>Casual Vision Chat (30 min)</h4>
+            <p>1-on-1 with founders/CTO to discuss project vision, problem scope, and mutual fit. No formal prep or NDA required.</p>
           </div>
         
           <div class="step reveal">
             <div class="n">STEP 2</div>
-            <h4>Technical Interview (CTO)</h4>
-            <p>Distributed systems fundamentals and architecture decisions behind GPU inference platforms you operated.</p>
+            <h4>Systems & Architecture Discussion (CTO)</h4>
+            <p>Deep-dive discussion on distributed systems trade-offs and how you approach designing greenfield schedulers.</p>
           </div>
         
           <div class="step reveal">
             <div class="n">STEP 3</div>
-            <h4>Paid Work Sample (Half-day to 1 day)</h4>
-            <p>Implement and improve placement logic using sample GPU logs and task traces; 30-minute presentation. AI tools permitted.</p>
+            <h4>Paid Work Sample Assignment</h4>
+            <p>A focused, real-world design or implementation challenge (half to full day, fully paid). Coding agents/AI tools encouraged.</p>
           </div>
         
           <div class="step reveal">
             <div class="n">STEP 4</div>
-            <h4>CEO Interview & Offer</h4>
-            <p>Cultural alignment, compensation discussion, and formal offer.</p>
+            <h4>Founding Offer & Alignment</h4>
+            <p>Alignment on role scope, compensation, equity structure (stock options), and formal offer.</p>
           </div>
         
       </div>
@@ -1044,14 +1094,14 @@
       <script>for (let i = 0; i < 30; i++)document.write('<i></i>');</script>
     </div>
     <div class="wrap">
-      <h2 class="reveal">Let's start with a conversation.</h2>
+      <h2 class="reveal">Start with a Conversation.</h2>
       <p class="reveal">
-        Interested in building the scheduler that runs AI agents on GPUs at low cost? Book a casual talk directly with our engineering team.
+        Curious about our vision and the systems problems we are solving? You don't need a formal application to start—book a casual vision talk directly with our founders and CTO.
       </p>
       <a class="btn-primary reveal"
         href="https://outlook.office.com/book/datagusto_@datagusto.ai/s/9T6y-RBzcEaGfOTPYNpTGw2?ismsaljsauthenabled"
         target="_blank" rel="noopener noreferrer">Book Casual Talk</a>
-      <div class="tagline reveal">datagusto — Connect agent workloads to GPU allocation.</div>
+      <div class="tagline reveal">datagusto — Building next-generation agent compute architecture from ground up.</div>
     </div>
   </section>
 
