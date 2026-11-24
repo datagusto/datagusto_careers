@@ -28,6 +28,7 @@
       border-radius: 999px;
       margin-bottom: 16px;
     }
+
     .kicker-phase::before {
       content: "";
       width: 6px;
@@ -37,10 +38,19 @@
       display: inline-block;
       animation: pulse 2s infinite;
     }
+
     @keyframes pulse {
-      0% { opacity: 0.4; }
-      50% { opacity: 1; }
-      100% { opacity: 0.4; }
+      0% {
+        opacity: 0.4;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0.4;
+      }
     }
   </style>
 </head>
@@ -97,7 +107,7 @@
       <div class="facts-row">
         <div class="fact">
           <div class="l">Phase</div>
-          <div class="v">0→1 Phase<br>（初期立ち上げ・ステルス）</div>
+          <div class="v">0→1 Phase<br>（初期立ち上げ）</div>
         </div>
         <div class="fact">
           <div class="l">Role & Scope</div>
@@ -232,17 +242,23 @@
       </div>
 
       <!-- 0->1 Work Style Highlights -->
-      <div class="grid-2 reveal" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 36px;">
+      <div class="grid-2 reveal"
+        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 36px;">
         <div class="card" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 28px;">
-          <div style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px;">0→1の自由と技術決定権</div>
+          <div
+            style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px;">
+            0→1の自由と技術決定権</div>
           <h3 style="font-size: 18px; margin-bottom: 12px; color: var(--text);">レガシーなし。白紙からスタックを選び切る</h3>
           <p style="color: var(--muted); font-size: 14px; line-height: 1.8;">
-            引き継ぐべきレガシーコードも、縛られる社内標準フレームワークもありません。パフォーマンスと堅牢性を最大化するために最適な技術スタック（Rust, Go, C++等）を自らの意思で選定し、最初のコミットから主導できます。
+            引き継ぐべきレガシーコードも、縛られる社内標準フレームワークもありません。パフォーマンスと堅牢性を最大化するために最適な技術スタック（Rust, Go,
+            C++等）を自らの意思で選定し、最初のコミットから主導できます。
           </p>
         </div>
 
         <div class="card" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 28px;">
-          <div style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px;">柔軟で自律的なワーキングスタイル</div>
+          <div
+            style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px;">
+            柔軟で自律的なワーキングスタイル</div>
           <h3 style="font-size: 18px; margin-bottom: 12px; color: var(--text);">非同期中心・副業/週数日からの0→1立ち上げ歓迎</h3>
           <p style="color: var(--muted); font-size: 14px; line-height: 1.8;">
             形式的な会議や承認フローは排除し、テキスト主体の明快な非同期コミュニケーションで自律駆動。まずは現在の本業を続けながら副業・業務委託（週数日〜）として0→1の立ち上げに参画し、双方が納得した段階でコアメンバー・フルタイムへ移行する柔軟な働き方が可能です。
@@ -690,7 +706,11 @@
               <!-- Left: YouTube Interview Video -->
               <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
                 <div class="talk-video-wrapper">
-                  <iframe tabindex="-1" loading="lazy" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/g-pgvjzxgzo?autoplay=1><img src=https://img.youtube.com/vi/g-pgvjzxgzo/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>" title="Yankho Interview Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe tabindex="-1" loading="lazy"
+                    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/g-pgvjzxgzo?autoplay=1><img src=https://img.youtube.com/vi/g-pgvjzxgzo/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>"
+                    title="Yankho Interview Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 </div>
               </div>
 
@@ -781,7 +801,11 @@
               <!-- Left: Interview Video -->
               <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
                 <div class="talk-video-wrapper">
-                  <iframe tabindex="-1" loading="lazy" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/iznFI-UzUU4?autoplay=1><img src=https://img.youtube.com/vi/iznFI-UzUU4/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>" title="Sean Interview Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe tabindex="-1" loading="lazy"
+                    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/iznFI-UzUU4?autoplay=1><img src=https://img.youtube.com/vi/iznFI-UzUU4/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>"
+                    title="Sean Interview Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 </div>
               </div>
 
@@ -859,7 +883,11 @@
               <!-- Left: Interview Video -->
               <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
                 <div class="talk-video-wrapper">
-                  <iframe tabindex="-1" loading="lazy" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/c6LUT3Sja8A?autoplay=1><img src=https://img.youtube.com/vi/c6LUT3Sja8A/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>" title="Ice Interview Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe tabindex="-1" loading="lazy"
+                    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/c6LUT3Sja8A?autoplay=1><img src=https://img.youtube.com/vi/c6LUT3Sja8A/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>"
+                    title="Ice Interview Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 </div>
               </div>
 
@@ -948,7 +976,11 @@
               <!-- Left: Interview Video -->
               <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
                 <div class="talk-video-wrapper">
-                  <iframe tabindex="-1" loading="lazy" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/iQebouRFzDw?autoplay=1><img src=https://img.youtube.com/vi/iQebouRFzDw/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>" title="Faustin Interview Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe tabindex="-1" loading="lazy"
+                    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/iQebouRFzDw?autoplay=1><img src=https://img.youtube.com/vi/iQebouRFzDw/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>"
+                    title="Faustin Interview Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 </div>
               </div>
 

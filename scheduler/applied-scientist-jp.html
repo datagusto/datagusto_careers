@@ -28,6 +28,7 @@
       border-radius: 999px;
       margin-bottom: 16px;
     }
+
     .kicker-phase::before {
       content: "";
       width: 6px;
@@ -37,10 +38,19 @@
       display: inline-block;
       animation: pulse 2s infinite;
     }
+
     @keyframes pulse {
-      0% { opacity: 0.4; }
-      50% { opacity: 1; }
-      100% { opacity: 0.4; }
+      0% {
+        opacity: 0.4;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0.4;
+      }
     }
   </style>
 </head>
@@ -97,7 +107,7 @@
       <div class="facts-row">
         <div class="fact">
           <div class="l">Phase</div>
-          <div class="v">0→1 Phase<br>（初期立ち上げ・ステルス）</div>
+          <div class="v">0→1 Phase<br>（初期立ち上げ）</div>
         </div>
         <div class="fact">
           <div class="l">Role & Scope</div>
@@ -232,9 +242,12 @@
       </div>
 
       <!-- 0->1 Work Style Highlights -->
-      <div class="grid-2 reveal" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 36px;">
+      <div class="grid-2 reveal"
+        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 36px;">
         <div class="card" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 28px;">
-          <div style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px;">0→1の自由と数理設計の決定権</div>
+          <div
+            style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px;">
+            0→1の自由と数理設計の決定権</div>
           <h3 style="font-size: 18px; margin-bottom: 12px; color: var(--text);">既存データセットの制約なし。白紙からの設計</h3>
           <p style="color: var(--muted); font-size: 14px; line-height: 1.8;">
             誰かが用意したベンチマークを改善するだけの仕事ではありません。解くべき課題の数理定式化、必要なログテレメトリ仕様の策定から、アルゴリズムの選定・プロトタイプ作成まで、自らの手で一気通貫に主導できます。
@@ -242,7 +255,9 @@
         </div>
 
         <div class="card" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 28px;">
-          <div style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px;">柔軟で自律的なワーキングスタイル</div>
+          <div
+            style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px;">
+            柔軟で自律的なワーキングスタイル</div>
           <h3 style="font-size: 18px; margin-bottom: 12px; color: var(--text);">非同期中心・副業/週1〜2日からの0→1立ち上げ歓迎</h3>
           <p style="color: var(--muted); font-size: 14px; line-height: 1.8;">
             大学・研究機関や他社での本業を続けながら、週1〜2日の副業や業務委託として0→1の立ち上げに参画できます。非同期のテキストコミュニケーションを中心に、週1回のオンラインミーティングで論点をすり合わせる自律的なスタイルです。
@@ -250,12 +265,15 @@
         </div>
       </div>
 
-      <div class="roadmap-block reveal" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px; margin-bottom: 36px;">
+      <div class="roadmap-block reveal"
+        style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px; margin-bottom: 36px;">
         <h3 style="margin-bottom: 16px; color: var(--text);">0→1の立ち上げフェーズで担うこと</h3>
         <ul style="padding-left: 20px; color: var(--muted); font-size: 15px; line-height: 1.8;">
           <li style="margin-bottom: 8px;"><strong>1. 潜在制約の定式化とプロキシ信号設計:</strong> 観測ログからタスクの許容度や品質水準を捉える数理モデルの基礎設計</li>
-          <li style="margin-bottom: 8px;"><strong>2. 推定ベースラインのPythonプロトタイプ実装:</strong> 不確実性を考慮した予測ロジックを実装し、エンジニアチームへ引き渡す</li>
-          <li style="margin-bottom: 8px;"><strong>3. 先端クラスタでの実験プロトコル策定:</strong> 探索アルゴリズムやシャドウ実行を活用し、実環境で安全に効果を実証する評価基盤を構築</li>
+          <li style="margin-bottom: 8px;"><strong>2. 推定ベースラインのPythonプロトタイプ実装:</strong> 不確実性を考慮した予測ロジックを実装し、エンジニアチームへ引き渡す
+          </li>
+          <li style="margin-bottom: 8px;"><strong>3. 先端クラスタでの実験プロトコル策定:</strong>
+            探索アルゴリズムやシャドウ実行を活用し、実環境で安全に効果を実証する評価基盤を構築</li>
           <li style="margin-bottom: 8px;"><strong>4. 研究成果の知財・論文発表:</strong> 国際会議への論文投稿や特許出願を通じた、技術的プレゼンスの確立</li>
         </ul>
       </div>
@@ -316,14 +334,17 @@
         <p>AIエージェントの普及に伴い、ツール呼び出しや長大な推論によるGPUコストが急増しています。計算資源を確保できるかどうかが、AI活用の成否を分ける制約になりつつあります。</p>
       </div>
 
-      <div class="grid-2" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 36px;">
-        <div class="card reveal" style="background: var(--ink2); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 32px;">
+      <div class="grid-2"
+        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 36px;">
+        <div class="card reveal"
+          style="background: var(--ink2); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 32px;">
           <h3 style="color:var(--white); margin-bottom: 12px;">着目している課題と数理的フロンティア</h3>
           <p style="color:var(--muted-d); font-size: 14px; line-height: 1.8;">
             エージェントの自律ジョブには「いつまでに終われば十分か」「どの程度の品質が許容されるか」という暗黙の制約が存在します。正解が直接与えられない環境で、反実仮想や不確実性を考慮しながら最適解を導くアプローチは、世界的にも先駆的な研究開発テーマです。アプローチの詳細は、NDA締結後にお話しします。
           </p>
         </div>
-        <div class="card reveal" style="background: var(--ink2); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 32px;">
+        <div class="card reveal"
+          style="background: var(--ink2); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 32px;">
           <h3 style="color:var(--white); margin-bottom: 12px;">このポジションが果たす役割とインパクト</h3>
           <p style="color:var(--muted-d); font-size: 14px; line-height: 1.8;">
             論文やレポートの提出にとどまらず、自ら設計したモデルとPythonプロトタイプがテックリードの手で本番システムに組み込まれ、東京、台湾、シンガポール、米国等の顧客GPUクラスタを制御します。数理設計が実世界に与えるインパクトを直に体感できます。
@@ -338,28 +359,40 @@
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="kicker">Founding Profile</span>
-        <h2>求める人物像（必須・歓迎）</h2>
+        <h2>応募要件（必須・歓迎）</h2>
         <p>正解が直接観測しにくい問題に対して、自ら数理アプローチを組み立ててPythonで検証できる推進力を重視します。</p>
       </div>
 
-      <div class="card reveal" style="margin-bottom: 24px; background: #fff; border: 1px solid var(--light2); border-radius: 8px; padding: 20px 28px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
-        <div style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase;">Focus Domain</div>
-        <div style="font-size: 14px; color: var(--text); font-weight: 600;">バンディット/強化学習, 因果推論・反実仮想評価, 不確実性推定, オペレーションズ・リサーチ, Pythonプロトタイピング</div>
+      <div class="card reveal"
+        style="margin-bottom: 24px; background: #fff; border: 1px solid var(--light2); border-radius: 8px; padding: 20px 28px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+        <div
+          style="font-family: var(--disp); font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: .08em; text-transform: uppercase;">
+          Focus Domain</div>
+        <div style="font-size: 14px; color: var(--text); font-weight: 600;">バンディット/強化学習, 因果推論・反実仮想評価, 不確実性推定,
+          オペレーションズ・リサーチ, Pythonプロトタイピング</div>
       </div>
 
       <div class="grid-2" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
-        <div class="card reveal" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px;">
-          <div style="font-family: var(--disp); font-size: 12px; font-weight: 700; color: var(--teal); text-transform: uppercase; margin-bottom: 16px;">求めるコア要件（Must）</div>
+        <div class="card reveal"
+          style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px;">
+          <div
+            style="font-family: var(--disp); font-size: 12px; font-weight: 700; color: var(--teal); text-transform: uppercase; margin-bottom: 16px;">
+            求めるコア要件（Must）</div>
           <ul style="padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.8;">
-            <li style="margin-bottom: 10px;"><strong>実世界意思決定モデルの設計経験：</strong> 推薦、広告、リソース配分、動的価格設定など、観測バイアスや遅延フィードバックが存在する環境でのモデル構築経験</li>
-            <li style="margin-bottom: 10px;"><strong>Pythonによる確かなプロトタイピング力：</strong> 数理理論を頭の中だけに留めず、自らゼロからPythonで実験コードを書き、高速に検証できること</li>
+            <li style="margin-bottom: 10px;"><strong>実世界意思決定モデルの設計経験：</strong>
+              推薦、広告、リソース配分、動的価格設定など、観測バイアスや遅延フィードバックが存在する環境でのモデル構築経験</li>
+            <li style="margin-bottom: 10px;"><strong>Pythonによる確かなプロトタイピング力：</strong>
+              数理理論を頭の中だけに留めず、自らゼロからPythonで実験コードを書き、高速に検証できること</li>
             <li style="margin-bottom: 10px;"><strong>数理統計・機械学習の確かな基礎：</strong> 統計的推測、不確実性モデリング、回帰分析、最適化理論への深い理解</li>
             <li style="margin-bottom: 10px;">不確実性の高い0→1の環境において、自律的に論点を整理し、少数精鋭チームと密に連携できること</li>
           </ul>
         </div>
 
-        <div class="card reveal" style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px;">
-          <div style="font-family: var(--disp); font-size: 12px; font-weight: 700; color: var(--muted-d); text-transform: uppercase; margin-bottom: 16px;">歓迎する経験（Nice to have）</div>
+        <div class="card reveal"
+          style="background:#fff; border: 1px solid var(--light2); border-radius: 8px; padding: 32px;">
+          <div
+            style="font-family: var(--disp); font-size: 12px; font-weight: 700; color: var(--muted-d); text-transform: uppercase; margin-bottom: 16px;">
+            歓迎する経験（Nice to have）</div>
           <ul style="padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.8;">
             <li style="margin-bottom: 10px;">コンテキスト付きバンディット、強化学習、または因果推論（オフポリシー評価等）の実務・研究経験</li>
             <li style="margin-bottom: 10px;">待ち行列理論、スケジューリング理論、オペレーションズ・リサーチ（OR）の知見・論文実績</li>
@@ -369,11 +402,14 @@
         </div>
       </div>
 
-      <div class="card reveal" style="margin-top: 24px; background: #fff; border: 1px solid rgba(226, 92, 24, 0.2); border-left: 4px solid var(--teal); border-radius: 8px; padding: 24px 32px;">
+      <div class="card reveal"
+        style="margin-top: 24px; background: #fff; border: 1px solid rgba(226, 92, 24, 0.2); border-left: 4px solid var(--teal); border-radius: 8px; padding: 24px 32px;">
         <h4 style="margin-bottom: 10px; color: var(--text);">このポジションに向いている方・向いていない方</h4>
         <ul style="padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.8;">
-          <li style="margin-bottom: 6px;"><strong>向いている方：</strong> 「誰も解いたことのない実世界の難題に、自ら数理アプローチを描いて挑みたい」「実環境にデプロイされる数理モデルを0から作りたい」という探求心のある方。</li>
-          <li style="margin-bottom: 6px;"><strong>向いていない方：</strong> すでにクレンジングされたきれいなデータセットの上で、ハイパーパラメータの微調整のみを行いたい方。</li>
+          <li style="margin-bottom: 6px;"><strong>向いている方：</strong>
+            「誰も解いたことのない実世界の難題に、自ら数理アプローチを描いて挑みたい」「実環境にデプロイされる数理モデルを0から作りたい」という探求心のある方。</li>
+          <li style="margin-bottom: 6px;"><strong>向いていない方：</strong> すでにクレンジングされたきれいなデータセットの上で、ハイパーパラメータの微調整のみを行いたい方。
+          </li>
         </ul>
       </div>
     </div>
@@ -389,35 +425,35 @@
       </div>
 
       <div class="tl">
-        
-          <div class="tl-step reveal">
-            <div class="dot">1</div>
-            <div class="ph">1ヶ月目</div>
-            <h4>代替信号とログ仕様定義</h4>
-            <p>プロキシ信号を定義し、システムエンジニアへテレメトリ仕様を引き渡します。</p>
-          </div>
-        
-          <div class="tl-step reveal">
-            <div class="dot">2</div>
-            <div class="ph">2ヶ月目</div>
-            <h4>区間推定ベースライン作成</h4>
-            <p>Conformal Predictionを用いた締め切り・品質の予測プロトタイプをPythonで実装します。</p>
-          </div>
-        
-          <div class="tl-step reveal">
-            <div class="dot">3</div>
-            <div class="ph">3ヶ月目</div>
-            <h4>PoC実験プロトコル設計</h4>
-            <p>顧客クラスタでのシャドウ実行・探索計画と、反実仮想を検証するオフポリシー評価を確立します。</p>
-          </div>
-        
-          <div class="tl-step reveal">
-            <div class="dot">4</div>
-            <div class="ph">6ヶ月〜</div>
-            <h4>ドメイン転移と論文・特許化</h4>
-            <p>複数顧客間での事前分布転移手法を確立し、世界トップカンファレンスへの論文投稿・特許化を推進します。</p>
-          </div>
-        
+
+        <div class="tl-step reveal">
+          <div class="dot">1</div>
+          <div class="ph">1ヶ月目</div>
+          <h4>代替信号とログ仕様定義</h4>
+          <p>プロキシ信号を定義し、システムエンジニアへテレメトリ仕様を引き渡します。</p>
+        </div>
+
+        <div class="tl-step reveal">
+          <div class="dot">2</div>
+          <div class="ph">2ヶ月目</div>
+          <h4>区間推定ベースライン作成</h4>
+          <p>Conformal Predictionを用いた締め切り・品質の予測プロトタイプをPythonで実装します。</p>
+        </div>
+
+        <div class="tl-step reveal">
+          <div class="dot">3</div>
+          <div class="ph">3ヶ月目</div>
+          <h4>PoC実験プロトコル設計</h4>
+          <p>顧客クラスタでのシャドウ実行・探索計画と、反実仮想を検証するオフポリシー評価を確立します。</p>
+        </div>
+
+        <div class="tl-step reveal">
+          <div class="dot">4</div>
+          <div class="ph">6ヶ月〜</div>
+          <h4>ドメイン転移と論文・特許化</h4>
+          <p>複数顧客間での事前分布転移手法を確立し、世界トップカンファレンスへの論文投稿・特許化を推進します。</p>
+        </div>
+
       </div>
 
       <div class="callout reveal" style="background:var(--ink);">
@@ -425,37 +461,37 @@
       </div>
 
       <div class="paths">
-        
-          <div class="path reveal">
-            <div class="ic">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-            </div>
-            <h4>リサーチリード / チーフサイエンティスト</h4>
-            <p>datagustoのアルゴリズム知的財産を統括し、AIスケジューリング領域の世界的第一人者へ。</p>
+
+        <div class="path reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
           </div>
-        
-          <div class="path reveal">
-            <div class="ic">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-            </div>
-            <h4>因果推論・意思決定データサイエンスの第一人者</h4>
-            <p>観測バイアスを伴うエンタープライズ自動意思決定システムにおける高度専門家としてのキャリア。</p>
+          <h4>リサーチリード / チーフサイエンティスト</h4>
+          <p>datagustoのアルゴリズム知的財産を統括し、AIスケジューリング領域の世界的第一人者へ。</p>
+        </div>
+
+        <div class="path reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
           </div>
-        
-          <div class="path reveal">
-            <div class="ic">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-            </div>
-            <h4>副業からフルタイムの創業サイエンティストへ</h4>
-            <p>PoCの成功と事業拡大に合わせ、中核の創業サイエンティストとしてフルコミットへの移行。</p>
+          <h4>因果推論・意思決定データサイエンスの第一人者</h4>
+          <p>観測バイアスを伴うエンタープライズ自動意思決定システムにおける高度専門家としてのキャリア。</p>
+        </div>
+
+        <div class="path reveal">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF7A33" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
           </div>
-        
+          <h4>副業からフルタイムの創業サイエンティストへ</h4>
+          <p>PoCの成功と事業拡大に合わせ、中核の創業サイエンティストとしてフルコミットへの移行。</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -500,31 +536,31 @@
         <p>相互の専門性・ビジョンの一致と、実践的な数理設計力を確かめ合う透明性の高い選考フローです。</p>
       </div>
       <div class="steps">
-        
-          <div class="step reveal">
-            <div class="n">STEP 1</div>
-            <h4>カジュアル面談（オンライン / 30分）</h4>
-            <p>創業者・CTOと1on1。プロジェクトの構想、解こうとしている数理課題について直接共有（NDA不要）。</p>
-          </div>
-        
-          <div class="step reveal">
-            <div class="n">STEP 2</div>
-            <h4>研究・実績ディスカッション (30分 / CTO同席)</h4>
-            <p>正解が直接観測しにくい問題や不確実性モデリングについて、過去の取り組みや設計思想をディスカッション。</p>
-          </div>
-        
-          <div class="step reveal">
-            <div class="n">STEP 3</div>
-            <h4>有償ワークサンプル課題 (Paid Work Sample)</h4>
-            <p>実務に近い抽象度の高い問題に対するシンプルな数理定式化・プロトタイプ設計（有償）。AIツールの活用は完全自由。</p>
-          </div>
-        
-          <div class="step reveal">
-            <div class="n">STEP 4</div>
-            <h4>参画条件の合意・オファー</h4>
-            <p>稼働形態（週1〜2日の副業、業務委託等）、報酬条件のすり合わせを経てオファー。</p>
-          </div>
-        
+
+        <div class="step reveal">
+          <div class="n">STEP 1</div>
+          <h4>カジュアル面談（オンライン / 30分）</h4>
+          <p>創業者・CTOと1on1。プロジェクトの構想、解こうとしている数理課題について直接共有（NDA不要）。</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="n">STEP 2</div>
+          <h4>研究・実績ディスカッション (30分 / CTO同席)</h4>
+          <p>正解が直接観測しにくい問題や不確実性モデリングについて、過去の取り組みや設計思想をディスカッション。</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="n">STEP 3</div>
+          <h4>有償ワークサンプル課題 (Paid Work Sample)</h4>
+          <p>実務に近い抽象度の高い問題に対するシンプルな数理定式化・プロトタイプ設計（有償）。AIツールの活用は完全自由。</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="n">STEP 4</div>
+          <h4>参画条件の合意・オファー</h4>
+          <p>稼働形態（週1〜2日の副業、業務委託等）、報酬条件のすり合わせを経てオファー。</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -601,27 +637,42 @@
         <p>2名でスケジューラを開発し、CTOが全体を統括。本ポジションが推定・評価モデル、ファウンディングエンジニアがシステム実装を担当します。</p>
       </div>
 
-      <div class="team-grid reveal" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 32px;">
-        <div class="team-card" style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px;">
-          <div style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">Overall Lead</div>
+      <div class="team-grid reveal"
+        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 32px;">
+        <div class="team-card"
+          style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px;">
+          <div
+            style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">
+            Overall Lead</div>
           <h4 style="color:var(--text); margin-bottom: 8px;">CTO</h4>
           <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">学習精度ループとPoC数値の最終責任、設計方針決定、週次ミーティングを統括。</p>
         </div>
 
-        <div class="team-card" style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px; ">
-          <div style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">Systems & Infrastructure</div>
+        <div class="team-card"
+          style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px; ">
+          <div
+            style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">
+            Systems & Infrastructure</div>
           <h4 style="color:var(--text); margin-bottom: 8px;">Tech Lead / Founding Engineer</h4>
-          <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">ジョブ配置と実行、計測基盤、推定モデルの本番実装、顧客GPU環境への展開を担当。</p>
+          <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">ジョブ配置と実行、計測基盤、推定モデルの本番実装、顧客GPU環境への展開を担当。
+          </p>
         </div>
 
-        <div class="team-card" style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px; border-color: var(--teal); background: #fff;">
-          <div style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">Estimation & Evaluation</div>
+        <div class="team-card"
+          style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px; border-color: var(--teal); background: #fff;">
+          <div
+            style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">
+            Estimation & Evaluation</div>
           <h4 style="color:var(--text); margin-bottom: 8px;">Applied Scientist</h4>
-          <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">納期と品質の推定モデル設計・プロトタイプ、フィードバック信号・探索・評価の設計、ログ仕様定義。</p>
+          <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">
+            納期と品質の推定モデル設計・プロトタイプ、フィードバック信号・探索・評価の設計、ログ仕様定義。</p>
         </div>
 
-        <div class="team-card" style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px;">
-          <div style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">Customers & Business</div>
+        <div class="team-card"
+          style="background: var(--light); border: 1px solid var(--light2); border-radius: 8px; padding: 24px;">
+          <div
+            style="font-family: var(--disp); color: var(--teal); font-weight: 700; font-size: 13px; margin-bottom: 6px;">
+            Customers & Business</div>
           <h4 style="color:var(--text); margin-bottom: 8px;">CEO</h4>
           <p style="color: var(--muted); font-size: 13px; line-height: 1.6;">PoC顧客との調整、要件定義、ビジネス成果の報告と検証結果の説明をリード。</p>
         </div>
@@ -649,7 +700,11 @@
               <!-- Left: YouTube Interview Video -->
               <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
                 <div class="talk-video-wrapper">
-                  <iframe tabindex="-1" loading="lazy" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/g-pgvjzxgzo?autoplay=1><img src=https://img.youtube.com/vi/g-pgvjzxgzo/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>" title="Yankho Interview Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe tabindex="-1" loading="lazy"
+                    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/g-pgvjzxgzo?autoplay=1><img src=https://img.youtube.com/vi/g-pgvjzxgzo/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>"
+                    title="Yankho Interview Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 </div>
               </div>
 
@@ -740,7 +795,11 @@
               <!-- Left: Interview Video -->
               <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
                 <div class="talk-video-wrapper">
-                  <iframe tabindex="-1" loading="lazy" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/iznFI-UzUU4?autoplay=1><img src=https://img.youtube.com/vi/iznFI-UzUU4/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>" title="Sean Interview Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe tabindex="-1" loading="lazy"
+                    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/iznFI-UzUU4?autoplay=1><img src=https://img.youtube.com/vi/iznFI-UzUU4/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>"
+                    title="Sean Interview Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 </div>
               </div>
 
@@ -818,7 +877,11 @@
               <!-- Left: Interview Video -->
               <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
                 <div class="talk-video-wrapper">
-                  <iframe tabindex="-1" loading="lazy" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/c6LUT3Sja8A?autoplay=1><img src=https://img.youtube.com/vi/c6LUT3Sja8A/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>" title="Ice Interview Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe tabindex="-1" loading="lazy"
+                    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/c6LUT3Sja8A?autoplay=1><img src=https://img.youtube.com/vi/c6LUT3Sja8A/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>"
+                    title="Ice Interview Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 </div>
               </div>
 
@@ -907,7 +970,11 @@
               <!-- Left: Interview Video -->
               <div class="talk-video-block reveal" style="margin-top: 0; width: 100%;">
                 <div class="talk-video-wrapper">
-                  <iframe tabindex="-1" loading="lazy" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/iQebouRFzDw?autoplay=1><img src=https://img.youtube.com/vi/iQebouRFzDw/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>" title="Faustin Interview Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe tabindex="-1" loading="lazy"
+                    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/iQebouRFzDw?autoplay=1><img src=https://img.youtube.com/vi/iQebouRFzDw/hqdefault.jpg alt=' + + '><span>&#x25BA;</span></a>"
+                    title="Faustin Interview Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 </div>
               </div>
 
@@ -999,7 +1066,7 @@
         <p>応募にあたって気になる点や、組織・技術に関する疑問にお答えします。</p>
       </div>
       <div class="reveal">
-        
+
         <div class="faq-item">
           <div class="faq-q">
             <h4>なぜプロダクトの詳細が書かれていないのですか？</h4><span class="tog">+</span>
@@ -1026,7 +1093,7 @@
             <p>大歓迎です。未解決のスケジューリング問題やオフポリシー評価の成果を、論文や特許として積極的に世に出す方針です。</p>
           </div>
         </div>
-        
+
       </div>
     </div>
   </section>
@@ -1039,29 +1106,30 @@
         <h2>募集要項</h2>
       </div>
 
-      <div class="card reveal" style="background:#fff; border-radius: 8px; padding: 32px; border: 1px solid rgba(0,0,0,0.06); max-width: 800px; margin: 0 auto;">
+      <div class="card reveal"
+        style="background:#fff; border-radius: 8px; padding: 32px; border: 1px solid rgba(0,0,0,0.06); max-width: 800px; margin: 0 auto;">
         <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
-          
-            <tr style="border-bottom: 1px solid var(--light2);">
-              <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">契約形態</td>
-              <td style="padding: 14px 12px; color: var(--muted);">副業または業務委託（週1〜2日程度から参画可能、正社員登用あり）</td>
-            </tr>
-          
-            <tr style="border-bottom: 1px solid var(--light2);">
-              <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">報酬</td>
-              <td style="padding: 14px 12px; color: var(--muted);">経験・専門性に応じて協議決定 / ストックオプション付与検討</td>
-            </tr>
-          
-            <tr style="border-bottom: 1px solid var(--light2);">
-              <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">勤務形態</td>
-              <td style="padding: 14px 12px; color: var(--muted);">フルリモート可（週次ミーティングはオンライン実施）</td>
-            </tr>
-          
-            <tr style="border-bottom: 1px solid var(--light2);">
-              <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">開始時期</td>
-              <td style="padding: 14px 12px; color: var(--muted);">ファウンディングエンジニアと同時期を想定</td>
-            </tr>
-          
+
+          <tr style="border-bottom: 1px solid var(--light2);">
+            <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">契約形態</td>
+            <td style="padding: 14px 12px; color: var(--muted);">副業または業務委託（週1〜2日程度から参画可能、正社員登用あり）</td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid var(--light2);">
+            <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">報酬</td>
+            <td style="padding: 14px 12px; color: var(--muted);">経験・専門性に応じて協議決定 / ストックオプション付与検討</td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid var(--light2);">
+            <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">勤務形態</td>
+            <td style="padding: 14px 12px; color: var(--muted);">フルリモート可（週次ミーティングはオンライン実施）</td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid var(--light2);">
+            <td style="padding: 14px 12px; font-weight: 700; width: 30%; color: var(--text);">開始時期</td>
+            <td style="padding: 14px 12px; color: var(--muted);">ファウンディングエンジニアと同時期を想定</td>
+          </tr>
+
         </table>
       </div>
     </div>
@@ -1094,7 +1162,9 @@
     </div>
   </footer>
 
-  <a class="float-cta" id="floatCta" href="https://outlook.office.com/book/datagusto_@datagusto.ai/s/9T6y-RBzcEaGfOTPYNpTGw2?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer">カジュアル面談に応募 →</a>
+  <a class="float-cta" id="floatCta"
+    href="https://outlook.office.com/book/datagusto_@datagusto.ai/s/9T6y-RBzcEaGfOTPYNpTGw2?ismsaljsauthenabled"
+    target="_blank" rel="noopener noreferrer">カジュアル面談に応募 →</a>
 
   <script src="../assets/js/job-detail.js"></script>
 </body>
